@@ -61,7 +61,7 @@ export function StaggerItem({ children, className }: StaggerItemProps) {
       y: 0,
       transition: {
         duration: 0.4,
-        ease: theme.animations.easing.smooth,
+        ease: theme.animations.easing.smooth as [number, number, number, number],
       },
     },
   };
