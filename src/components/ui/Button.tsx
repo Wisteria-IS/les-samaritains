@@ -112,6 +112,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
 
     // Render as external link
     if (href && external) {
+      const { onAnimationStart, onAnimationEnd, ...anchorProps } = props as React.AnchorHTMLAttributes<HTMLAnchorElement>;
       return (
         <motion.a
           ref={ref as React.Ref<HTMLAnchorElement>}
@@ -122,7 +123,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
           whileTap={{ scale: 0.98 }}
           transition={{ duration: 0.15 }}
           className={classes}
-          {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+          {...anchorProps}
         >
           {content}
         </motion.a>
