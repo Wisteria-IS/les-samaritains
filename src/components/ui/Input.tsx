@@ -33,7 +33,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             {label}
           </motion.label>
         )}
-        <motion.input
+        <input
           ref={ref}
           id={inputId}
           onFocus={() => setIsFocused(true)}
