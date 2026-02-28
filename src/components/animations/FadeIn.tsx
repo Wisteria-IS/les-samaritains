@@ -50,7 +50,7 @@ export function FadeIn({
       transition: {
         duration: actualDuration,
         delay,
-        ease: theme.animations.easing.smooth,
+        ease: theme.animations.easing.smooth as [number, number, number, number],
       },
     },
   };
