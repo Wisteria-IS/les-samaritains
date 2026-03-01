@@ -10,9 +10,9 @@ import { CountUp } from '@/components/animations/CountUp';
 
 const stats = [
   { value: 17000, suffix: '+', label: 'visites annuelles' },
-  { value: 800, suffix: '', label: 'familles a Noel' },
-  { value: 50, suffix: '+', label: 'benevoles actifs' },
-  { value: 22, suffix: '', label: "annees d'experience" },
+  { value: 800, suffix: '', label: 'familles à Noël' },
+  { value: 50, suffix: '+', label: 'bénévoles actifs' },
+  { value: 22, suffix: '', label: "années d'expérience" },
 ];
 
 export function ImpactSection() {
@@ -31,8 +31,8 @@ export function ImpactSection() {
             Des chiffres qui parlent
           </h2>
           <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto px-4">
-            Depuis 2002, nous travaillons sans relache pour faire une difference
-            dans la vie des familles montrealaises.
+            Depuis 2002, nous travaillons sans relâche pour faire une différence
+            dans la vie des familles montréalaises.
           </p>
         </FadeIn>
 
@@ -67,19 +67,19 @@ export function ImpactSection() {
             <div className="relative aspect-video rounded-lg md:rounded-xl overflow-hidden">
               <Image
                 src="/images/gallery/groceries.jpg"
-                alt="Notre equipe"
+                alt="Notre équipe"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
               <blockquote className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed mb-4 md:mb-6">
-                "Chaque annee, nous distribuons des milliers de paniers alimentaires
+                "Chaque année, nous distribuons des milliers de paniers alimentaires
                 aux familles dans le besoin."
               </blockquote>
               <p className="text-sm md:text-base text-white/70">
                 Notre mission est de nous assurer que personne ne souffre de la faim
-                dans notre communaute.
+                dans notre communauté.
               </p>
             </div>
           </div>

@@ -11,22 +11,22 @@ import { Button } from '@/components/ui/Button';
 const donationOptions = [
   {
     icon: CreditCard,
-    title: 'Don monetaire',
-    description: 'Faites un don en ligne securise via PayPal ou envoyez un cheque a notre adresse.',
+    title: 'Don monétaire',
+    description: 'Faites un don en ligne sécurisé via PayPal ou envoyez un chèque à notre adresse.',
     href: '/don',
     color: 'primary',
   },
   {
     icon: Truck,
     title: 'Don alimentaire',
-    description: 'Donnez des denrees non perissables ou des produits frais lors de nos heures d\'ouverture.',
+    description: 'Donnez des denrées non périssables ou des produits frais lors de nos heures d\'ouverture.',
     href: '/don#alimentaire',
     color: 'secondary',
   },
   {
     icon: Gift,
-    title: 'Don de materiel',
-    description: 'Equipement, fournitures et autres ressources pour nous aider a mieux servir.',
+    title: 'Don de matériel',
+    description: 'Équipement, fournitures et autres ressources pour nous aider à mieux servir.',
     href: '/contact',
     color: 'accent',
   },
@@ -45,15 +45,15 @@ export function DonationSection() {
               Contribuer
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-text mb-6 leading-tight">
-              Votre generosite fait la difference
+              Votre générosité fait la différence
             </h2>
             <p className="text-xl text-text-muted mb-6">
-              Chaque contribution, qu'elle soit grande ou petite, aide a nourrir
+              Chaque contribution, qu'elle soit grande ou petite, aide à nourrir
               une famille dans le besoin.
             </p>
             <p className="text-text-muted mb-8">
-              L'Oeuvre des Samaritains est un organisme a but non lucratif. Tous
-              les dons sont utilises directement pour soutenir notre mission.
+              L'Oeuvre des Samaritains est un organisme à but non lucratif. Tous
+              les dons sont utilisés directement pour soutenir notre mission.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" href="/don">
@@ -61,7 +61,7 @@ export function DonationSection() {
                 Faire un don
               </Button>
               <Button variant="outline" size="lg" href="/benevole">
-                Devenir benevole
+                Devenir bénévole
               </Button>
             </div>
           </FadeIn>
@@ -127,7 +127,7 @@ export function DonationSection() {
         {/* Charity number */}
         <FadeIn className="text-center mt-16 pt-12 border-t border-border">
           <p className="text-text-muted">
-            L'Oeuvre des Samaritains est un organisme de bienfaisance enregistre.
+            L'Oeuvre des Samaritains est un organisme de bienfaisance enregistré.
           </p>
           <p className="text-text font-medium mt-2">
             No. d'organisme de bienfaisance: 86400 9741RR0001

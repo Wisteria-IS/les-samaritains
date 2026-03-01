@@ -119,7 +119,7 @@ function HeroHarvest() {
             </Button>
             <Button variant="outline" size="lg" href="/benevole" className="w-full sm:w-auto justify-center">
               <Users className="w-5 h-5 mr-2" />
-              Devenir benevole
+              Devenir bénévole
             </Button>
           </motion.div>
 
@@ -140,7 +140,7 @@ function HeroHarvest() {
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-secondary">
                 <CountUp end={800} duration={2.5} />
               </div>
-              <p className="text-xs sm:text-sm font-medium text-text">familles a Noel</p>
+              <p className="text-xs sm:text-sm font-medium text-text">familles à Noël</p>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-accent">22+</div>
@@ -355,7 +355,7 @@ function HeroUrban() {
                 href="/benevole"
                 className="w-full sm:w-auto justify-center border-white/30 text-white hover:bg-white hover:text-primary"
               >
-                Devenir benevole
+                Devenir bénévole
               </Button>
             </motion.div>
 
@@ -376,7 +376,7 @@ function HeroUrban() {
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary">
                   <CountUp end={800} duration={2.5} />
                 </div>
-                <p className="text-xs sm:text-sm text-white/60">familles a Noel</p>
+                <p className="text-xs sm:text-sm text-white/60">familles à Noël</p>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">22+</div>

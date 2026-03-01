@@ -18,11 +18,11 @@ interface NavItem {
 const navigation: NavItem[] = [
   { label: 'Accueil', href: '/' },
   {
-    label: 'A propos',
+    label: 'À propos',
     href: '/a-propos',
     children: [
-      { label: 'Mot de la presidente', href: '/president' },
-      { label: 'Rapport d\'activites', href: '/rapport' },
+      { label: 'Mot de la présidente', href: '/president' },
+      { label: 'Rapport d\'activités', href: '/rapport' },
       { label: 'Notre historique', href: '/historique' },
       { label: 'C\'est pour qui?', href: '/pour-qui' },
     ],
@@ -32,16 +32,16 @@ const navigation: NavItem[] = [
     href: '/bienfaits',
     children: [
       { label: 'Les fruits', href: '/bienfaits/fruits' },
-      { label: 'Les legumes', href: '/bienfaits/legumes' },
+      { label: 'Les légumes', href: '/bienfaits/legumes' },
       { label: 'Les viandes', href: '/bienfaits/viandes' },
-      { label: 'Epices et herbes', href: '/bienfaits/epices' },
+      { label: 'Épices et herbes', href: '/bienfaits/epices' },
     ],
   },
   {
-    label: 'Notre equipe',
+    label: 'Notre équipe',
     href: '/equipe',
     children: [
-      { label: 'L\'equipe', href: '/equipe' },
+      { label: 'L\'équipe', href: '/equipe' },
       { label: 'Nos partenaires', href: '/partenaires' },
     ],
   },
@@ -69,7 +69,7 @@ export function Header() {
         <Container>
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-6">
-              <span>9300 Lajeunesse, Montreal</span>
+              <span>9300 Lajeunesse, Montréal</span>
               <span>lds@live.ca</span>
               <span>514 388 4095</span>
             </div>
@@ -147,7 +147,7 @@ export function Header() {
           {/* CTA buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <Button variant="outline" size="md" href="/benevole" icon={<Users className="w-5 h-5" />}>
-              Benevole
+              Bénévole
             </Button>
             <Button variant="primary" size="md" href="/don" icon={<Heart className="w-5 h-5" />}>
               Faire un don
@@ -206,7 +206,7 @@ export function Header() {
                 ))}
                 <div className="pt-4 flex flex-col gap-2" onClick={() => setMobileMenuOpen(false)}>
                   <Button variant="outline" className="w-full" href="/benevole">
-                    Devenir benevole
+                    Devenir bénévole
                   </Button>
                   <Button variant="primary" className="w-full" href="/don">
                     Faire un don

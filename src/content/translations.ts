@@ -7,12 +7,12 @@ export const content = {
     cta: {
       contact: 'Nous contacter',
       donate: 'Faire un don',
-      volunteer: 'Devenir benevole',
+      volunteer: 'Devenir bénévole',
       learnMore: 'En savoir plus',
     },
     contact: {
       address: '3535 Avenue Papineau',
-      city: 'Montreal, QC H2K 4J9',
+      city: 'Montréal, QC H2K 4J9',
       phone: '(514) 523-5288',
       email: 'info@lessamaritains.net',
     },
@@ -26,20 +26,20 @@ export const content = {
   // Navigation
   nav: {
     home: 'Accueil',
-    about: 'A propos',
-    president: 'Mot de la presidente',
+    about: 'À propos',
+    president: 'Mot de la présidente',
     history: 'Notre historique',
-    team: 'Notre equipe',
+    team: 'Notre équipe',
     partners: 'Nos partenaires',
     services: 'Services',
     forWho: "C'est pour qui?",
     benefits: 'Bienfaits',
     fruits: 'Des fruits',
-    vegetables: 'Des legumes',
+    vegetables: 'Des légumes',
     meats: 'Les viandes',
-    spices: 'Fines herbes et epices',
+    spices: 'Fines herbes et épices',
     getInvolved: "S'impliquer",
-    volunteer: 'Devenir benevole',
+    volunteer: 'Devenir bénévole',
     donate: 'Faire un don',
     contact: 'Contact',
   },
@@ -49,33 +49,33 @@ export const content = {
     hero: {
       subtitle: 'Depuis 2002',
       title: 'Ensemble, nourrissons l\'espoir',
-      description: 'L\'Oeuvre des Samaritains aide les familles a faible revenu de Montreal en leur offrant des denrees alimentaires et un soutien chaleureux.',
+      description: 'L\'Oeuvre des Samaritains aide les familles à faible revenu de Montréal en leur offrant des denrées alimentaires et un soutien chaleureux.',
     },
     mission: {
       subtitle: 'Notre mission',
-      title: 'Nourrir et inspirer notre communaute',
-      description: 'Notre mission va au-dela de la simple distribution alimentaire. Nous nous engageons a soutenir les personnes a faible revenu en leur offrant bien plus qu\'un repas.',
+      title: 'Nourrir et inspirer notre communauté',
+      description: 'Notre mission va au-delà de la simple distribution alimentaire. Nous nous engageons à soutenir les personnes à faible revenu en leur offrant bien plus qu\'un repas.',
     },
     impact: {
       subtitle: 'Notre impact',
       title: 'Des chiffres qui parlent',
-      description: 'Depuis 2002, nous travaillons sans relache pour faire une difference dans la vie des familles montrealaises.',
+      description: 'Depuis 2002, nous travaillons sans relâche pour faire une différence dans la vie des familles montréalaises.',
       stats: {
         visits: { value: 17000, suffix: '+', label: 'visites annuelles' },
-        christmas: { value: 800, suffix: '', label: 'familles a Noel' },
-        volunteers: { value: 50, suffix: '+', label: 'benevoles actifs' },
-        years: { value: 22, suffix: '', label: "annees d'experience" },
+        christmas: { value: 800, suffix: '', label: 'familles à Noël' },
+        volunteers: { value: 50, suffix: '+', label: 'bénévoles actifs' },
+        years: { value: 22, suffix: '', label: "années d'expérience" },
       },
     },
   },
 
   // President Page
   president: {
-    title: 'Mot de la Presidente',
+    title: 'Mot de la Présidente',
     subtitle: 'Notre vision',
-    description: 'Un message de notre fondatrice et presidente, Chantal Plouffe',
+    description: 'Un message de notre fondatrice et présidente, Chantal Plouffe',
     name: 'Chantal Plouffe',
-    role: 'Presidente et fondatrice',
+    role: 'Présidente et fondatrice',
   },
 
   // History Page
@@ -89,42 +89,42 @@ export const content = {
   forWho: {
     title: "C'est pour qui?",
     subtitle: 'Nos services',
-    description: 'Decouvrez qui peut beneficier de nos services d\'aide alimentaire',
+    description: 'Découvrez qui peut bénéficier de nos services d\'aide alimentaire',
     whoWeServe: {
       title: 'Qui a recours aux banques alimentaires?',
       subtitle: 'Il n\'existe pas de profil type unique',
-      description: 'Les personnes aidees sont diverses et viennent de tous les horizons. Notre mission est d\'aider toute personne dans le besoin, sans jugement.',
+      description: 'Les personnes aidées sont diverses et viennent de tous les horizons. Notre mission est d\'aider toute personne dans le besoin, sans jugement.',
     },
   },
 
   // Team Page
   team: {
-    title: 'Notre Equipe',
+    title: 'Notre Équipe',
     subtitle: 'Qui sommes-nous',
-    description: 'Decouvrez les personnes devouees qui font vivre l\'Oeuvre des Samaritains',
+    description: 'Découvrez les personnes dévouées qui font vivre l\'Oeuvre des Samaritains',
   },
 
   // Partners Page
   partners: {
     title: 'Nos Partenaires',
     subtitle: 'Ensemble',
-    description: 'Grace a nos partenaires, nous pouvons aider des milliers de familles chaque annee',
+    description: 'Grâce à nos partenaires, nous pouvons aider des milliers de familles chaque année',
   },
 
   // Volunteer Page
   volunteer: {
-    title: 'Devenir Benevole',
+    title: 'Devenir Bénévole',
     subtitle: "S'impliquer",
-    description: 'Rejoignez notre equipe de benevoles et faites une difference dans votre communaute',
+    description: 'Rejoignez notre équipe de bénévoles et faites une différence dans votre communauté',
     form: {
-      firstName: 'Prenom',
+      firstName: 'Prénom',
       lastName: 'Nom',
       email: 'Courriel',
-      phone: 'Telephone',
-      availability: 'Disponibilite',
-      motivation: 'Pourquoi souhaitez-vous devenir benevole?',
+      phone: 'Téléphone',
+      availability: 'Disponibilité',
+      motivation: 'Pourquoi souhaitez-vous devenir bénévole?',
       submit: 'Soumettre ma candidature',
-      success: 'Merci! Nous vous contacterons bientot.',
+      success: 'Merci! Nous vous contacterons bientôt.',
     },
   },
 
@@ -132,19 +132,19 @@ export const content = {
   donate: {
     title: 'Faire un Don',
     subtitle: 'Soutenez-nous',
-    description: 'Votre generosite nous permet d\'aider des milliers de familles chaque annee',
+    description: 'Votre générosité nous permet d\'aider des milliers de familles chaque année',
     options: {
       oneTime: 'Don unique',
       monthly: 'Don mensuel',
-      food: 'Don de denrees',
+      food: 'Don de denrées',
     },
   },
 
   // Report Page
   report: {
-    title: "Rapport d'Activites",
+    title: "Rapport d'Activités",
     subtitle: 'Transparence',
-    description: 'Consultez nos rapports annuels et decouvrez l\'impact de votre soutien',
+    description: 'Consultez nos rapports annuels et découvrez l\'impact de votre soutien',
   },
 
   // Benefits Pages
@@ -152,22 +152,22 @@ export const content = {
     fruits: {
       title: 'Les Fruits',
       subtitle: 'Bienfaits',
-      description: 'Decouvrez les bienfaits des fruits que nous distribuons',
+      description: 'Découvrez les bienfaits des fruits que nous distribuons',
     },
     vegetables: {
-      title: 'Les Legumes',
+      title: 'Les Légumes',
       subtitle: 'Bienfaits',
-      description: 'Decouvrez les bienfaits des legumes que nous distribuons',
+      description: 'Découvrez les bienfaits des légumes que nous distribuons',
     },
     meats: {
       title: 'Les Viandes',
       subtitle: 'Bienfaits',
-      description: 'Decouvrez les bienfaits des viandes que nous distribuons',
+      description: 'Découvrez les bienfaits des viandes que nous distribuons',
     },
     spices: {
-      title: 'Fines Herbes et Epices',
+      title: 'Fines Herbes et Épices',
       subtitle: 'Bienfaits',
-      description: 'Decouvrez les bienfaits des fines herbes et epices',
+      description: 'Découvrez les bienfaits des fines herbes et épices',
     },
   },
 
@@ -175,18 +175,18 @@ export const content = {
   contact: {
     title: 'Nous Joindre',
     subtitle: 'Contact',
-    description: 'Vous avez des questions? N\'hesitez pas a nous contacter.',
+    description: 'Vous avez des questions? N\'hésitez pas à nous contacter.',
     form: {
       name: 'Nom complet',
       email: 'Courriel',
-      phone: 'Telephone',
+      phone: 'Téléphone',
       subject: 'Sujet',
       message: 'Message',
       submit: 'Envoyer le message',
-      success: 'Message envoye! Nous vous repondrons dans les plus brefs delais.',
+      success: 'Message envoyé! Nous vous répondrons dans les plus brefs délais.',
       subjects: {
-        general: 'Question generale',
-        volunteer: 'Benevolat',
+        general: 'Question générale',
+        volunteer: 'Bénévolat',
         donation: 'Don',
         partnership: 'Partenariat',
         other: 'Autre',

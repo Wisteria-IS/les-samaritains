@@ -58,19 +58,19 @@ export function MissionSection() {
 
           <FadeIn>
             <p className="text-base md:text-lg text-text-muted leading-relaxed mb-4 md:mb-6">
-              En accedant a notre centre de distribution alimentaire, nos beneficiaires
-              decouvrent un espace de bienveillance et de partage. Nous croyons fermement
-              en la puissance de l'ecoute, de l'encouragement et de la solidarite.
+              En accédant à notre centre de distribution alimentaire, nos bénéficiaires
+              découvrent un espace de bienveillance et de partage. Nous croyons fermement
+              en la puissance de l'écoute, de l'encouragement et de la solidarité.
             </p>
             <p className="text-base md:text-lg text-text-muted leading-relaxed mb-6 md:mb-8">
               Chaque semaine, nous accueillons des centaines de familles avec le sourire.
-              Notre equipe de benevoles devoues travaille sans relache pour que personne
-              ne soit laisse pour compte.
+              Notre équipe de bénévoles dévoués travaille sans relâche pour que personne
+              ne soit laissé pour compte.
             </p>
 
             {/* Values list */}
             <div className="grid grid-cols-2 gap-3 md:gap-4">
-              {['Compassion', 'Respect', 'Dignite', 'Solidarite'].map((value) => (
+              {['Compassion', 'Respect', 'Dignité', 'Solidarité'].map((value) => (
                 <div key={value} className="flex items-center gap-2 md:gap-3">
                   <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-primary flex-shrink-0" />
                   <span className="text-sm md:text-base text-text font-medium">{value}</span>
@@ -86,7 +86,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden">
               <Image
                 src="/images/history/hist-3.jpg"
-                alt="Service a la communaute"
+                alt="Service à la communauté"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -102,7 +102,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden hidden md:block">
               <Image
                 src="/images/history/hist-14.jpg"
-                alt="Benevoles en action"
+                alt="Bénévoles en action"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -110,7 +110,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden hidden md:block">
               <Image
                 src="/images/history/hist-17.jpg"
-                alt="Notre equipe aujourd'hui"
+                alt="Notre équipe aujourd'hui"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />

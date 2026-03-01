@@ -8,17 +8,17 @@ import { cn } from '@/lib/utils';
 
 const footerLinks = {
   raccourcis: [
-    { label: 'Mot de la presidente', href: '/president' },
+    { label: 'Mot de la présidente', href: '/president' },
     { label: 'C\'est pour qui?', href: '/pour-qui' },
     { label: 'Notre historique', href: '/historique' },
-    { label: 'Notre equipe', href: '/equipe' },
+    { label: 'Notre équipe', href: '/equipe' },
     { label: 'Nos partenaires', href: '/partenaires' },
   ],
   bienfaits: [
     { label: 'Les fruits', href: '/bienfaits/fruits' },
-    { label: 'Les legumes', href: '/bienfaits/legumes' },
+    { label: 'Les légumes', href: '/bienfaits/legumes' },
     { label: 'Les viandes', href: '/bienfaits/viandes' },
-    { label: 'Epices et herbes', href: '/bienfaits/epices' },
+    { label: 'Épices et herbes', href: '/bienfaits/epices' },
   ],
 };
 
@@ -42,7 +42,7 @@ export function Footer() {
                 Centre de distribution alimentaire
               </p>
               <p className="text-xs text-gray-500">
-                Numero de bienfaisance: 86400 9741RR0001
+                Numéro de bienfaisance: 86400 9741RR0001
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <a
@@ -104,7 +104,7 @@ export function Footer() {
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className={cn('text-sm', footerConfig.text)}>
                     9300 rue Lajeunesse,<br />
-                    Montreal, QC H2M 1S4
+                    Montréal, QC H2M 1S4
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -134,10 +134,10 @@ export function Footer() {
         <div className="py-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className={cn('text-sm', footerConfig.text)}>
-              &copy; {new Date().getFullYear()} L'Oeuvre des Samaritains. Tous droits reserves.
+              &copy; {new Date().getFullYear()} L'Oeuvre des Samaritains. Tous droits réservés.
             </p>
             <p className={cn('text-sm flex items-center gap-1', footerConfig.text)}>
-              Fait avec <Heart className="w-4 h-4 text-primary" /> a Montreal
+              Fait avec <Heart className="w-4 h-4 text-primary" /> à Montréal
             </p>
           </div>
         </div>
