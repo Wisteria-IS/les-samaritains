@@ -151,15 +151,15 @@ export default function PourQuiPage() {
                 <div className="space-y-4 mb-8">
                   <div className="flex justify-between items-center py-3 border-b border-white/20">
                     <span className="text-white/80">Mardi</span>
-                    <span className="text-white font-semibold">10h00 - 14h00</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-white/20">
-                    <span className="text-white/80">Mercredi</span>
-                    <span className="text-white font-semibold">10h00 - 14h00</span>
+                    <span className="text-white font-semibold">13h00 - 17h00</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-white/20">
                     <span className="text-white/80">Jeudi</span>
-                    <span className="text-white font-semibold">10h00 - 14h00</span>
+                    <span className="text-white font-semibold">13h00 - 17h00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/20">
+                    <span className="text-white/80">Vendredi</span>
+                    <span className="text-white font-semibold">13h00 - 17h00</span>
                   </div>
                 </div>
 
@@ -186,8 +186,8 @@ export default function PourQuiPage() {
                 </div>
 
                 <div className="mb-8">
-                  <p className="text-lg text-text mb-2">3535 Avenue Papineau</p>
-                  <p className="text-lg text-text mb-4">Montreal, QC H2K 4J9</p>
+                  <p className="text-lg text-text mb-2">9300 Rue Lajeunesse</p>
+                  <p className="text-lg text-text mb-4">Montréal, QC H2M 1S4</p>
                   <p className="text-text-muted">
                     Accessible en transport en commun. Stationnement disponible sur place.
                   </p>
@@ -195,7 +195,7 @@ export default function PourQuiPage() {
 
                 <div className="aspect-video rounded-xl overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.2511453!2d-73.5687!3d45.5267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a58c5f5b1b9%3A0x2b32f3c4a4b5c6d7!2s3535%20Av.%20Papineau%2C%20Montr%C3%A9al%2C%20QC%20H2K%204J9!5e0!3m2!1sfr!2sca!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.8!2d-73.6548!3d45.5582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bc93c5d3e45%3A0x5e8f4b3c2d1a7f9e!2s9300%20Rue%20Lajeunesse%2C%20Montr%C3%A9al%2C%20QC%20H2M%201S4!5e0!3m2!1sfr!2sca!4v1234567890"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

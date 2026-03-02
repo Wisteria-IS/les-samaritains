@@ -11,15 +11,15 @@ export const content = {
       learnMore: 'En savoir plus',
     },
     contact: {
-      address: '3535 Avenue Papineau',
-      city: 'Montréal, QC H2K 4J9',
-      phone: '(514) 523-5288',
-      email: 'info@lessamaritains.net',
+      address: '9300 Rue Lajeunesse',
+      city: 'Montréal, QC H2M 1S4',
+      phone: '514 388 4095',
+      email: 'lds@live.ca',
     },
     schedule: {
-      tuesday: 'Mardi: 10h00 - 14h00',
-      wednesday: 'Mercredi: 10h00 - 14h00',
-      thursday: 'Jeudi: 10h00 - 14h00',
+      tuesday: 'Mardi: 13h00 - 17h00',
+      thursday: 'Jeudi: 13h00 - 17h00',
+      friday: 'Vendredi: 13h00 - 17h00',
     },
   },
 

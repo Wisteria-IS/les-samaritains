@@ -53,9 +53,9 @@ export function DistributionSection() {
                 <div>
                   <h3 className="text-xl font-bold text-text mb-3">Horaire</h3>
                   <div className="space-y-2 text-text-muted">
-                    <p>Mardi: <span className="text-text font-medium">10h00 - 14h00</span></p>
-                    <p>Mercredi: <span className="text-text font-medium">10h00 - 14h00</span></p>
-                    <p>Jeudi: <span className="text-text font-medium">10h00 - 14h00</span></p>
+                    <p>Mardi: <span className="text-text font-medium">13h00 - 17h00</span></p>
+                    <p>Jeudi: <span className="text-text font-medium">13h00 - 17h00</span></p>
+                    <p>Vendredi: <span className="text-text font-medium">13h00 - 17h00</span></p>
                   </div>
                 </div>
               </div>
@@ -70,8 +70,8 @@ export function DistributionSection() {
                 <div>
                   <h3 className="text-xl font-bold text-text mb-2">Adresse</h3>
                   <p className="text-text-muted">
-                    3535 Avenue Papineau<br />
-                    Montreal, QC H2K 4J9
+                    9300 Rue Lajeunesse<br />
+                    Montréal, QC H2M 1S4
                   </p>
                 </div>
               </div>
