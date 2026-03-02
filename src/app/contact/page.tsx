@@ -12,25 +12,25 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Adresse',
-    content: '3535 Avenue Papineau\nMontreal, QC H2K 4J9',
-    link: 'https://maps.google.com/?q=3535+Avenue+Papineau+Montreal',
+    content: '9300 Rue Lajeunesse\nMontréal, QC H2M 1S4',
+    link: 'https://maps.google.com/?q=9300+Rue+Lajeunesse+Montreal',
   },
   {
     icon: Phone,
     title: 'Telephone',
-    content: '(514) 523-5288',
-    link: 'tel:+15145235288',
+    content: '514 388 4095',
+    link: 'tel:+15143884095',
   },
   {
     icon: Mail,
     title: 'Courriel',
-    content: 'info@lessamaritains.net',
-    link: 'mailto:info@lessamaritains.net',
+    content: 'lds@live.ca',
+    link: 'mailto:lds@live.ca',
   },
   {
     icon: Clock,
     title: 'Heures d\'ouverture',
-    content: 'Mardi - Jeudi: 10h00 - 14h00\nSamedi: Sur rendez-vous',
+    content: 'Mardi, Jeudi, Vendredi\nDe 13h00 à 17h00',
   },
 ];
 
@@ -131,7 +131,7 @@ export default function ContactPage() {
             <FadeIn direction="right">
               <div className="rounded-2xl overflow-hidden border border-border h-full min-h-[400px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.2511453!2d-73.5687!3d45.5267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a58c5f5b1b9%3A0x2b32f3c4a4b5c6d7!2s3535%20Av.%20Papineau%2C%20Montr%C3%A9al%2C%20QC%20H2K%204J9!5e0!3m2!1sfr!2sca!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.8!2d-73.6548!3d45.5582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bc93c5d3e45%3A0x5e8f4b3c2d1a7f9e!2s9300%20Rue%20Lajeunesse%2C%20Montr%C3%A9al%2C%20QC%20H2M%201S4!5e0!3m2!1sfr!2sca!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: '400px' }}

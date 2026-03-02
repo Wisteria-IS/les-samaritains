@@ -69,12 +69,12 @@ export function Header() {
         <Container>
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-6">
-              <span>9300 Lajeunesse, Montréal</span>
+              <span>9300 Rue Lajeunesse, Montréal, QC H2M 1S4</span>
               <span>lds@live.ca</span>
               <span>514 388 4095</span>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-white/80">Mardi, Jeudi, Vendredi: 13h-17h</span>
+              <span className="text-white/80">Mardi, Jeudi, Vendredi: 13h00-17h00</span>
             </div>
           </div>
         </Container>
