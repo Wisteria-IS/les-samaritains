@@ -37,19 +37,19 @@ export function ThemeProvider({ children, initialTheme = defaultTheme }: ThemePr
 
   const setTheme = (name: ThemeName) => {
     setThemeName(name);
-    // Optionally persist to localStorage
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', name);
-    }
+    // Persist to localStorage - disabled while theme switcher is hidden
+    // if (typeof window !== 'undefined') {
+    //   localStorage.setItem('theme', name);
+    // }
   };
 
-  // Load saved theme on mount
-  useEffect(() => {
-    const saved = localStorage.getItem('theme') as ThemeName | null;
-    if (saved && themes[saved]) {
-      setThemeName(saved);
-    }
-  }, []);
+  // Load saved theme on mount - disabled while theme switcher is hidden
+  // useEffect(() => {
+  //   const saved = localStorage.getItem('theme') as ThemeName | null;
+  //   if (saved && themes[saved]) {
+  //     setThemeName(saved);
+  //   }
+  // }, []);
 
   return (
     <ThemeContext.Provider
