@@ -76,15 +76,14 @@ function HeroHarvest() {
       {/* Content */}
       <Container className="relative z-20 min-h-screen flex items-center py-20 md:py-24 lg:py-32">
         <div className="max-w-2xl bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-10 shadow-lg">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-primary/20 text-primary rounded-full text-sm font-semibold mb-4 md:mb-6"
+            className="text-text-muted text-base md:text-lg mb-3 md:mb-4"
           >
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Depuis 2002 au service de la communaute
-          </motion.span>
+            Depuis 2002 au service de la communauté
+          </motion.p>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

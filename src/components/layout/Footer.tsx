@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Mail, Phone, MapPin, Heart } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from './Container';
@@ -33,10 +34,16 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Logo and description */}
             <div className="lg:col-span-1">
-              <Link href="/" className="inline-block">
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  L'Oeuvre des Samaritains
-                </h3>
+              <Link href="/" className="inline-block mb-4">
+                <div className="bg-white rounded-xl p-3 inline-block">
+                  <Image
+                    src="/logo.png"
+                    alt="L'Oeuvre des Samaritains"
+                    width={180}
+                    height={90}
+                    className="h-16 w-auto object-contain"
+                  />
+                </div>
               </Link>
               <p className={cn('text-sm mb-4', footerConfig.text)}>
                 Centre de distribution alimentaire
@@ -49,9 +56,9 @@ export function Footer() {
                   href="https://www.facebook.com/Oeuvredessamaritains"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white/10 hover:bg-primary transition-colors"
+                  className="p-2 rounded-full bg-white hover:bg-gray-100 transition-colors"
                 >
-                  <Facebook className="w-5 h-5 text-white" />
+                  <Facebook className="w-5 h-5 text-[#1877F2]" />
                 </a>
               </div>
             </div>

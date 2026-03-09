@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Facebook } from 'lucide-react';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
@@ -31,6 +31,12 @@ const contactInfo = [
     icon: Clock,
     title: 'Heures d\'ouverture',
     content: 'Mardi, Jeudi, Vendredi\nDe 13h00 à 17h00',
+  },
+  {
+    icon: Facebook,
+    title: 'Facebook',
+    content: 'Suivez-nous',
+    link: 'https://www.facebook.com/Oeuvredessamaritains',
   },
 ];
 
@@ -86,7 +92,7 @@ export default function ContactPage() {
       {/* Contact Info Cards */}
       <section className="py-16 bg-surface">
         <Container>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={info.title}
@@ -101,8 +107,14 @@ export default function ContactPage() {
                   'transition-all duration-300'
                 )}
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <info.icon className="w-7 h-7 text-primary" />
+                <div className={cn(
+                    "w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4",
+                    info.title === 'Facebook' ? 'bg-[#1877F2]/10' : 'bg-primary/10'
+                  )}>
+                  <info.icon className={cn(
+                    "w-7 h-7",
+                    info.title === 'Facebook' ? 'text-[#1877F2]' : 'text-primary'
+                  )} />
                 </div>
                 <h3 className="font-semibold text-lg text-text mb-2">{info.title}</h3>
                 {info.link ? (

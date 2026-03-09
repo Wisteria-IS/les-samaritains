@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Heart, Users } from 'lucide-react';
+import { Menu, X, ChevronDown, Heart, Users, Facebook } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from './Container';
 import { Button } from '@/components/ui/Button';
@@ -75,6 +76,15 @@ export function Header() {
             </div>
             <div className="flex items-center gap-4">
               <span className="text-white/80">Mardi, Jeudi, Vendredi: 13h00-17h00</span>
+              <a
+                href="https://www.facebook.com/Oeuvredessamaritains"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 rounded-full bg-white/90 hover:bg-white transition-colors"
+                aria-label="Suivez-nous sur Facebook"
+              >
+                <Facebook className="w-4 h-4 text-[#1877F2]" />
+              </a>
             </div>
           </div>
         </Container>
@@ -84,12 +94,15 @@ export function Header() {
       <Container>
         <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold text-primary"
-            >
-              Les Samaritains
+          <Link href="/" className="flex items-center">
+            <motion.div whileHover={{ scale: 1.03 }}>
+              <Image
+                src="/logo.png"
+                alt="L'Oeuvre des Samaritains"
+                width={200}
+                height={100}
+                className="h-14 lg:h-18 w-auto object-contain"
+              />
             </motion.div>
           </Link>
 

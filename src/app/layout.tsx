@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter, Outfit, DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter, Outfit, DM_Sans, Caveat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/next";
 // ThemeSwitcher removed but kept in codebase for future use
 // import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 
@@ -33,6 +34,13 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+// Accent font for Harvest theme
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "L'Oeuvre des Samaritains | Centre de distribution alimentaire",
   description:
@@ -46,6 +54,10 @@ export const metadata: Metadata = {
     "Samaritains",
   ],
   authors: [{ name: "L'Oeuvre des Samaritains" }],
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "fr_CA",
@@ -54,6 +66,14 @@ export const metadata: Metadata = {
     title: "L'Oeuvre des Samaritains | Centre de distribution alimentaire",
     description:
       "Aidez les familles de Montreal en faisant un don ou en devenant benevole.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 180,
+        height: 180,
+        alt: "L'Oeuvre des Samaritains",
+      },
+    ],
   },
 };
 
@@ -70,16 +90,18 @@ export default function RootLayout({
           ${inter.variable}
           ${outfit.variable}
           ${dmSans.variable}
+          ${caveat.variable}
           antialiased
         `}
       >
-        <ThemeProvider initialTheme="urban">
+        <ThemeProvider initialTheme="harvest">
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
