@@ -16,7 +16,7 @@ export const themes = {
 
 export type ThemeName = keyof typeof themes;
 
-export const defaultTheme: ThemeName = 'harvest';
+export const defaultTheme: ThemeName = 'urban';
 
 // Helper to get theme by name
 export function getTheme(name: ThemeName): Theme {

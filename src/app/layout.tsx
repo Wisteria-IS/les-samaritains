@@ -4,7 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
+// ThemeSwitcher removed but kept in codebase for future use
+// import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 
 // Fonts for Harvest theme
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -72,13 +73,12 @@ export default function RootLayout({
           antialiased
         `}
       >
-        <ThemeProvider initialTheme="harvest">
+        <ThemeProvider initialTheme="urban">
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
-          <ThemeSwitcher />
         </ThemeProvider>
       </body>
     </html>
