@@ -173,8 +173,15 @@ export default function PourQuiPage() {
                 </div>
 
                 <div className="mb-8">
-                  <p className="text-lg text-text mb-2">{t('location.address')}</p>
-                  <p className="text-lg text-text mb-4">{t('location.city')}</p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=9300+Rue+Lajeunesse,+Montréal,+QC+H2M+1S4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
+                    <p className="text-lg text-text mb-2">{t('location.address')}</p>
+                    <p className="text-lg text-text mb-4">{t('location.city')}</p>
+                  </a>
                   <p className="text-text-muted">
                     {t('location.accessibility')}
                   </p>

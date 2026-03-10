@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Heart, Users, Facebook } from 'lucide-react';
+import { Menu, X, ChevronDown, Heart, Users, Facebook, Mail, Phone, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from './Container';
@@ -74,9 +74,29 @@ export function Header() {
         <Container>
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-6">
-              <span>9300 Rue Lajeunesse, Montréal, QC H2M 1S4</span>
-              <span>lds@live.ca</span>
-              <span>514 388 4095</span>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=9300+Rue+Lajeunesse,+Montréal,+QC+H2M+1S4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+              >
+                <MapPin className="w-4 h-4" />
+                9300 Rue Lajeunesse, Montréal, QC H2M 1S4
+              </a>
+              <a
+                href="mailto:lds@live.ca"
+                className="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                lds@live.ca
+              </a>
+              <a
+                href="tel:+15143884095"
+                className="flex items-center gap-1.5 hover:text-white/80 transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                514 388 4095
+              </a>
             </div>
             <div className="flex items-center gap-4">
               <span className="text-white/80">{tHeader('hours')}</span>

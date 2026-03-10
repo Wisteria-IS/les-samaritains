@@ -112,10 +112,15 @@ export function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className={cn('text-sm', footerConfig.text)}>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=9300+Rue+Lajeunesse,+Montréal,+QC+H2M+1S4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn('text-sm hover:text-primary transition-colors', footerConfig.text)}
+                  >
                     9300 rue Lajeunesse,<br />
                     Montréal, QC H2M 1S4
-                  </span>
+                  </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
@@ -129,7 +134,7 @@ export function Footer() {
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                   <a
-                    href="tel:5143884095"
+                    href="tel:+15143884095"
                     className={cn('text-sm hover:text-primary transition-colors', footerConfig.text)}
                   >
                     514 388 4095
