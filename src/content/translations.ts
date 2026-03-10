@@ -49,7 +49,7 @@ export const content = {
     hero: {
       subtitle: 'Depuis 2002',
       title: 'Ensemble, nourrissons l\'espoir',
-      description: 'L\'Oeuvre des Samaritains aide les familles à faible revenu de Montréal en leur offrant des denrées alimentaires et un soutien chaleureux.',
+      description: 'L\'Œuvre des Samaritains aide les familles à faible revenu de Montréal en leur offrant des denrées alimentaires et un soutien chaleureux.',
     },
     mission: {
       subtitle: 'Notre mission',
@@ -101,7 +101,7 @@ export const content = {
   team: {
     title: 'Notre Équipe',
     subtitle: 'Qui sommes-nous',
-    description: 'Découvrez les personnes dévouées qui font vivre l\'Oeuvre des Samaritains',
+    description: 'Découvrez les personnes dévouées qui font vivre l\'Œuvre des Samaritains',
   },
 
   // Partners Page
