@@ -152,7 +152,15 @@ export function Footer() {
               &copy; {new Date().getFullYear()} {t('copyright')}
             </p>
             <p className={cn('text-sm flex items-center gap-1', footerConfig.text)}>
-              {t('madeWith')} <Heart className="w-4 h-4 text-primary" /> {t('in')}
+              {t('madeWith')} <Heart className="w-4 h-4 text-primary" /> {t('in')}{' '}
+              <a
+                href="https://www.nordiqintelligence.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                Nordiq Intelligence
+              </a>
             </p>
           </div>
         </div>
