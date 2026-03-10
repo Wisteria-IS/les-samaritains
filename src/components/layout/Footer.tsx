@@ -159,7 +159,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-white font-medium hover:text-primary transition-colors"
               >
-                Nordi<span className="text-indigo-400">Q</span> Intelligence
+                <span className="text-white font-semibold">Nordi</span><span className="text-indigo-400 font-semibold">Q</span><span className="text-white font-semibold"> Intelligence</span>
               </a>
             </p>
           </div>
