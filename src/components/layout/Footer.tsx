@@ -157,9 +157,9 @@ export function Footer() {
                 href="https://www.nordiqintelligence.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
+                className="text-white font-medium hover:text-primary transition-colors"
               >
-                Nordiq Intelligence
+                Nordi<span className="text-indigo-400">q</span> Intelligence
               </a>
             </p>
           </div>
