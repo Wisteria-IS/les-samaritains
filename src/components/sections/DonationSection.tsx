@@ -3,37 +3,39 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Heart, CreditCard, Truck, Gift, ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
 
-const donationOptions = [
-  {
-    icon: CreditCard,
-    title: 'Don monétaire',
-    description: 'Faites un don en ligne sécurisé via PayPal ou envoyez un chèque à notre adresse.',
-    href: '/don',
-    color: 'primary',
-  },
-  {
-    icon: Truck,
-    title: 'Don alimentaire',
-    description: 'Donnez des denrées non périssables ou des produits frais lors de nos heures d\'ouverture.',
-    href: '/don#alimentaire',
-    color: 'secondary',
-  },
-  {
-    icon: Gift,
-    title: 'Don de matériel',
-    description: 'Équipement, fournitures et autres ressources pour nous aider à mieux servir.',
-    href: '/contact',
-    color: 'accent',
-  },
-];
-
 export function DonationSection() {
   const { theme } = useTheme();
+  const t = useTranslations('donationHome');
+
+  const donationOptions = [
+    {
+      icon: CreditCard,
+      title: t('methods.monetary.title'),
+      description: t('methods.monetary.description'),
+      href: '/don',
+      color: 'primary',
+    },
+    {
+      icon: Truck,
+      title: t('methods.food.title'),
+      description: t('methods.food.description'),
+      href: '/don#alimentaire',
+      color: 'secondary',
+    },
+    {
+      icon: Gift,
+      title: t('methods.material.title'),
+      description: t('methods.material.description'),
+      href: '/contact',
+      color: 'accent',
+    },
+  ];
 
   return (
     <section className="py-20 lg:py-28 bg-white">
@@ -42,26 +44,24 @@ export function DonationSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
           <FadeIn>
             <span className="text-primary font-medium text-lg mb-4 block">
-              Contribuer
+              {t('subtitle')}
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-text mb-6 leading-tight">
-              Votre générosité fait la différence
+              {t('title')}
             </h2>
             <p className="text-xl text-text-muted mb-6">
-              Chaque contribution, qu'elle soit grande ou petite, aide à nourrir
-              une famille dans le besoin.
+              {t('description')}
             </p>
             <p className="text-text-muted mb-8">
-              L'Oeuvre des Samaritains est un organisme à but non lucratif. Tous
-              les dons sont utilisés directement pour soutenir notre mission.
+              {t('orgInfo')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" href="/don">
                 <Heart className="w-5 h-5 mr-2" />
-                Faire un don
+                {t('donateButton')}
               </Button>
               <Button variant="outline" size="lg" href="/benevole">
-                Devenir bénévole
+                {t('volunteerButton')}
               </Button>
             </div>
           </FadeIn>
@@ -71,7 +71,7 @@ export function DonationSection() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/gallery/helping.jpg"
-                  alt="Aider"
+                  alt={t('altHelping')}
                   fill
                   className="object-cover"
                 />
@@ -85,7 +85,7 @@ export function DonationSection() {
               >
                 <Image
                   src="/images/food/fruits.jpg"
-                  alt="Fruits"
+                  alt={t('altFruits')}
                   fill
                   className="object-cover"
                 />
@@ -97,7 +97,7 @@ export function DonationSection() {
         {/* Donation options - cards */}
         <FadeIn>
           <h3 className="text-2xl font-bold text-text text-center mb-10">
-            Comment contribuer
+            {t('howToContribute')}
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {donationOptions.map((option, index) => (
@@ -117,7 +117,7 @@ export function DonationSection() {
                 <h4 className="text-xl font-bold text-text mb-3">{option.title}</h4>
                 <p className="text-text-muted mb-4">{option.description}</p>
                 <span className="inline-flex items-center text-primary font-medium group-hover:gap-2 transition-all">
-                  En savoir plus <ArrowRight className="w-4 h-4 ml-1" />
+                  {t('learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
                 </span>
               </motion.a>
             ))}
@@ -127,10 +127,10 @@ export function DonationSection() {
         {/* Charity number */}
         <FadeIn className="text-center mt-16 pt-12 border-t border-border">
           <p className="text-text-muted">
-            L'Oeuvre des Samaritains est un organisme de bienfaisance enregistré.
+            {t('charityInfo')}
           </p>
           <p className="text-text font-medium mt-2">
-            No. d'organisme de bienfaisance: 86400 9741RR0001
+            {t('charityNumber')}
           </p>
         </FadeIn>
       </Container>

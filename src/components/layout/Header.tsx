@@ -1,13 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Heart, Users, Facebook } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from './Container';
 import { Button } from '@/components/ui/Button';
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import { cn } from '@/lib/utils';
 
 interface NavItem {
@@ -16,41 +18,43 @@ interface NavItem {
   children?: { label: string; href: string }[];
 }
 
-const navigation: NavItem[] = [
-  { label: 'Accueil', href: '/' },
-  {
-    label: 'À propos',
-    href: '/a-propos',
-    children: [
-      { label: 'Mot de la présidente', href: '/president' },
-      { label: 'Rapport d\'activités', href: '/rapport' },
-      { label: 'Notre historique', href: '/historique' },
-      { label: 'C\'est pour qui?', href: '/pour-qui' },
-    ],
-  },
-  {
-    label: 'Bienfaits',
-    href: '/bienfaits',
-    children: [
-      { label: 'Les fruits', href: '/bienfaits/fruits' },
-      { label: 'Les légumes', href: '/bienfaits/legumes' },
-      { label: 'Les viandes', href: '/bienfaits/viandes' },
-      { label: 'Épices et herbes', href: '/bienfaits/epices' },
-    ],
-  },
-  {
-    label: 'Notre équipe',
-    href: '/equipe',
-    children: [
-      { label: 'L\'équipe', href: '/equipe' },
-      { label: 'Nos partenaires', href: '/partenaires' },
-    ],
-  },
-  { label: 'Contact', href: '/contact' },
-];
-
 export function Header() {
   const { theme } = useTheme();
+  const t = useTranslations('nav');
+  const tHeader = useTranslations('header');
+
+  const navigation: NavItem[] = [
+    { label: t('home'), href: '/' },
+    {
+      label: t('about'),
+      href: '/a-propos',
+      children: [
+        { label: t('aboutDropdown.president'), href: '/president' },
+        { label: t('aboutDropdown.report'), href: '/rapport' },
+        { label: t('aboutDropdown.history'), href: '/historique' },
+        { label: t('aboutDropdown.forWho'), href: '/pour-qui' },
+      ],
+    },
+    {
+      label: t('benefits'),
+      href: '/bienfaits',
+      children: [
+        { label: t('benefitsDropdown.fruits'), href: '/bienfaits/fruits' },
+        { label: t('benefitsDropdown.vegetables'), href: '/bienfaits/legumes' },
+        { label: t('benefitsDropdown.meats'), href: '/bienfaits/viandes' },
+        { label: t('benefitsDropdown.spices'), href: '/bienfaits/epices' },
+      ],
+    },
+    {
+      label: t('team'),
+      href: '/equipe',
+      children: [
+        { label: t('teamDropdown.team'), href: '/equipe' },
+        { label: t('teamDropdown.partners'), href: '/partenaires' },
+      ],
+    },
+    { label: t('contact'), href: '/contact' },
+  ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
@@ -75,16 +79,17 @@ export function Header() {
               <span>514 388 4095</span>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-white/80">Mardi, Jeudi, Vendredi: 13h00-17h00</span>
+              <span className="text-white/80">{tHeader('hours')}</span>
               <a
                 href="https://www.facebook.com/Oeuvredessamaritains"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1.5 rounded-full bg-white/90 hover:bg-white transition-colors"
-                aria-label="Suivez-nous sur Facebook"
+                className="p-1.5 rounded-full bg-[#1877F2] hover:bg-[#1664d9] transition-colors"
+                aria-label={tHeader('followFacebook')}
               >
-                <Facebook className="w-4 h-4 text-[#1877F2]" />
+                <Facebook className="w-4 h-4 text-white" />
               </a>
+              <LanguageSwitcher />
             </div>
           </div>
         </Container>
@@ -98,7 +103,7 @@ export function Header() {
             <motion.div whileHover={{ scale: 1.03 }}>
               <Image
                 src="/logo.png"
-                alt="L'Oeuvre des Samaritains"
+                alt="L'Œuvre des Samaritains"
                 width={200}
                 height={100}
                 className="h-14 lg:h-18 w-auto object-contain"
@@ -160,10 +165,10 @@ export function Header() {
           {/* CTA buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <Button variant="outline" size="md" href="/benevole" icon={<Users className="w-5 h-5" />}>
-              Bénévole
+              {t('volunteer')}
             </Button>
             <Button variant="primary" size="md" href="/don" icon={<Heart className="w-5 h-5" />}>
-              Faire un don
+              {t('donate')}
             </Button>
           </div>
 
@@ -219,10 +224,10 @@ export function Header() {
                 ))}
                 <div className="pt-4 flex flex-col gap-2" onClick={() => setMobileMenuOpen(false)}>
                   <Button variant="outline" className="w-full" href="/benevole">
-                    Devenir bénévole
+                    {t('volunteer')}
                   </Button>
                   <Button variant="primary" className="w-full" href="/don">
-                    Faire un don
+                    {t('donate')}
                   </Button>
                 </div>
               </div>

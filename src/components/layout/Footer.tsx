@@ -1,31 +1,34 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { Facebook, Mail, Phone, MapPin, Heart } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from './Container';
 import { cn } from '@/lib/utils';
 
-const footerLinks = {
-  raccourcis: [
-    { label: 'Mot de la présidente', href: '/president' },
-    { label: 'C\'est pour qui?', href: '/pour-qui' },
-    { label: 'Notre historique', href: '/historique' },
-    { label: 'Notre équipe', href: '/equipe' },
-    { label: 'Nos partenaires', href: '/partenaires' },
-  ],
-  bienfaits: [
-    { label: 'Les fruits', href: '/bienfaits/fruits' },
-    { label: 'Les légumes', href: '/bienfaits/legumes' },
-    { label: 'Les viandes', href: '/bienfaits/viandes' },
-    { label: 'Épices et herbes', href: '/bienfaits/epices' },
-  ],
-};
-
 export function Footer() {
   const { theme } = useTheme();
+  const t = useTranslations('footer');
+  const tNav = useTranslations('nav');
   const footerConfig = theme.components.footer;
+
+  const footerLinks = {
+    raccourcis: [
+      { label: tNav('aboutDropdown.president'), href: '/president' },
+      { label: tNav('aboutDropdown.forWho'), href: '/pour-qui' },
+      { label: tNav('aboutDropdown.history'), href: '/historique' },
+      { label: tNav('team'), href: '/equipe' },
+      { label: tNav('teamDropdown.partners'), href: '/partenaires' },
+    ],
+    bienfaits: [
+      { label: tNav('benefitsDropdown.fruits'), href: '/bienfaits/fruits' },
+      { label: tNav('benefitsDropdown.vegetables'), href: '/bienfaits/legumes' },
+      { label: tNav('benefitsDropdown.meats'), href: '/bienfaits/viandes' },
+      { label: tNav('benefitsDropdown.spices'), href: '/bienfaits/epices' },
+    ],
+  };
 
   return (
     <footer className={cn(footerConfig.bg, footerConfig.border)}>
@@ -38,7 +41,7 @@ export function Footer() {
                 <div className="bg-white rounded-xl p-3 inline-block">
                   <Image
                     src="/logo.png"
-                    alt="L'Oeuvre des Samaritains"
+                    alt="L'Œuvre des Samaritains"
                     width={180}
                     height={90}
                     className="h-16 w-auto object-contain"
@@ -46,26 +49,26 @@ export function Footer() {
                 </div>
               </Link>
               <p className={cn('text-sm mb-4', footerConfig.text)}>
-                Centre de distribution alimentaire
+                {t('description')}
               </p>
               <p className="text-xs text-gray-500">
-                Numéro de bienfaisance: 86400 9741RR0001
+                {t('charityNumber')}
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <a
                   href="https://www.facebook.com/Oeuvredessamaritains"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white hover:bg-gray-100 transition-colors"
+                  className="p-2 rounded-full bg-[#1877F2] hover:bg-[#1664d9] transition-colors"
                 >
-                  <Facebook className="w-5 h-5 text-[#1877F2]" />
+                  <Facebook className="w-5 h-5 text-white" />
                 </a>
               </div>
             </div>
 
             {/* Raccourcis */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Raccourcis</h4>
+              <h4 className="text-white font-semibold mb-4">{t('shortcuts')}</h4>
               <ul className="space-y-2">
                 {footerLinks.raccourcis.map((link) => (
                   <li key={link.href}>
@@ -85,7 +88,7 @@ export function Footer() {
 
             {/* Bienfaits */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Bienfaits des aliments</h4>
+              <h4 className="text-white font-semibold mb-4">{t('foodBenefits')}</h4>
               <ul className="space-y-2">
                 {footerLinks.bienfaits.map((link) => (
                   <li key={link.href}>
@@ -105,7 +108,7 @@ export function Footer() {
 
             {/* Contact */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Nous rejoindre</h4>
+              <h4 className="text-white font-semibold mb-4">{t('contactUs')}</h4>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -141,10 +144,10 @@ export function Footer() {
         <div className="py-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className={cn('text-sm', footerConfig.text)}>
-              &copy; {new Date().getFullYear()} L'Oeuvre des Samaritains. Tous droits réservés.
+              &copy; {new Date().getFullYear()} {t('copyright')}
             </p>
             <p className={cn('text-sm flex items-center gap-1', footerConfig.text)}>
-              Fait avec <Heart className="w-4 h-4 text-primary" /> à Montréal
+              {t('madeWith')} <Heart className="w-4 h-4 text-primary" /> {t('in')}
             </p>
           </div>
         </div>

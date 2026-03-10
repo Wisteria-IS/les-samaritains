@@ -2,12 +2,15 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 
 export function MissionSection() {
   const { theme } = useTheme();
+  const t = useTranslations('mission');
+  const values = t.raw('values') as string[];
 
   return (
     <section className="py-12 md:py-20 lg:py-28 bg-white">
@@ -15,15 +18,13 @@ export function MissionSection() {
         {/* Header */}
         <FadeIn className="text-center mb-10 md:mb-16">
           <span className="text-secondary font-medium text-base md:text-lg mb-3 md:mb-4 block">
-            Notre mission
+            {t('subtitle')}
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text mb-4 md:mb-6 leading-tight px-4">
-            Nourrir et inspirer notre communaute
+            {t('title')}
           </h2>
           <p className="text-base md:text-xl text-text-muted max-w-3xl mx-auto px-4">
-            Notre mission va au-dela de la simple distribution alimentaire. Nous nous
-            engageons a soutenir les personnes a faible revenu en leur offrant bien plus
-            qu'un repas.
+            {t('description')}
           </p>
         </FadeIn>
 
@@ -34,7 +35,7 @@ export function MissionSection() {
               <div className="relative aspect-[4/3] rounded-xl md:rounded-2xl overflow-hidden">
                 <Image
                   src="/images/history/hist-2.jpg"
-                  alt="Les fondateurs de l'Oeuvre"
+                  alt={t('altFounders')}
                   fill
                   className="object-cover"
                 />
@@ -48,7 +49,7 @@ export function MissionSection() {
               >
                 <Image
                   src="/images/history/hist-1B.jpg"
-                  alt="Notre histoire"
+                  alt={t('altHistory')}
                   fill
                   className="object-cover"
                 />
@@ -58,19 +59,15 @@ export function MissionSection() {
 
           <FadeIn>
             <p className="text-base md:text-lg text-text-muted leading-relaxed mb-4 md:mb-6">
-              En accédant à notre centre de distribution alimentaire, nos bénéficiaires
-              découvrent un espace de bienveillance et de partage. Nous croyons fermement
-              en la puissance de l'écoute, de l'encouragement et de la solidarité.
+              {t('paragraph1')}
             </p>
             <p className="text-base md:text-lg text-text-muted leading-relaxed mb-6 md:mb-8">
-              Chaque semaine, nous accueillons des centaines de familles avec le sourire.
-              Notre équipe de bénévoles dévoués travaille sans relâche pour que personne
-              ne soit laissé pour compte.
+              {t('paragraph2')}
             </p>
 
             {/* Values list */}
             <div className="grid grid-cols-2 gap-3 md:gap-4">
-              {['Compassion', 'Respect', 'Dignité', 'Solidarité'].map((value) => (
+              {values.map((value) => (
                 <div key={value} className="flex items-center gap-2 md:gap-3">
                   <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-primary flex-shrink-0" />
                   <span className="text-sm md:text-base text-text font-medium">{value}</span>
@@ -86,7 +83,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden">
               <Image
                 src="/images/history/hist-3.jpg"
-                alt="Service à la communauté"
+                alt={t('altCommunity')}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -94,7 +91,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden">
               <Image
                 src="/images/history/hist-7.jpg"
-                alt="Notre local"
+                alt={t('altLocation')}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -102,7 +99,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden hidden md:block">
               <Image
                 src="/images/history/hist-14.jpg"
-                alt="Bénévoles en action"
+                alt={t('altVolunteers')}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -110,7 +107,7 @@ export function MissionSection() {
             <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden hidden md:block">
               <Image
                 src="/images/history/hist-17.jpg"
-                alt="Notre équipe aujourd'hui"
+                alt={t('altTeam')}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />

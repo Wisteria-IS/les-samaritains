@@ -3,36 +3,37 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { CountUp } from '@/components/animations/CountUp';
 
-const stats = [
-  { value: 17000, suffix: '+', label: 'visites annuelles' },
-  { value: 800, suffix: '', label: 'familles à Noël' },
-  { value: 50, suffix: '+', label: 'bénévoles actifs' },
-  { value: 22, suffix: '', label: "années d'expérience" },
-];
-
 export function ImpactSection() {
   const { theme } = useTheme();
+  const t = useTranslations('impact');
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
+
+  const stats = [
+    { value: 17000, suffix: '+', label: t('stats.visits') },
+    { value: 800, suffix: '', label: t('stats.christmas') },
+    { value: 50, suffix: '+', label: t('stats.volunteers') },
+    { value: 22, suffix: '', label: t('stats.years') },
+  ];
 
   return (
     <section ref={sectionRef} className="py-12 md:py-20 lg:py-28 bg-primary">
       <Container>
         <FadeIn className="text-center mb-10 md:mb-16">
           <span className="text-white/70 text-base md:text-lg font-medium mb-3 md:mb-4 block">
-            Notre impact
+            {t('subtitle')}
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight px-4">
-            Des chiffres qui parlent
+            {t('title')}
           </h2>
           <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto px-4">
-            Depuis 2002, nous travaillons sans relâche pour faire une différence
-            dans la vie des familles montréalaises.
+            {t('description')}
           </p>
         </FadeIn>
 
@@ -67,19 +68,17 @@ export function ImpactSection() {
             <div className="relative aspect-video rounded-lg md:rounded-xl overflow-hidden">
               <Image
                 src="/images/gallery/groceries.jpg"
-                alt="Notre équipe"
+                alt={t('altTeam')}
                 fill
                 className="object-cover"
               />
             </div>
             <div>
               <blockquote className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed mb-4 md:mb-6">
-                "Chaque année, nous distribuons des milliers de paniers alimentaires
-                aux familles dans le besoin."
+                "{t('quote')}"
               </blockquote>
               <p className="text-sm md:text-base text-white/70">
-                Notre mission est de nous assurer que personne ne souffre de la faim
-                dans notre communauté.
+                {t('quoteDescription')}
               </p>
             </div>
           </div>

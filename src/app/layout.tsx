@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter, Outfit, DM_Sans, Caveat } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/contexts/ThemeContext";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/next";
-// ThemeSwitcher removed but kept in codebase for future use
-// import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 
 // Fonts for Harvest theme
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -42,18 +37,18 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "L'Oeuvre des Samaritains | Centre de distribution alimentaire",
+  title: "L'Œuvre des Samaritains | Centre de distribution alimentaire",
   description:
-    "L'Oeuvre des Samaritains est un centre de distribution alimentaire a Montreal qui aide les familles dans le besoin depuis 2002. Faire un don, devenir benevole.",
+    "L'Œuvre des Samaritains est un centre de distribution alimentaire à Montréal qui aide les familles dans le besoin depuis 2002. Faire un don, devenir bénévole.",
   keywords: [
     "banque alimentaire",
-    "Montreal",
+    "Montréal",
     "aide alimentaire",
-    "benevole",
+    "bénévole",
     "don",
     "Samaritains",
   ],
-  authors: [{ name: "L'Oeuvre des Samaritains" }],
+  authors: [{ name: "L'Œuvre des Samaritains" }],
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
@@ -62,16 +57,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_CA",
     url: "https://lessamaritains.net",
-    siteName: "L'Oeuvre des Samaritains",
-    title: "L'Oeuvre des Samaritains | Centre de distribution alimentaire",
+    siteName: "L'Œuvre des Samaritains",
+    title: "L'Œuvre des Samaritains | Centre de distribution alimentaire",
     description:
-      "Aidez les familles de Montreal en faisant un don ou en devenant benevole.",
+      "Aidez les familles de Montréal en faisant un don ou en devenant bénévole.",
     images: [
       {
         url: "/logo.png",
         width: 180,
         height: 180,
-        alt: "L'Oeuvre des Samaritains",
+        alt: "L'Œuvre des Samaritains",
       },
     ],
   },
@@ -83,7 +78,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body
         className={`
           ${plusJakartaSans.variable}
@@ -94,13 +89,7 @@ export default function RootLayout({
           antialiased
         `}
       >
-        <ThemeProvider initialTheme="harvest">
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
+        {children}
         <Analytics />
       </body>
     </html>

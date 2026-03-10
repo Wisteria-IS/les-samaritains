@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Clock, MapPin, Users, Calendar } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
@@ -10,6 +11,8 @@ import { Button } from '@/components/ui/Button';
 
 export function DistributionSection() {
   const { theme } = useTheme();
+  const t = useTranslations('distribution');
+  const documents = t.raw('documents.items') as string[];
 
   return (
     <section className="py-12 md:py-20 lg:py-28 bg-background-alt">
@@ -17,14 +20,13 @@ export function DistributionSection() {
         {/* Header */}
         <FadeIn className="text-center mb-10 md:mb-16">
           <span className="text-secondary font-medium text-base md:text-lg mb-3 md:mb-4 block">
-            Distribution
+            {t('subtitle')}
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text mb-4 md:mb-6 leading-tight px-4">
-            Comment ca fonctionne
+            {t('title')}
           </h2>
           <p className="text-base md:text-xl text-text-muted max-w-2xl mx-auto px-4">
-            Notre centre de distribution alimentaire accueille les familles dans
-            un environnement chaleureux et respectueux.
+            {t('description')}
           </p>
         </FadeIn>
 
@@ -35,7 +37,7 @@ export function DistributionSection() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
                 src="/images/gallery/food-sorting.jpg"
-                alt="Centre de distribution"
+                alt={t('altCenter')}
                 fill
                 className="object-cover"
               />
@@ -51,11 +53,11 @@ export function DistributionSection() {
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-text mb-3">Horaire</h3>
+                  <h3 className="text-xl font-bold text-text mb-3">{t('schedule.title')}</h3>
                   <div className="space-y-2 text-text-muted">
-                    <p>Mardi: <span className="text-text font-medium">13h00 - 17h00</span></p>
-                    <p>Jeudi: <span className="text-text font-medium">13h00 - 17h00</span></p>
-                    <p>Vendredi: <span className="text-text font-medium">13h00 - 17h00</span></p>
+                    <p>{t('schedule.tuesday')}: <span className="text-text font-medium">{t('schedule.hours')}</span></p>
+                    <p>{t('schedule.thursday')}: <span className="text-text font-medium">{t('schedule.hours')}</span></p>
+                    <p>{t('schedule.friday')}: <span className="text-text font-medium">{t('schedule.hours')}</span></p>
                   </div>
                 </div>
               </div>
@@ -68,10 +70,10 @@ export function DistributionSection() {
                   <MapPin className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-text mb-2">Adresse</h3>
+                  <h3 className="text-xl font-bold text-text mb-2">{t('address.title')}</h3>
                   <p className="text-text-muted">
-                    9300 Rue Lajeunesse<br />
-                    Montréal, QC H2M 1S4
+                    {t('address.street')}<br />
+                    {t('address.city')}
                   </p>
                 </div>
               </div>
@@ -84,9 +86,9 @@ export function DistributionSection() {
                   <Users className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-text mb-2">Pour qui?</h3>
+                  <h3 className="text-xl font-bold text-text mb-2">{t('who.title')}</h3>
                   <p className="text-text-muted">
-                    Personnes et familles a faible revenu residant a Montreal.
+                    {t('who.description')}
                   </p>
                 </div>
               </div>
@@ -99,9 +101,9 @@ export function DistributionSection() {
                   <Calendar className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-text mb-2">Frequence</h3>
+                  <h3 className="text-xl font-bold text-text mb-2">{t('frequency.title')}</h3>
                   <p className="text-text-muted">
-                    Une visite par mois pour chaque famille inscrite.
+                    {t('frequency.description')}
                   </p>
                 </div>
               </div>
@@ -110,20 +112,14 @@ export function DistributionSection() {
             {/* Documents needed */}
             <FadeIn>
               <div className="p-6 bg-white rounded-xl">
-                <h3 className="text-lg font-bold text-text mb-3">Documents requis</h3>
+                <h3 className="text-lg font-bold text-text mb-3">{t('documents.title')}</h3>
                 <ul className="space-y-2 text-text-muted">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary" />
-                    Piece d'identite avec photo
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary" />
-                    Preuve de residence (facture, bail)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary" />
-                    Preuve de revenu (si disponible)
-                  </li>
+                  {documents.map((doc, index) => (
+                    <li key={index} className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      {doc}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </FadeIn>
@@ -132,10 +128,10 @@ export function DistributionSection() {
             <FadeIn>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" href="/pour-qui">
-                  En savoir plus
+                  {t('learnMore')}
                 </Button>
                 <Button variant="outline" size="lg" href="/contact">
-                  Nous contacter
+                  {t('contactUs')}
                 </Button>
               </div>
             </FadeIn>

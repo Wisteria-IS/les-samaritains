@@ -2,13 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const mainPartners = [
-  { name: 'Moisson Montreal', logo: '/images/partners/moisson-montreal.webp' },
+  { name: 'Moisson Montréal', logo: '/images/partners/moisson-montreal.webp' },
   { name: 'Croix Rouge', logo: '/images/partners/croix-rouge.webp' },
   { name: 'Centraide', logo: '/images/partners/donateur-centraide.webp' },
   { name: 'Ahuntsic', logo: '/images/partners/donateur-ahuntsic.webp' },
@@ -27,6 +28,7 @@ const otherPartners = [
 
 export function PartnersSection() {
   const { theme } = useTheme();
+  const t = useTranslations('partnersHome');
 
   return (
     <section className="py-20 lg:py-28 bg-background-alt">
@@ -34,20 +36,20 @@ export function PartnersSection() {
         {/* Header */}
         <FadeIn className="text-center mb-16">
           <span className="text-primary font-medium text-lg mb-4 block">
-            Partenaires
+            {t('subtitle')}
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-text mb-6 leading-tight">
-            Ensemble, nous sommes plus forts
+            {t('title')}
           </h2>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
-            Nos partenaires jouent un role essentiel dans notre mission.
+            {t('description')}
           </p>
         </FadeIn>
 
         {/* Main Partners */}
         <FadeIn className="mb-16">
           <p className="text-center text-sm uppercase tracking-wider text-text-muted mb-8">
-            Partenaires Principaux
+            {t('mainPartners')}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
             {mainPartners.map((partner, index) => (
@@ -74,7 +76,7 @@ export function PartnersSection() {
         {/* Other Partners Grid */}
         <FadeIn>
           <p className="text-center text-sm uppercase tracking-wider text-text-muted mb-8">
-            Autres Partenaires
+            {t('otherPartners')}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
             {otherPartners.map((partner, index) => (
@@ -101,10 +103,10 @@ export function PartnersSection() {
         {/* CTA */}
         <FadeIn className="text-center mt-16">
           <p className="text-text-muted mb-6">
-            Vous souhaitez devenir partenaire?
+            {t('becomePartner')}
           </p>
           <Button size="lg" href="/contact">
-            Devenir partenaire
+            {t('becomePartnerButton')}
           </Button>
         </FadeIn>
       </Container>
