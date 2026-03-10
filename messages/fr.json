@@ -1,0 +1,875 @@
+{
+  "metadata": {
+    "title": "L'Œuvre des Samaritains | Centre de distribution alimentaire",
+    "description": "L'Œuvre des Samaritains est un centre de distribution alimentaire à Montréal qui aide les familles dans le besoin depuis 2002. Faire un don, devenir bénévole.",
+    "ogDescription": "Aidez les familles de Montréal en faisant un don ou en devenant bénévole."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "aboutDropdown": {
+      "president": "Mot de la présidente",
+      "report": "Rapport d'activités",
+      "history": "Notre historique",
+      "forWho": "C'est pour qui?"
+    },
+    "benefits": "Bienfaits",
+    "benefitsDropdown": {
+      "fruits": "Les fruits",
+      "vegetables": "Les légumes",
+      "meats": "Les viandes",
+      "spices": "Épices et herbes"
+    },
+    "team": "Notre équipe",
+    "teamDropdown": {
+      "team": "L'équipe",
+      "partners": "Nos partenaires"
+    },
+    "contact": "Contact",
+    "volunteer": "Bénévole",
+    "donate": "Faire un don"
+  },
+  "hero": {
+    "tagline": "Depuis 2002 au service de la communauté",
+    "title1": "Nourrir.",
+    "title2": "Soutenir.",
+    "title3": "Inspirer.",
+    "description": "L'Œuvre des Samaritains aide les familles dans le besoin avec des aliments frais et nutritifs. Ensemble, faisons la différence.",
+    "donateButton": "Faire un don",
+    "volunteerButton": "Devenir bénévole",
+    "scroll": "Défiler",
+    "stats": {
+      "visits": "visites/an",
+      "christmas": "familles à Noël",
+      "years": "ans"
+    }
+  },
+  "mission": {
+    "subtitle": "Notre mission",
+    "title": "Nourrir et inspirer notre communauté",
+    "description": "Notre mission va au-delà de la simple distribution alimentaire. Nous nous engageons à soutenir les personnes à faible revenu en leur offrant bien plus qu'un repas.",
+    "paragraph1": "En accédant à notre centre de distribution alimentaire, nos bénéficiaires découvrent un espace de bienveillance et de partage. Nous croyons fermement en la puissance de l'écoute, de l'encouragement et de la solidarité.",
+    "paragraph2": "Chaque semaine, nous accueillons des centaines de familles avec le sourire. Notre équipe de bénévoles dévoués travaille sans relâche pour que personne ne soit laissé pour compte.",
+    "values": ["Compassion", "Respect", "Dignité", "Solidarité"],
+    "altFounders": "Les fondateurs de l'Œuvre",
+    "altHistory": "Notre histoire",
+    "altCommunity": "Service à la communauté",
+    "altLocation": "Notre local",
+    "altVolunteers": "Bénévoles en action",
+    "altTeam": "Notre équipe aujourd'hui"
+  },
+  "impact": {
+    "subtitle": "Notre impact",
+    "title": "Des chiffres qui parlent",
+    "description": "Depuis 2002, nous travaillons sans relâche pour faire une différence dans la vie des familles montréalaises.",
+    "stats": {
+      "visits": "visites annuelles",
+      "christmas": "familles à Noël",
+      "volunteers": "bénévoles actifs",
+      "years": "années d'expérience"
+    },
+    "quote": "Chaque année, nous distribuons des milliers de paniers alimentaires aux familles dans le besoin.",
+    "quoteDescription": "Notre mission est de nous assurer que personne ne souffre de la faim dans notre communauté.",
+    "altTeam": "Notre équipe"
+  },
+  "distribution": {
+    "subtitle": "Distribution",
+    "title": "Comment ça fonctionne",
+    "description": "Notre centre de distribution alimentaire accueille les familles dans un environnement chaleureux et respectueux.",
+    "schedule": {
+      "title": "Horaire",
+      "tuesday": "Mardi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "hours": "13h00 - 17h00"
+    },
+    "address": {
+      "title": "Adresse",
+      "street": "9300 Rue Lajeunesse",
+      "city": "Montréal, QC H2M 1S4"
+    },
+    "who": {
+      "title": "Pour qui?",
+      "description": "Personnes et familles à faible revenu résidant à Montréal."
+    },
+    "frequency": {
+      "title": "Fréquence",
+      "description": "Une visite par mois pour chaque famille inscrite."
+    },
+    "documents": {
+      "title": "Documents requis",
+      "items": ["Pièce d'identité avec photo", "Preuve de résidence (facture, bail)", "Preuve de revenu (si disponible)"]
+    },
+    "learnMore": "En savoir plus",
+    "contactUs": "Nous contacter",
+    "altCenter": "Centre de distribution"
+  },
+  "donationHome": {
+    "subtitle": "Contribuer",
+    "title": "Votre générosité fait la différence",
+    "description": "Chaque contribution, qu'elle soit grande ou petite, aide à nourrir une famille dans le besoin.",
+    "orgInfo": "L'Œuvre des Samaritains est un organisme à but non lucratif. Tous les dons sont utilisés directement pour soutenir notre mission.",
+    "donateButton": "Faire un don",
+    "volunteerButton": "Devenir bénévole",
+    "howToContribute": "Comment contribuer",
+    "methods": {
+      "monetary": {
+        "title": "Don monétaire",
+        "description": "Faites un don en ligne sécurisé via PayPal ou envoyez un chèque à notre adresse."
+      },
+      "food": {
+        "title": "Don alimentaire",
+        "description": "Donnez des denrées non périssables ou des produits frais lors de nos heures d'ouverture."
+      },
+      "material": {
+        "title": "Don de matériel",
+        "description": "Équipement, fournitures et autres ressources pour nous aider à mieux servir."
+      }
+    },
+    "learnMore": "En savoir plus",
+    "charityInfo": "L'Œuvre des Samaritains est un organisme de bienfaisance enregistré.",
+    "charityNumber": "No. d'organisme de bienfaisance: 86400 9741RR0001",
+    "altHelping": "Aider",
+    "altFruits": "Fruits"
+  },
+  "partnersHome": {
+    "subtitle": "Partenaires",
+    "title": "Ensemble, nous sommes plus forts",
+    "description": "Nos partenaires jouent un rôle essentiel dans notre mission.",
+    "mainPartners": "Partenaires Principaux",
+    "otherPartners": "Autres Partenaires",
+    "becomePartner": "Vous souhaitez devenir partenaire?",
+    "becomePartnerButton": "Devenir partenaire"
+  },
+  "header": {
+    "hours": "Mardi, Jeudi, Vendredi: 13h00-17h00",
+    "followFacebook": "Suivez-nous sur Facebook"
+  },
+  "footer": {
+    "description": "Centre de distribution alimentaire",
+    "charityNumber": "Numéro de bienfaisance: 86400 9741RR0001",
+    "shortcuts": "Raccourcis",
+    "foodBenefits": "Bienfaits des aliments",
+    "contactUs": "Nous rejoindre",
+    "copyright": "L'Œuvre des Samaritains. Tous droits réservés.",
+    "madeWith": "Fait avec",
+    "in": "à Montréal"
+  },
+  "contact": {
+    "title": "Nous joindre",
+    "subtitle": "Contact",
+    "description": "Vous avez des questions? N'hésitez pas à nous contacter. Notre équipe se fera un plaisir de vous répondre.",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "hours": "Heures d'ouverture",
+    "hoursValue": "Mardi, Jeudi, Vendredi\nDe 13h00 à 17h00",
+    "facebook": "Facebook",
+    "followUs": "Suivez-nous",
+    "sendMessage": "Envoyez-nous un message",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Courriel",
+      "emailPlaceholder": "votre@courriel.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "(514) 000-0000",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Choisir un sujet",
+      "subjectGeneral": "Question générale",
+      "subjectVolunteer": "Bénévolat",
+      "subjectDonation": "Don",
+      "subjectPartnership": "Partenariat",
+      "subjectOther": "Autre",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "submit": "Envoyer le message",
+      "success": "Message envoyé!",
+      "successMessage": "Merci de nous avoir contacté. Nous vous répondrons dans les plus brefs délais.",
+      "required": "*"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Notre mission",
+    "description": "Découvrez l'histoire et les valeurs de L'Œuvre des Samaritains",
+    "whoWeAre": "Qui sommes-nous",
+    "communityService": "Un organisme au service de la communauté",
+    "intro1": "Fondée en décembre 2002, L'Œuvre des Samaritains est un organisme de bienfaisance enregistré qui se consacre à la distribution alimentaire dans l'arrondissement d'Ahuntsic-Cartierville et les quartiers environnants de Montréal.",
+    "intro2": "Notre mission est simple mais essentielle : offrir une aide alimentaire de qualité aux familles et individus qui traversent des moments difficiles. Chaque semaine, nous distribuons des paniers alimentaires contenant des denrées fraîches, des produits laitiers, des viandes et des produits d'épicerie de base.",
+    "intro3": "Grâce à nos partenaires comme Moisson Montréal, Centraide et la Croix-Rouge, ainsi qu'à nos généreux donateurs et bénévoles, nous pouvons aider des milliers de familles chaque année à mettre de la nourriture sur leur table.",
+    "values": {
+      "title": "Nos valeurs",
+      "subtitle": "Ce qui nous guide",
+      "compassion": "Compassion",
+      "compassionDesc": "Nous accueillons chaque personne avec dignité et respect, sans jugement.",
+      "solidarity": "Solidarité",
+      "solidarityDesc": "Ensemble, nous créons un réseau de soutien pour les familles dans le besoin.",
+      "commitment": "Engagement",
+      "commitmentDesc": "Nos bénévoles donnent de leur temps avec dévouement et générosité.",
+      "integrity": "Intégrité",
+      "integrityDesc": "Nous agissons avec transparence dans toutes nos actions."
+    },
+    "learnMore": "En savoir plus",
+    "explorePages": "Explorez nos pages",
+    "links": {
+      "president": "Mot de la présidente",
+      "presidentDesc": "Découvrez le message de notre présidente sur notre mission et nos valeurs.",
+      "history": "Notre historique",
+      "historyDesc": "Retracez notre parcours depuis 2002 et les étapes clés de notre développement.",
+      "forWho": "C'est pour qui?",
+      "forWhoDesc": "Apprenez qui peut bénéficier de nos services et comment y accéder.",
+      "team": "Notre équipe",
+      "teamDesc": "Rencontrez les bénévoles dévoués qui font vivre notre organisme."
+    },
+    "cta": {
+      "title": "Vous souhaitez nous aider?",
+      "description": "Que ce soit par un don ou en devenant bénévole, chaque geste compte pour soutenir les familles de notre communauté.",
+      "donate": "Faire un don",
+      "volunteer": "Devenir bénévole"
+    }
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Ensemble",
+    "description": "Grâce à nos partenaires, nous pouvons aider des milliers de familles chaque année",
+    "intro": "L'Œuvre des Samaritains est fière de collaborer avec de nombreux partenaires qui partagent notre vision d'une communauté sans faim. Leur soutien nous permet de distribuer des milliers de paniers alimentaires chaque année.",
+    "mainPartners": "Partenaires principaux",
+    "mainPartnersTitle": "Nos collaborateurs majeurs",
+    "allPartners": "Tous nos partenaires",
+    "allPartnersTitle": "Une communauté de soutien",
+    "allPartnersDesc": "Chaque partenaire contribue à notre mission de façon unique et précieuse.",
+    "whyPartner": "Pourquoi devenir partenaire",
+    "benefitsTitle": "Les avantages d'un partenariat",
+    "benefits": {
+      "community": "Impact communautaire",
+      "communityDesc": "Contribuez directement à la lutte contre l'insécurité alimentaire dans votre communauté.",
+      "social": "Responsabilité sociale",
+      "socialDesc": "Renforcez l'engagement social de votre entreprise auprès de vos employés et clients.",
+      "partnership": "Partenariat durable",
+      "partnershipDesc": "Construisez une relation à long terme basée sur des valeurs communes de solidarité."
+    },
+    "becomePartner": "Devenir partenaire",
+    "interested": "Intéressés par un partenariat?",
+    "interestedDesc": "Que vous soyez une entreprise, un commerce ou un organisme, nous serions ravis de discuter des possibilités de collaboration.",
+    "contactUs": "Nous contacter"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "readMore": "Lire la suite",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "required": "Obligatoire"
+  },
+  "language": {
+    "switch": "Langue",
+    "fr": "Français",
+    "en": "English"
+  },
+  "president": {
+    "title": "Mot de la Présidente",
+    "subtitle": "Notre vision",
+    "description": "Un message de notre fondatrice et présidente, Chantal Plouffe",
+    "role": "Présidente et fondatrice",
+    "greeting": "Chers amis et partenaires de l'Œuvre des Samaritains,",
+    "paragraph1": "Depuis plus de 20 ans, notre organisme s'est donné pour mission d'aider les personnes et les familles à faible revenu de notre communauté. Ce qui a commencé comme un geste de reconnaissance envers ceux qui nous ont aidés dans nos moments difficiles est devenu une véritable œuvre de solidarité.",
+    "paragraph2": "Chaque semaine, nous accueillons des centaines de familles dans notre centre de distribution alimentaire. Plus qu'un simple service de dépannage, nous offrons un espace de bienveillance où chacun est traité avec dignité et respect.",
+    "paragraph3": "Notre équipe de bénévoles dévoués travaille sans relâche pour s'assurer que personne ne soit laissé pour compte. Ensemble, nous croyons fermement en la puissance de l'entraide et de la solidarité communautaire.",
+    "paragraph4": "L'Œuvre des Samaritains, c'est plus qu'une banque alimentaire. C'est une famille qui accueille, qui écoute et qui soutient. Chaque don, chaque heure de bénévolat, chaque geste de générosité contribue à faire une différence concrète dans la vie de nos bénéficiaires.",
+    "paragraph5": "Je vous invite à découvrir notre histoire, à rencontrer notre équipe et à vous joindre à nous dans cette belle mission. Ensemble, nous pouvons nourrir l'espoir et bâtir une communauté plus solidaire.",
+    "closing": "Avec toute ma gratitude,",
+    "quote": "Nous croyons fermement que personne ne devrait souffrir de la faim dans notre communauté. Chaque geste de générosité fait une différence."
+  },
+  "report": {
+    "title": "Rapport d'activité",
+    "subtitle": "Bilan annuel",
+    "description": "RAPPORT ANNUEL 2024-2025",
+    "stats": {
+      "totalVisits": "Visites totales",
+      "groceryVisits": "Visites épicerie",
+      "emergencies": "Situations d'urgence",
+      "christmasFamilies": "Familles à Noël"
+    },
+    "mission": {
+      "sectionTitle": "1. Mission et valeurs",
+      "title": "Notre mission",
+      "description": "La mission de L'Œuvre des Samaritains est de soutenir les personnes à faible revenu en leur donnant accès à un centre de distribution alimentaire. Le but de l'organisme est aussi d'offrir de l'écoute, de l'encouragement et d'orienter les personnes vers d'autres ressources et services du quartier qui pourraient les aider.",
+      "valuesTitle": "Les valeurs véhiculées par nos bénévoles",
+      "values": ["Le respect", "La confiance", "La compassion", "La dignité", "La courtoisie", "La civilité"]
+    },
+    "overview": {
+      "subtitle": "L'Œuvre des Samaritains en 2024-2025",
+      "title": "Un coup d'œil statistique",
+      "sectionTitle": "2. Centre de distribution",
+      "point1": "Au cours de l'année, 900 cas de situation d'urgence (visites gratuites) et 15 000 visites pour une épicerie, ont pu s'approvisionner à l'organisme, donc au total nous avons reçu 15 900 visites de nos membres et non membres.",
+      "point2": "Depuis le début de l'année fiscal qui est au 30 juin 2025, il y a une augmentation significative de nouveaux arrivants en situation d'urgence.",
+      "christmasTitle": "Épicerie de Noël 2024",
+      "christmasText": "800 familles ont été desservies sur une période de 5 jours."
+    },
+    "profile": {
+      "title": "Le profil des participants 2024-2025",
+      "point1": "30% de nos bénéficiaires habitent en cohabitation, étant donné l'augmentation du coût de la vie.",
+      "point2": "Durant l'année 2024-25: 30% des nouvelles inscriptions sont des nouveaux arrivants. Depuis la fin de l'année 2024, le nombre de nouveaux arrivants en provenance d'Ukraine, l'Afrique et la Turquie bénéficiant de la banque alimentaire a augmenté de manière significative.",
+      "point3": "En tenant compte des situations d'urgence et des distributions de paniers de Noël: Nous avons servi près de 17 000 visites gratuites depuis 2020.",
+      "point4": "17 000 visites gratuites x le coût par visite de 7$ = 119 000$ en visites gratuites redonnées aux plus démunis de notre communauté."
+    },
+    "services": {
+      "title": "Les Services de L'Œuvre des Samaritains 2024-2025",
+      "distributionTitle": "A) La distribution alimentaire en 2024-2025",
+      "distributionText": "En 2024-2025, nous avons reçu 17 000 visites, une fois inscrit les participants recevront un panier de nourriture, assistés d'un bénévole. La distribution alimentaire de L'Œuvre des Samaritains se déroulait sous forme d'une épicerie communautaire depuis ses débuts. Pour faire face à la situation de pandémie nous avons dû chambouler notre procédure de distribution pour répondre adéquatement aux règles sanitaires établies par la santé publique.",
+      "wasteTitle": "B) Nous disons NON aux gaspillages alimentaires",
+      "wasteText": "Depuis 2007, l'organisme est soucieux de l'environnement car nous inspectons et transformons chaque produit périssable que Moisson Montréal nous envoie. Nous sommes donc engagés à offrir plus de produits propres à la consommation. Ce service est offert trois jours par semaine, soit le mardi, jeudi ainsi que le vendredi. Les aliments offerts par L'Œuvre des Samaritains sont triés, nettoyés et empaquetés. Offrir des denrées est important pour l'organisme. L'organisme désire servir sa clientèle avec respect et dignité.",
+      "christmasTitle": "C) L'épicerie de Noël 2024",
+      "christmasText1": "À l'occasion des fêtes de Noël 2024, notre organisme a eu le plaisir d'organiser une distribution alimentaire pour nos bénéficiaires. Grâce à un budget de 15 000$, nous avons pu acheter des produits essentiels tels que de la viande, du poulet, du riz, et du sucre.",
+      "christmasText2": "Cette initiative a été rendue possible grâce à la générosité de nos donateurs, qui ont également permis à nos bénéficiaires de choisir les articles qui leur étaient les plus utiles. Ce soutien a été crucial pour apporter un peu de réconfort et de chaleur à ceux qui en avaient le plus besoin en cette période de fête. Nous remercions chaleureusement tous ceux qui ont contribué à faire de cet événement un succès. 800 familles ont été desservies sur une période de six jours.",
+      "communityTitle": "D) L'Implication communautaire",
+      "communityIntro": "L'Œuvre des Samaritains est membre de:",
+      "communityList": ["La table de quartier multisectorielle d'Ahuntsic", "Chantier sécurité alimentaire de Solidarité Ahuntsic", "Table de sécurité alimentaire d'Ahuntsic"]
+    },
+    "download": {
+      "title": "Rapport annuel 2024-2025",
+      "description": "Télécharger le rapport complet en format PDF",
+      "button": "Télécharger le rapport (PDF)"
+    },
+    "cta": {
+      "title": "Soutenez notre mission",
+      "description": "Votre don nous permet de continuer à aider les familles dans le besoin. Chaque contribution fait une différence.",
+      "donate": "Faire un don",
+      "contact": "Nous contacter"
+    }
+  },
+  "history": {
+    "title": "Notre Historique",
+    "subtitle": "Depuis 2002",
+    "description": "Un parcours de soutien et d'adaptation depuis plus de 20 ans",
+    "intro": "L'histoire de l'Œuvre des Samaritains est une histoire de compassion, de résilience et de solidarité communautaire. Découvrez comment un simple geste de bonté a donné naissance à un organisme qui aide des milliers de familles chaque année.",
+    "cta": {
+      "title": "Faites partie de notre histoire",
+      "description": "Notre histoire continue de s'écrire grâce à vous. Rejoignez-nous comme bénévole ou soutenez notre mission par un don.",
+      "volunteer": "Devenir bénévole",
+      "donate": "Faire un don"
+    },
+    "chapters": [
+      {
+        "year": "1999",
+        "title": "Comment vas-tu?",
+        "content": "En décembre 1999, Chantal va chercher des biens dans une banque alimentaire, ce qu'elle fait par nécessité 1 fois par semaine pour nourrir sa famille de 9 enfants. Ce jour-là, une des bénévoles de l'organisme lui demande comment elle se porte. Elle le fait avec tant de bonté et avec une telle sollicitude que Chantal lui ouvre son cœur.\n\nÇa ne va pas du tout. Le logement où Chantal habite est infesté de moisissure noire et ces champignons toxiques sont en train de rendre toute sa famille malade, les plus jeunes en particulier.\n\nÉmue par la situation de Chantal, la bénévole de l'organisme d'entraide propose une visite du logement. Il s'ensuit une rapide, nécessaire mais oh combien désagréable succession d'événements.\n\nAppelé d'urgence, un inspecteur de la ville vient évaluer le logement. Le verdict est sans appel : la maison, trop contaminée, est vivement condamnée et la famille se retrouve brusquement à la rue, quelques jours avant Noël.\n\nSans adresse fixe et sans plus aucun bien à son nom, la famille se réfugie temporairement dans une petite chambre d'hôtel avant d'être relocalisée dans un centre d'hébergement.\n\nAvec la communauté qui s'active pour les aider et les médias qui diffusent leur histoire à la télévision et à la radio, la famille finit par recevoir une offre incroyable : un médecin particulièrement touché par leur situation leur offre une grande maison à Longueuil."
+      },
+      {
+        "year": "2000",
+        "title": "Motivés par la reconnaissance",
+        "content": "Remplis de reconnaissance pour tout le soutien que leur famille a reçu, Chantal et son époux, Sylvain, souhaitent ardemment redonner à la communauté.\n\nSoutenu par les siens, Sylvain ne tarde pas à entamer les démarches qui mèneront à la création de l'Œuvre des Samaritains, un organisme charitable dont l'objectif premier est de venir en aide aux itinérants.\n\nComme il a une formation en cuisine française, Sylvain sait exactement ce dont il a besoin : des chaudrons, des brûleurs, un camion, un endroit pour entreposer la nourriture, une chambre froide, une cuisinière, etc.\n\nIl se trouve des collaborateurs, fait part de son projet à d'autres organismes (Moisson Montréal embarque tout de suite dans le projet) et il obtient du matériel de la part d'entreprises locales."
+      },
+      {
+        "year": "2002",
+        "title": "Aller nourrir les démunis",
+        "content": "Deux ans plus tard, en décembre 2002, le rêve de Sylvain et de Chantal devient réalité. 3 à 4 fois par semaine, à la Place Émilie-Gamelin, Sylvain et sa famille servent de bons repas chauds à plus de 500 personnes.\n\n\"Au début, je croyais nourrir uniquement les sans-abris\", confie Sylvain. Il se rend rapidement compte que ce profil ne correspond pas aux nombreuses personnes qui viennent recevoir les repas. Oui, il sert des itinérants mais également beaucoup de personnes à faible revenu.\n\nL'Œuvre des Samaritains se fait remarquer. Avec les médias qui parlent régulièrement de l'organisme, une nouvelle clientèle se pointe. La popularité de l'Œuvre entraîne de nouveaux défis."
+      },
+      {
+        "year": "2005",
+        "title": "L'Œuvre a pignon sur rue",
+        "content": "Pour leur cause, Sylvain et Chantal ont transformé leur garage en chambre froide et le sous-sol de leur maison en garde-manger et en cuisine industrielle. La Ville de Longueuil est ferme : le couple réside dans un quartier résidentiel et doit donc cesser leurs activités culinaires.\n\nC'est ce problème de zonage qui incite Sylvain à chercher un local à Montréal. En 2005, il implante l'Œuvre des Samaritains au 10214, rue Lajeunesse. Le centre de distribution alimentaire dessert dorénavant Ahuntsic-Cartierville.\n\nNe recevant pas d'aide gouvernementale, l'Œuvre est rapidement confrontée à des difficultés financières. Ainsi, un bon matin, Sylvain attache ses souliers et entreprend un marche-o-thon pour recueillir des dons, parcourant pour ce faire, 800 km en 35 jours!"
+      },
+      {
+        "year": "2007",
+        "title": "Même rue, nouveaux défis",
+        "content": "En 2007, l'Œuvre des Samaritains déménage au 9413 rue Lajeunesse, dans un immeuble adéquat en termes d'espace, mais qui nécessite beaucoup d'entretien. Quand les pluies de 2009 déferlent sur Montréal, le bâtiment subit un si important refoulement d'égout que l'Œuvre doit interrompre ses activités pour un temps.\n\nSylvain et Chantal retroussent leurs manches et remettent rapidement l'Œuvre en opération. Leur mission demeure aussi claire qu'avant: répondre aux besoins des plus démunis de la communauté.\n\nLorsque Chantal tombe gravement malade en 2012, la communauté lui témoigne tant de soutien et de reconnaissance qu'elle en est encore émue aujourd'hui."
+      },
+      {
+        "year": "2016",
+        "title": "Le décès du fondateur",
+        "content": "Le 25 décembre 2016, le cœur de Sylvain, si rempli d'amour pour sa famille et de compassion pour les pauvres, décide subitement de s'arrêter. Il décède entouré par les siens, avec toute une communauté qui partage leur deuil.\n\nLe comité d'administration de l'Œuvre accompagne Chantal alors qu'ils tentent de trouver ensemble des moyens de conserver l'organisme actif. Si Sylvain a longtemps été le cœur de l'Œuvre des Samaritains, Chantal en a toujours été le bras droit. Pas question pour elle d'abandonner le projet!"
+      },
+      {
+        "year": "2017-Présent",
+        "title": "Un nouveau chapitre",
+        "content": "Depuis 2017, sous la direction de Chantal Plouffe, l'Œuvre des Samaritains continue de grandir et de servir la communauté. Chaque année, nous accueillons plus de 17 000 visites et distribuons des milliers de paniers alimentaires.\n\nNotre équipe de plus de 50 bénévoles actifs travaille sans relâche pour s'assurer que chaque famille soit accueillie avec dignité et respect. Nous avons également développé des partenariats solides avec d'autres organismes et entreprises locales.\n\nL'histoire de l'Œuvre des Samaritains est celle de la résilience, de la solidarité et de l'espoir. Elle continue de s'écrire chaque jour grâce à la générosité de nos donateurs et de nos bénévoles."
+      }
+    ]
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "subtitle": "Qui sommes-nous",
+    "description": "Découvrez les personnes dévouées qui font vivre l'Œuvre des Samaritains",
+    "stats": {
+      "volunteers": "Bénévoles actifs",
+      "hours": "Heures de bénévolat par mois",
+      "years": "Années de service",
+      "families": "Familles aidées par an"
+    },
+    "administration": {
+      "subtitle": "Conseil d'administration",
+      "title": "Notre équipe de direction",
+      "description": "Des personnes dévouées qui guident notre mission et assurent le bon fonctionnement de l'organisme."
+    },
+    "administrators": [
+      { "name": "Chantal Plouffe", "role": "Présidente et fondatrice" },
+      { "name": "Khadija Chahlaoui", "role": "Vice-présidente" },
+      { "name": "Julien Gob", "role": "Administrateur" },
+      { "name": "Miguel Angel Arevalo", "role": "Administrateur" },
+      { "name": "Membre du conseil", "role": "Administrateur" }
+    ],
+    "volunteers": {
+      "subtitle": "Nos bénévoles",
+      "title": "Le cœur de notre mission",
+      "description1": "Nos bénévoles sont le pilier de l'Œuvre des Samaritains. Chaque semaine, des dizaines de personnes dévouées donnent de leur temps pour aider les familles dans le besoin.",
+      "description2": "Que ce soit pour le tri des denrées, l'accueil des bénéficiaires ou la distribution alimentaire, nos bénévoles travaillent avec compassion et dédition.",
+      "tasks": [
+        "Accueil chaleureux des bénéficiaires",
+        "Tri et préparation des paniers alimentaires",
+        "Distribution et aide au transport"
+      ]
+    },
+    "cta": {
+      "title": "Rejoignez notre équipe de bénévoles",
+      "description": "Vous souhaitez faire une différence dans votre communauté? Nous sommes toujours à la recherche de personnes dévouées pour nous aider dans notre mission.",
+      "volunteer": "Devenir bénévole",
+      "learnMore": "En savoir plus",
+      "whyVolunteer": "Pourquoi devenir bénévole?",
+      "reasons": [
+        "Faire une différence concrète dans la vie des familles",
+        "Rejoindre une communauté accueillante et solidaire",
+        "Développer de nouvelles compétences",
+        "Horaires flexibles adaptés à votre disponibilité"
+      ]
+    }
+  },
+  "donate": {
+    "title": "Faire un Don",
+    "subtitle": "Soutenez-nous",
+    "description": "Votre générosité nous permet d'aider des milliers de familles chaque année",
+    "impact": {
+      "subtitle": "Votre impact",
+      "title": "Chaque don fait une différence",
+      "description": "Votre contribution nous permet de continuer notre mission d'aide aux familles dans le besoin. Voici ce que votre don peut accomplir:",
+      "examples": [
+        { "amount": 25, "description": "Fournit un panier alimentaire pour une personne" },
+        { "amount": 50, "description": "Nourrit une famille de 2-3 personnes pour une semaine" },
+        { "amount": 100, "description": "Aide à préparer un panier de Noël pour une famille" },
+        { "amount": 250, "description": "Soutient les opérations du centre pendant une journée" }
+      ]
+    },
+    "form": {
+      "title": "Faites un don maintenant",
+      "description": "Choisissez le montant et le type de don qui vous convient.",
+      "once": "Don unique",
+      "monthly": "Don mensuel",
+      "selectAmount": "Sélectionnez un montant",
+      "otherAmount": "Autre montant",
+      "donateMonthly": "Donner mensuellement",
+      "donate": "Faire un don",
+      "taxReceipt": "Un reçu pour fins d'impôt sera émis pour tout don de 20$ et plus.",
+      "thankYou": "Merci! Vous serez redirigé vers notre plateforme de paiement pour un don de"
+    },
+    "methods": {
+      "subtitle": "Autres façons de donner",
+      "title": "Plusieurs options s'offrent à vous",
+      "online": { "title": "Don en ligne", "description": "Faites un don sécurisé par carte de crédit ou PayPal." },
+      "food": { "title": "Don de denrées", "description": "Apportez des denrées non périssables à notre centre." },
+      "recurring": { "title": "Don mensuel", "description": "Soutenez-nous régulièrement avec un don récurrent." }
+    },
+    "foodDonation": {
+      "title": "Don de denrées alimentaires",
+      "description": "Vous pouvez également nous aider en apportant des denrées alimentaires non périssables à notre centre de distribution.",
+      "mostNeeded": "Articles les plus demandés:",
+      "items": ["Conserves de légumes", "Pâtes alimentaires", "Riz", "Céréales", "Sauce tomate", "Huile de cuisson", "Beurre d'arachide", "Lait UHT"],
+      "contact": "Nous contacter pour organiser un don"
+    }
+  },
+  "volunteer": {
+    "title": "Devenir Bénévole",
+    "subtitle": "S'impliquer",
+    "description": "Rejoignez notre équipe de bénévoles et faites une différence dans votre communauté",
+    "benefits": {
+      "title": "Pourquoi devenir bénévole?",
+      "description": "Le bénévolat est une expérience enrichissante qui vous permet de contribuer à votre communauté tout en développant de nouvelles compétences.",
+      "makeDifference": { "title": "Faire une différence", "description": "Contribuez directement à améliorer la vie des familles dans le besoin." },
+      "joinCommunity": { "title": "Rejoindre une communauté", "description": "Intégrez une équipe chaleureuse et accueillante de bénévoles passionnés." },
+      "flexibleHours": { "title": "Horaires flexibles", "description": "Choisissez les heures qui conviennent à votre emploi du temps." },
+      "developSkills": { "title": "Développer vos compétences", "description": "Acquérez de nouvelles aptitudes et enrichissez votre expérience." }
+    },
+    "roles": {
+      "subtitle": "Rôles disponibles",
+      "title": "Comment pouvez-vous aider?",
+      "description": "Nous avons besoin de bénévoles pour différentes tâches. Que vous ayez quelques heures ou une journée complète, chaque contribution compte!",
+      "list": [
+        { "title": "Tri des denrées", "description": "Trier et organiser les produits alimentaires reçus." },
+        { "title": "Accueil des bénéficiaires", "description": "Accueillir les familles avec chaleur et respect." },
+        { "title": "Préparation des paniers", "description": "Assembler les paniers alimentaires pour la distribution." },
+        { "title": "Distribution", "description": "Aider à la distribution des denrées aux familles." }
+      ]
+    },
+    "form": {
+      "subtitle": "Formulaire d'inscription",
+      "title": "Rejoignez notre équipe",
+      "description": "Remplissez le formulaire ci-dessous et nous vous contacterons pour discuter de votre implication.",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Courriel",
+      "emailPlaceholder": "votre@courriel.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "(514) 000-0000",
+      "availability": "Disponibilité",
+      "availabilityOptions": [
+        { "value": "mardi_matin", "label": "Mardi matin (9h-12h)" },
+        { "value": "mardi_apres", "label": "Mardi après-midi (12h-15h)" },
+        { "value": "mercredi_matin", "label": "Mercredi matin (9h-12h)" },
+        { "value": "mercredi_apres", "label": "Mercredi après-midi (12h-15h)" },
+        { "value": "jeudi_matin", "label": "Jeudi matin (9h-12h)" },
+        { "value": "jeudi_apres", "label": "Jeudi après-midi (12h-15h)" },
+        { "value": "weekend", "label": "Fins de semaine (occasionnel)" }
+      ],
+      "motivation": "Pourquoi souhaitez-vous devenir bénévole?",
+      "motivationPlaceholder": "Parlez-nous de vos motivations...",
+      "submit": "Soumettre ma candidature",
+      "success": "Candidature envoyée!",
+      "successMessage": "Merci de votre intérêt! Nous vous contacterons dans les plus brefs délais.",
+      "required": "*"
+    }
+  },
+  "forWho": {
+    "title": "C'est pour qui?",
+    "subtitle": "Nos services",
+    "description": "Découvrez qui peut bénéficier de nos services d'aide alimentaire",
+    "whoWeServe": {
+      "subtitle": "Qui a recours aux banques alimentaires?",
+      "title": "Il n'existe pas de profil type unique",
+      "description": "Les personnes aidées sont diverses et viennent de tous les horizons. Notre mission est d'aider toute personne dans le besoin, sans jugement.",
+      "list": [
+        "Des familles avec des enfants",
+        "Des personnes ayant un emploi, mais dont le salaire ne suffit pas à couvrir les dépenses",
+        "Des personnes recevant de la solidarité sociale ou de l'assurance emploi",
+        "Des personnes à mobilité réduite",
+        "Les aînés",
+        "Les étudiants",
+        "Les personnes monoparentales",
+        "Les nouveaux arrivants",
+        "Références documentées des CLSC, hôpitaux (santé mentale)",
+        "Maisons d'hébergement",
+        "Maisons de transition"
+      ]
+    },
+    "requirements": {
+      "subtitle": "Documents requis",
+      "title": "Ce qu'il vous faut pour vous inscrire",
+      "description": "Pour bénéficier de nos services, veuillez apporter les documents suivants lors de votre première visite.",
+      "id": { "title": "Pièce d'identité", "description": "Une pièce d'identité avec photo valide" },
+      "proof": { "title": "Preuve de résidence", "description": "Facture, bail ou autre document prouvant votre adresse" },
+      "family": { "title": "Composition familiale", "description": "Nombre de personnes dans votre foyer" }
+    },
+    "schedule": {
+      "title": "Horaire de distribution",
+      "tuesday": "Mardi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "hours": "13h00 - 17h00",
+      "frequency": "Fréquence",
+      "frequencyText": "Une visite par mois pour chaque famille inscrite"
+    },
+    "location": {
+      "title": "Notre adresse",
+      "address": "9300 Rue Lajeunesse",
+      "city": "Montréal, QC H2M 1S4",
+      "accessibility": "Accessible en transport en commun. Stationnement disponible sur place."
+    },
+    "cta": {
+      "title": "Besoin d'aide alimentaire?",
+      "description": "N'hésitez pas à nous contacter pour plus d'informations ou venez nous visiter directement pendant nos heures d'ouverture.",
+      "contact": "Nous contacter"
+    }
+  },
+  "benefits": {
+    "title": "Les Bienfaits",
+    "subtitle": "Nutrition",
+    "description": "Découvrez les bienfaits nutritionnels des aliments que nous distribuons",
+    "intro": "À l'Œuvre des Samaritains, nous croyons que l'alimentation est la base d'une bonne santé. Découvrez les bienfaits nutritionnels des différents aliments que nous distribuons chaque semaine aux familles.",
+    "categories": {
+      "fruits": { "title": "Les Fruits", "description": "Découvrez les bienfaits des fruits frais que nous distribuons." },
+      "vegetables": { "title": "Les Légumes", "description": "Les légumes sont essentiels pour une alimentation équilibrée." },
+      "meats": { "title": "Les Viandes", "description": "Sources de protéines importantes pour la santé." },
+      "spices": { "title": "Fines Herbes et Épices", "description": "Ajoutez de la saveur et des bienfaits à vos repas." }
+    },
+    "tips": {
+      "title": "Conseils nutritionnels",
+      "description": "Quelques conseils pour profiter au maximum des aliments que vous recevez.",
+      "variety": { "title": "Variété", "description": "Mangez une variété d'aliments pour obtenir tous les nutriments nécessaires." },
+      "freshness": { "title": "Fraîcheur", "description": "Consommez les fruits et légumes frais rapidement pour maximiser leurs bienfaits." },
+      "preparation": { "title": "Préparation", "description": "Privilégiez la cuisson à la vapeur ou au four pour préserver les nutriments." }
+    }
+  },
+  "fruits": {
+    "title": "Les Fruits",
+    "subtitle": "Bienfaits",
+    "description": "Découvrez les bienfaits des fruits frais que nous distribuons",
+    "backLink": "Retour aux bienfaits",
+    "whyEat": {
+      "title": "Pourquoi manger des fruits?",
+      "description": "Les fruits sont essentiels pour une alimentation équilibrée. Ils apportent vitamines, minéraux et fibres nécessaires à une bonne santé."
+    },
+    "benefits": {
+      "heart": { "title": "Santé cardiaque", "description": "Les fruits sont riches en antioxydants qui protègent le cœur." },
+      "immune": { "title": "Système immunitaire", "description": "La vitamine C renforce les défenses naturelles du corps." },
+      "energy": { "title": "Énergie naturelle", "description": "Les sucres naturels des fruits fournissent une énergie saine." }
+    },
+    "filter": {
+      "all": "Tous les fruits",
+      "stone": "À noyaux",
+      "pome": "À pépins",
+      "berries": "Petits fruits",
+      "fruitVeg": "Fruits-légumes",
+      "exotic": "Exotiques"
+    },
+    "categories": {
+      "stone": {
+        "name": "À noyaux",
+        "description": "Abricot, cerise, prune, pêche... Les fruits à noyau sont les stars de l'été. Ils contiennent tous des vitamines, des minéraux et des fibres."
+      },
+      "pome": {
+        "name": "À pépins",
+        "description": "Les fruits à pépins figurent parmi les plus courants de notre alimentation. Des pommes aux poires, ces fruits sucrés et juteux sont appréciés pour leurs saveurs distinctes."
+      },
+      "berries": {
+        "name": "Petits fruits",
+        "description": "Il est possible de varier les plantations afin d'avoir toujours un petit fruit dans votre assiette, du printemps à l'automne."
+      },
+      "fruitVeg": {
+        "name": "Fruits-légumes",
+        "description": "Un fruit c'est une fructification donc ce qui porte des graines, un légume c'est une plante dont certaines parties sont comestibles."
+      },
+      "exotic": {
+        "name": "Exotiques",
+        "description": "Des fruits venus d'ailleurs qui apportent saveurs et nutriments uniques à notre alimentation."
+      }
+    },
+    "items": {
+      "avocats": { "name": "Avocats" },
+      "cerises": { "name": "Cerises" },
+      "prunes": { "name": "Prunes" },
+      "pommes": { "name": "Pommes" },
+      "poires": { "name": "Poires" },
+      "kaki": { "name": "Kaki" },
+      "melons": { "name": "Melons" },
+      "bleuets": { "name": "Bleuets" },
+      "canneberges": { "name": "Canneberges" },
+      "fraises": { "name": "Fraises" },
+      "framboises": { "name": "Framboises" },
+      "mures": { "name": "Mûres" },
+      "citrouilles": { "name": "Citrouilles" },
+      "courgettes": { "name": "Courgettes" },
+      "aubergines": { "name": "Aubergines" },
+      "kiwi": { "name": "Kiwi" },
+      "bananes": { "name": "Bananes" }
+    },
+    "available": {
+      "title": "Nos fruits disponibles",
+      "description": "Cliquez sur un fruit pour découvrir ses bienfaits et conseils de préparation."
+    },
+    "tip": {
+      "title": "Conseil de conservation",
+      "description": "Conservez les fruits à température ambiante jusqu'à maturité, puis au réfrigérateur pour prolonger leur fraîcheur. Consommez-les rapidement pour profiter de tous leurs bienfaits!"
+    },
+    "modal": {
+      "benefits": "Ses bienfaits",
+      "choose": "Comment le choisir",
+      "store": "Comment le conserver",
+      "prepare": "Bien préparer",
+      "freeze": "Peut-on le congeler?",
+      "cook": "Bien cuisiner"
+    }
+  },
+  "vegetables": {
+    "title": "Les Légumes",
+    "subtitle": "Bienfaits",
+    "description": "Découvrez les bienfaits des légumes frais que nous distribuons",
+    "backLink": "Retour aux bienfaits",
+    "whyEat": {
+      "title": "Pourquoi manger des légumes?",
+      "description": "Les légumes sont la pierre angulaire d'une alimentation saine. Ils fournissent des nutriments essentiels tout en étant faibles en calories."
+    },
+    "benefits": {
+      "heart": { "title": "Santé cardiovasculaire", "description": "Les légumes verts réduisent les risques de maladies cardiaques." },
+      "eyes": { "title": "Santé des yeux", "description": "Les carottes et légumes orangés sont excellents pour la vue." },
+      "digestion": { "title": "Digestion saine", "description": "Les fibres des légumes favorisent une bonne digestion." }
+    },
+    "filter": {
+      "all": "Tous les légumes",
+      "flower": "Légumes fleurs",
+      "leaf": "Légumes feuilles",
+      "root": "Légumes racines"
+    },
+    "categories": {
+      "flower": {
+        "name": "Légumes fleurs",
+        "description": "Les légumes fleurs incluent les brocolis, choux-fleurs et artichauts, riches en vitamines et en fibres."
+      },
+      "leaf": {
+        "name": "Légumes feuilles",
+        "description": "Les légumes feuilles comme les épinards, le cresson et la bette à carde sont des concentrés de nutriments."
+      },
+      "root": {
+        "name": "Légumes racines",
+        "description": "Les légumes racines tels que les carottes, betteraves et oignons apportent énergie et minéraux essentiels."
+      }
+    },
+    "items": {
+      "artichaut": { "name": "Artichaut" },
+      "brocoli": { "name": "Brocoli" },
+      "choufleur": { "name": "Chou-fleur" },
+      "asperges": { "name": "Asperges" },
+      "bette": { "name": "Bette à carde" },
+      "epinards": { "name": "Épinards" },
+      "cresson": { "name": "Cresson" },
+      "celeri": { "name": "Céleri" },
+      "carottes": { "name": "Carottes" },
+      "betterave": { "name": "Betterave" },
+      "oignon": { "name": "Oignon" },
+      "ail": { "name": "Ail" }
+    },
+    "available": {
+      "title": "Nos légumes disponibles",
+      "description": "Cliquez sur un légume pour découvrir ses bienfaits et conseils de préparation."
+    },
+    "tip": {
+      "title": "Conseil de préparation",
+      "description": "Pour préserver un maximum de nutriments, privilégiez la cuisson à la vapeur ou sautez rapidement vos légumes. Évitez de les faire bouillir trop longtemps!"
+    },
+    "modal": {
+      "benefits": "Ses bienfaits",
+      "choose": "Comment le choisir",
+      "store": "Comment le conserver",
+      "prepare": "Bien préparer",
+      "freeze": "Peut-on le congeler?",
+      "cook": "Bien cuisiner"
+    }
+  },
+  "meats": {
+    "title": "Les Viandes",
+    "subtitle": "Bienfaits",
+    "description": "Découvrez les bienfaits des viandes et protéines que nous distribuons",
+    "backLink": "Retour aux bienfaits",
+    "intro": "La viande rouge contient des protéines et du fer, deux nutriments nécessaires pour conserver une bonne santé, produire des anticorps, protéger le système immunitaire, et éviter des maladies comme l'anémie. Pour une femme enceinte, cet apport de fer est primordial dans la croissance et le développement du cerveau du fœtus. La viande rouge contient également des vitamines B et D, du sélénium et du zinc.",
+    "whyEat": {
+      "title": "Pourquoi les protéines sont importantes?",
+      "description": "Les viandes et poissons sont d'excellentes sources de protéines de haute qualité, essentielles pour la croissance et le maintien d'une bonne santé."
+    },
+    "benefits": {
+      "muscle": { "title": "Développement musculaire", "description": "Les protéines sont essentielles pour la construction et réparation des muscles." },
+      "brain": { "title": "Fonction cérébrale", "description": "La vitamine B12 et le fer soutiennent le fonctionnement du cerveau." },
+      "energy": { "title": "Énergie durable", "description": "Les protéines fournissent une énergie stable tout au long de la journée." }
+    },
+    "filter": {
+      "all": "Toutes les viandes",
+      "red": "Viande rouge",
+      "white": "Viande blanche",
+      "fish": "Poissons",
+      "seafood": "Fruits de mer",
+      "deli": "Charcuteries"
+    },
+    "categories": {
+      "red": {
+        "name": "Viande rouge",
+        "description": "La viande rouge contient des protéines et du fer, deux nutriments nécessaires pour conserver une bonne santé."
+      },
+      "white": {
+        "name": "Viande blanche",
+        "description": "Les viandes blanches comme le poulet, le veau et le lapin sont maigres et riches en protéines."
+      },
+      "fish": {
+        "name": "Poissons",
+        "description": "Les poissons sont une excellente source de protéines et d'oméga-3 pour la santé cardiovasculaire."
+      },
+      "seafood": {
+        "name": "Fruits de mer",
+        "description": "Les fruits de mer apportent iode, sélénium et protéines de haute qualité."
+      },
+      "deli": {
+        "name": "Charcuteries",
+        "description": "À consommer avec modération, les charcuteries apportent variété et saveur à l'alimentation."
+      }
+    },
+    "items": {
+      "boeuf": { "name": "Bœuf" },
+      "cheval": { "name": "Cheval" },
+      "mouton": { "name": "Mouton/Agneau" },
+      "poulet": { "name": "Poulet/Volaille" },
+      "lapin": { "name": "Lapin" },
+      "porc": { "name": "Porc" },
+      "veau": { "name": "Veau" },
+      "merlan": { "name": "Merlan" },
+      "crevettes": { "name": "Crevettes" },
+      "poissons": { "name": "Poissons" },
+      "charcuteries": { "name": "Charcuteries" }
+    },
+    "available": {
+      "title": "Nos viandes et poissons disponibles",
+      "description": "Cliquez sur une viande pour découvrir ses bienfaits et conseils de préparation."
+    },
+    "tip": {
+      "title": "Conseil de conservation",
+      "description": "Conservez les viandes au réfrigérateur et consommez-les dans les 2-3 jours. Pour une conservation plus longue, congelez-les dès leur réception. Décongelez toujours au réfrigérateur, jamais à température ambiante."
+    },
+    "modal": {
+      "benefits": "Bienfaits pour la santé",
+      "choose": "Guide d'achat",
+      "store": "Conservation",
+      "cook": "Conseils de cuisson"
+    }
+  },
+  "spices": {
+    "title": "Fines Herbes et Épices",
+    "subtitle": "Bienfaits",
+    "description": "Découvrez les bienfaits des herbes et épices que nous distribuons",
+    "backLink": "Retour aux bienfaits",
+    "whyEat": {
+      "title": "Pourquoi utiliser les herbes et épices?",
+      "description": "Les fines herbes et épices ne sont pas seulement des exhausteurs de goût, elles possèdent aussi de nombreuses propriétés bénéfiques pour la santé."
+    },
+    "benefits": {
+      "digestion": { "title": "Digestion facilitée", "description": "Les herbes et épices aident à digérer les repas copieux." },
+      "medicinal": { "title": "Propriétés médicinales", "description": "De nombreuses épices ont des vertus antibactériennes et anti-inflammatoires." },
+      "flavor": { "title": "Saveurs naturelles", "description": "Elles permettent de réduire le sel et le sucre tout en rehaussant les goûts." }
+    },
+    "filter": {
+      "all": "Tout voir",
+      "herbs": "Fines herbes",
+      "spices": "Épices"
+    },
+    "categories": {
+      "herbs": {
+        "name": "Fines herbes",
+        "description": "Les fines herbes fraîches apportent saveur et bienfaits à vos plats tout en facilitant la digestion."
+      },
+      "spices": {
+        "name": "Épices",
+        "description": "Les épices sont de véritables trésors de santé, riches en antioxydants et en propriétés médicinales."
+      }
+    },
+    "items": {
+      "coriandre": { "name": "Coriandre" },
+      "menthe": { "name": "Menthe" },
+      "sauge": { "name": "Sauge" },
+      "thym": { "name": "Thym" },
+      "persil": { "name": "Persil" },
+      "cumin": { "name": "Cumin" },
+      "curcuma": { "name": "Curcuma" },
+      "gingembre": { "name": "Gingembre" },
+      "muscade": { "name": "Muscade" }
+    },
+    "available": {
+      "title": "Nos herbes et épices disponibles",
+      "description": "Cliquez sur une herbe ou épice pour découvrir ses bienfaits et conseils d'utilisation."
+    },
+    "tip": {
+      "title": "Conseil d'utilisation",
+      "description": "Les herbes fraîches s'ajoutent généralement en fin de cuisson pour préserver leurs arômes. Les épices, quant à elles, peuvent être ajoutées en début de cuisson pour développer leur plein potentiel de saveur."
+    },
+    "modal": {
+      "benefits": "Ses bienfaits",
+      "choose": "Comment la choisir",
+      "use": "Utilisation en cuisine",
+      "store": "Conservation"
+    }
+  }
+}

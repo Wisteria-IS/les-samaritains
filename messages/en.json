@@ -1,0 +1,875 @@
+{
+  "metadata": {
+    "title": "L'Œuvre des Samaritains | Food Distribution Center",
+    "description": "L'Œuvre des Samaritains is a food distribution center in Montreal that has been helping families in need since 2002. Donate, volunteer.",
+    "ogDescription": "Help Montreal families by donating or becoming a volunteer."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "aboutDropdown": {
+      "president": "President's Message",
+      "report": "Activity Report",
+      "history": "Our History",
+      "forWho": "Who Is It For?"
+    },
+    "benefits": "Food Benefits",
+    "benefitsDropdown": {
+      "fruits": "Fruits",
+      "vegetables": "Vegetables",
+      "meats": "Meats",
+      "spices": "Spices & Herbs"
+    },
+    "team": "Our Team",
+    "teamDropdown": {
+      "team": "The Team",
+      "partners": "Our Partners"
+    },
+    "contact": "Contact",
+    "volunteer": "Volunteer",
+    "donate": "Donate"
+  },
+  "hero": {
+    "tagline": "Serving the community since 2002",
+    "title1": "Nourish.",
+    "title2": "Support.",
+    "title3": "Inspire.",
+    "description": "L'Œuvre des Samaritains helps families in need with fresh and nutritious food. Together, let's make a difference.",
+    "donateButton": "Donate",
+    "volunteerButton": "Become a Volunteer",
+    "scroll": "Scroll",
+    "stats": {
+      "visits": "visits/year",
+      "christmas": "families at Christmas",
+      "years": "years"
+    }
+  },
+  "mission": {
+    "subtitle": "Our Mission",
+    "title": "Nourishing and Inspiring Our Community",
+    "description": "Our mission goes beyond simple food distribution. We are committed to supporting low-income individuals by offering them much more than a meal.",
+    "paragraph1": "By accessing our food distribution center, our beneficiaries discover a space of kindness and sharing. We firmly believe in the power of listening, encouragement, and solidarity.",
+    "paragraph2": "Every week, we welcome hundreds of families with a smile. Our team of dedicated volunteers works tirelessly to ensure no one is left behind.",
+    "values": ["Compassion", "Respect", "Dignity", "Solidarity"],
+    "altFounders": "The founders of L'Œuvre",
+    "altHistory": "Our history",
+    "altCommunity": "Community service",
+    "altLocation": "Our location",
+    "altVolunteers": "Volunteers in action",
+    "altTeam": "Our team today"
+  },
+  "impact": {
+    "subtitle": "Our Impact",
+    "title": "Numbers That Speak",
+    "description": "Since 2002, we have been working tirelessly to make a difference in the lives of Montreal families.",
+    "stats": {
+      "visits": "annual visits",
+      "christmas": "families at Christmas",
+      "volunteers": "active volunteers",
+      "years": "years of experience"
+    },
+    "quote": "Every year, we distribute thousands of food baskets to families in need.",
+    "quoteDescription": "Our mission is to ensure that no one goes hungry in our community.",
+    "altTeam": "Our team"
+  },
+  "distribution": {
+    "subtitle": "Distribution",
+    "title": "How It Works",
+    "description": "Our food distribution center welcomes families in a warm and respectful environment.",
+    "schedule": {
+      "title": "Schedule",
+      "tuesday": "Tuesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "hours": "1:00 PM - 5:00 PM"
+    },
+    "address": {
+      "title": "Address",
+      "street": "9300 Rue Lajeunesse",
+      "city": "Montreal, QC H2M 1S4"
+    },
+    "who": {
+      "title": "Who Is It For?",
+      "description": "Low-income individuals and families residing in Montreal."
+    },
+    "frequency": {
+      "title": "Frequency",
+      "description": "One visit per month for each registered family."
+    },
+    "documents": {
+      "title": "Required Documents",
+      "items": ["Photo ID", "Proof of residence (bill, lease)", "Proof of income (if available)"]
+    },
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "altCenter": "Distribution Center"
+  },
+  "donationHome": {
+    "subtitle": "Contribute",
+    "title": "Your Generosity Makes a Difference",
+    "description": "Every contribution, big or small, helps feed a family in need.",
+    "orgInfo": "L'Œuvre des Samaritains is a non-profit organization. All donations are used directly to support our mission.",
+    "donateButton": "Donate",
+    "volunteerButton": "Become a Volunteer",
+    "howToContribute": "How to Contribute",
+    "methods": {
+      "monetary": {
+        "title": "Monetary Donation",
+        "description": "Make a secure online donation via PayPal or send a check to our address."
+      },
+      "food": {
+        "title": "Food Donation",
+        "description": "Donate non-perishable items or fresh products during our opening hours."
+      },
+      "material": {
+        "title": "Material Donation",
+        "description": "Equipment, supplies, and other resources to help us serve better."
+      }
+    },
+    "learnMore": "Learn More",
+    "charityInfo": "L'Œuvre des Samaritains is a registered charity.",
+    "charityNumber": "Charity Number: 86400 9741RR0001",
+    "altHelping": "Helping",
+    "altFruits": "Fruits"
+  },
+  "partnersHome": {
+    "subtitle": "Partners",
+    "title": "Together, We Are Stronger",
+    "description": "Our partners play an essential role in our mission.",
+    "mainPartners": "Main Partners",
+    "otherPartners": "Other Partners",
+    "becomePartner": "Want to become a partner?",
+    "becomePartnerButton": "Become a Partner"
+  },
+  "header": {
+    "hours": "Tuesday, Thursday, Friday: 1:00 PM - 5:00 PM",
+    "followFacebook": "Follow us on Facebook"
+  },
+  "footer": {
+    "description": "Food Distribution Center",
+    "charityNumber": "Charity Number: 86400 9741RR0001",
+    "shortcuts": "Quick Links",
+    "foodBenefits": "Food Benefits",
+    "contactUs": "Contact Us",
+    "copyright": "L'Œuvre des Samaritains. All rights reserved.",
+    "madeWith": "Made with",
+    "in": "in Montreal"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Contact",
+    "description": "Have questions? Don't hesitate to contact us. Our team will be happy to help you.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "hoursValue": "Tuesday, Thursday, Friday\n1:00 PM - 5:00 PM",
+    "facebook": "Facebook",
+    "followUs": "Follow us",
+    "sendMessage": "Send us a message",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(514) 000-0000",
+      "subject": "Subject",
+      "subjectPlaceholder": "Choose a subject",
+      "subjectGeneral": "General Question",
+      "subjectVolunteer": "Volunteering",
+      "subjectDonation": "Donation",
+      "subjectPartnership": "Partnership",
+      "subjectOther": "Other",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "success": "Message Sent!",
+      "successMessage": "Thank you for contacting us. We will respond as soon as possible.",
+      "required": "*"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our Mission",
+    "description": "Discover the history and values of L'Œuvre des Samaritains",
+    "whoWeAre": "Who We Are",
+    "communityService": "An organization serving the community",
+    "intro1": "Founded in December 2002, L'Œuvre des Samaritains is a registered charity dedicated to food distribution in the Ahuntsic-Cartierville borough and surrounding neighborhoods of Montreal.",
+    "intro2": "Our mission is simple but essential: to provide quality food assistance to families and individuals going through difficult times. Each week, we distribute food baskets containing fresh produce, dairy products, meats, and basic grocery items.",
+    "intro3": "Thanks to our partners like Moisson Montréal, Centraide, and the Red Cross, as well as our generous donors and volunteers, we can help thousands of families put food on their table each year.",
+    "values": {
+      "title": "Our Values",
+      "subtitle": "What Guides Us",
+      "compassion": "Compassion",
+      "compassionDesc": "We welcome each person with dignity and respect, without judgment.",
+      "solidarity": "Solidarity",
+      "solidarityDesc": "Together, we create a support network for families in need.",
+      "commitment": "Commitment",
+      "commitmentDesc": "Our volunteers give their time with dedication and generosity.",
+      "integrity": "Integrity",
+      "integrityDesc": "We act with transparency in all our actions."
+    },
+    "learnMore": "Learn More",
+    "explorePages": "Explore Our Pages",
+    "links": {
+      "president": "President's Message",
+      "presidentDesc": "Discover our president's message about our mission and values.",
+      "history": "Our History",
+      "historyDesc": "Trace our journey since 2002 and the key milestones of our development.",
+      "forWho": "Who Is It For?",
+      "forWhoDesc": "Learn who can benefit from our services and how to access them.",
+      "team": "Our Team",
+      "teamDesc": "Meet the dedicated volunteers who bring our organization to life."
+    },
+    "cta": {
+      "title": "Want to Help?",
+      "description": "Whether through a donation or by becoming a volunteer, every gesture counts to support families in our community.",
+      "donate": "Donate",
+      "volunteer": "Become a Volunteer"
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Together",
+    "description": "Thanks to our partners, we can help thousands of families each year",
+    "intro": "L'Œuvre des Samaritains is proud to collaborate with many partners who share our vision of a community without hunger. Their support allows us to distribute thousands of food baskets each year.",
+    "mainPartners": "Main Partners",
+    "mainPartnersTitle": "Our Major Collaborators",
+    "allPartners": "All Our Partners",
+    "allPartnersTitle": "A Community of Support",
+    "allPartnersDesc": "Each partner contributes to our mission in a unique and precious way.",
+    "whyPartner": "Why Become a Partner",
+    "benefitsTitle": "Partnership Benefits",
+    "benefits": {
+      "community": "Community Impact",
+      "communityDesc": "Contribute directly to the fight against food insecurity in your community.",
+      "social": "Social Responsibility",
+      "socialDesc": "Strengthen your company's social commitment with your employees and customers.",
+      "partnership": "Lasting Partnership",
+      "partnershipDesc": "Build a long-term relationship based on shared values of solidarity."
+    },
+    "becomePartner": "Become a Partner",
+    "interested": "Interested in a Partnership?",
+    "interestedDesc": "Whether you're a business, store, or organization, we would be happy to discuss collaboration possibilities.",
+    "contactUs": "Contact Us"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "required": "Required"
+  },
+  "language": {
+    "switch": "Language",
+    "fr": "Français",
+    "en": "English"
+  },
+  "president": {
+    "title": "President's Message",
+    "subtitle": "Our Vision",
+    "description": "A message from our founder and president, Chantal Plouffe",
+    "role": "President and Founder",
+    "greeting": "Dear friends and partners of L'Œuvre des Samaritains,",
+    "paragraph1": "For over 20 years, our organization has been dedicated to helping low-income individuals and families in our community. What began as a gesture of gratitude towards those who helped us during our difficult times has become a true work of solidarity.",
+    "paragraph2": "Every week, we welcome hundreds of families to our food distribution center. More than just an emergency service, we offer a space of kindness where everyone is treated with dignity and respect.",
+    "paragraph3": "Our team of dedicated volunteers works tirelessly to ensure that no one is left behind. Together, we firmly believe in the power of mutual aid and community solidarity.",
+    "paragraph4": "L'Œuvre des Samaritains is more than a food bank. It's a family that welcomes, listens, and supports. Every donation, every hour of volunteering, every act of generosity makes a real difference in the lives of our beneficiaries.",
+    "paragraph5": "I invite you to discover our history, meet our team, and join us in this beautiful mission. Together, we can nourish hope and build a more supportive community.",
+    "closing": "With all my gratitude,",
+    "quote": "We firmly believe that no one should go hungry in our community. Every act of generosity makes a difference."
+  },
+  "report": {
+    "title": "Activity Report",
+    "subtitle": "Annual Review",
+    "description": "ANNUAL REPORT 2024-2025",
+    "stats": {
+      "totalVisits": "Total Visits",
+      "groceryVisits": "Grocery Visits",
+      "emergencies": "Emergency Situations",
+      "christmasFamilies": "Christmas Families"
+    },
+    "mission": {
+      "sectionTitle": "1. Mission and Values",
+      "title": "Our Mission",
+      "description": "The mission of L'Œuvre des Samaritains is to support low-income individuals by providing them access to a food distribution center. The organization also aims to offer listening, encouragement, and to direct people to other neighborhood resources and services that could help them.",
+      "valuesTitle": "Values upheld by our volunteers",
+      "values": ["Respect", "Trust", "Compassion", "Dignity", "Courtesy", "Civility"]
+    },
+    "overview": {
+      "subtitle": "L'Œuvre des Samaritains in 2024-2025",
+      "title": "A Statistical Overview",
+      "sectionTitle": "2. Distribution Center",
+      "point1": "During the year, 900 emergency situations (free visits) and 15,000 grocery visits were served by the organization, totaling 15,900 visits from our members and non-members.",
+      "point2": "Since the beginning of the fiscal year on June 30, 2025, there has been a significant increase in newcomers in emergency situations.",
+      "christmasTitle": "Christmas Grocery 2024",
+      "christmasText": "800 families were served over a period of 5 days."
+    },
+    "profile": {
+      "title": "Participant Profile 2024-2025",
+      "point1": "30% of our beneficiaries live in shared housing, given the increase in the cost of living.",
+      "point2": "During 2024-25: 30% of new registrations are newcomers. Since late 2024, the number of newcomers from Ukraine, Africa, and Turkey benefiting from the food bank has increased significantly.",
+      "point3": "Taking into account emergency situations and Christmas basket distributions: We have served nearly 17,000 free visits since 2020.",
+      "point4": "17,000 free visits x $7 cost per visit = $119,000 in free visits given back to the most disadvantaged in our community."
+    },
+    "services": {
+      "title": "L'Œuvre des Samaritains Services 2024-2025",
+      "distributionTitle": "A) Food Distribution in 2024-2025",
+      "distributionText": "In 2024-2025, we received 17,000 visits. Once registered, participants receive a food basket with the help of a volunteer. Food distribution at L'Œuvre des Samaritains has been in the form of a community grocery store since its inception. To cope with the pandemic situation, we had to change our distribution procedure to adequately meet the health rules established by public health.",
+      "wasteTitle": "B) We Say NO to Food Waste",
+      "wasteText": "Since 2007, the organization has been environmentally conscious as we inspect and transform every perishable product that Moisson Montréal sends us. We are therefore committed to offering more products fit for consumption. This service is offered three days a week: Tuesday, Thursday, and Friday. The food offered by L'Œuvre des Samaritains is sorted, cleaned, and packaged. Offering food is important to the organization. The organization wishes to serve its clients with respect and dignity.",
+      "christmasTitle": "C) Christmas Grocery 2024",
+      "christmasText1": "For the 2024 Christmas holidays, our organization was pleased to organize a food distribution for our beneficiaries. With a budget of $15,000, we were able to purchase essential products such as meat, chicken, rice, and sugar.",
+      "christmasText2": "This initiative was made possible thanks to the generosity of our donors, who also allowed our beneficiaries to choose the items most useful to them. This support was crucial in bringing some comfort and warmth to those who needed it most during this holiday season. We warmly thank everyone who contributed to making this event a success. 800 families were served over a period of six days.",
+      "communityTitle": "D) Community Involvement",
+      "communityIntro": "L'Œuvre des Samaritains is a member of:",
+      "communityList": ["Ahuntsic Multi-sectoral Neighborhood Table", "Food Security Project of Solidarité Ahuntsic", "Ahuntsic Food Security Table"]
+    },
+    "download": {
+      "title": "Annual Report 2024-2025",
+      "description": "Download the complete report in PDF format",
+      "button": "Download Report (PDF)"
+    },
+    "cta": {
+      "title": "Support Our Mission",
+      "description": "Your donation allows us to continue helping families in need. Every contribution makes a difference.",
+      "donate": "Donate",
+      "contact": "Contact Us"
+    }
+  },
+  "history": {
+    "title": "Our History",
+    "subtitle": "Since 2002",
+    "description": "A journey of support and adaptation for over 20 years",
+    "intro": "The history of L'Œuvre des Samaritains is a story of compassion, resilience, and community solidarity. Discover how a simple act of kindness gave birth to an organization that helps thousands of families every year.",
+    "cta": {
+      "title": "Be Part of Our History",
+      "description": "Our story continues to be written thanks to you. Join us as a volunteer or support our mission with a donation.",
+      "volunteer": "Become a Volunteer",
+      "donate": "Make a Donation"
+    },
+    "chapters": [
+      {
+        "year": "1999",
+        "title": "How Are You?",
+        "content": "In December 1999, Chantal goes to get supplies from a food bank, which she does out of necessity once a week to feed her family of 9 children. That day, one of the volunteers asks her how she is doing. She does it with such kindness and concern that Chantal opens her heart to her.\n\nThings are not going well at all. The apartment where Chantal lives is infested with black mold, and these toxic fungi are making her whole family sick, especially the youngest ones.\n\nMoved by Chantal's situation, the volunteer from the mutual aid organization proposes a visit to the apartment. What follows is a quick, necessary but oh so unpleasant succession of events.\n\nCalled urgently, a city inspector comes to evaluate the apartment. The verdict is clear: the house, too contaminated, is condemned and the family suddenly finds themselves on the street, a few days before Christmas.\n\nWithout a fixed address and without any belongings to their name, the family temporarily takes refuge in a small hotel room before being relocated to a shelter.\n\nWith the community rallying to help them and the media broadcasting their story on television and radio, the family eventually receives an incredible offer: a doctor particularly touched by their situation offers them a large house in Longueuil."
+      },
+      {
+        "year": "2000",
+        "title": "Motivated by Gratitude",
+        "content": "Filled with gratitude for all the support their family received, Chantal and her husband, Sylvain, ardently wish to give back to the community.\n\nSupported by his family, Sylvain quickly begins the process that will lead to the creation of L'Œuvre des Samaritains, a charitable organization whose primary objective is to help the homeless.\n\nAs he has training in French cuisine, Sylvain knows exactly what he needs: pots, burners, a truck, a place to store food, a cold room, a stove, etc.\n\nHe finds collaborators, shares his project with other organizations (Moisson Montréal immediately joins the project) and obtains equipment from local businesses."
+      },
+      {
+        "year": "2002",
+        "title": "Feeding the Needy",
+        "content": "Two years later, in December 2002, Sylvain and Chantal's dream becomes reality. 3 to 4 times a week, at Place Émilie-Gamelin, Sylvain and his family serve good hot meals to more than 500 people.\n\n\"At first, I thought I was only feeding the homeless,\" confides Sylvain. He quickly realizes that this profile does not match the many people who come to receive meals. Yes, he serves homeless people but also many renters.\n\nL'Œuvre des Samaritains gets noticed. With the media regularly talking about the organization, a new clientele shows up. The popularity of L'Œuvre brings new challenges."
+      },
+      {
+        "year": "2005",
+        "title": "L'Œuvre Sets Up Shop",
+        "content": "For their cause, Sylvain and Chantal transformed their garage into a cold room and the basement of their house into a pantry and industrial kitchen. The city of Longueuil is firm: the couple lives in a residential area and must therefore cease their culinary activities.\n\nIt is this zoning problem that prompts Sylvain to look for a location in Montreal. In 2005, he establishes L'Œuvre des Samaritains at 10214 rue Lajeunesse. The food distribution center now serves Ahuntsic-Cartierville.\n\nNot receiving government aid, L'Œuvre quickly faces financial difficulties. So, one fine morning, Sylvain ties his shoes and undertakes a walk-a-thon to collect donations, covering 800 km in 35 days!"
+      },
+      {
+        "year": "2007",
+        "title": "Same Street, New Challenges",
+        "content": "In 2007, L'Œuvre des Samaritains moves to 9413 rue Lajeunesse, in a building adequate in terms of space, but which requires a lot of maintenance. When the rains of 2009 hit Montreal, the building suffers such a significant sewer backup that L'Œuvre must interrupt its activities for a time.\n\nSylvain and Chantal roll up their sleeves and quickly get L'Œuvre back in operation. Their mission remains as clear as before: to meet the needs of the most disadvantaged in the community.\n\nWhen Chantal becomes seriously ill in 2012, the community shows her so much support and gratitude that she is still moved by it today."
+      },
+      {
+        "year": "2016",
+        "title": "The Founder's Passing",
+        "content": "On December 25, 2016, Sylvain's heart, so full of love for his family and compassion for the poor, suddenly stops. He passes away surrounded by his loved ones, with an entire community sharing their grief.\n\nThe Board of Directors of L'Œuvre accompanies Chantal as they try to find ways together to keep the organization active. If Sylvain was long the heart of L'Œuvre des Samaritains, Chantal has always been its iron fist. No question for her of abandoning the project!"
+      },
+      {
+        "year": "2017-Present",
+        "title": "A New Chapter",
+        "content": "Since 2017, under the direction of Chantal Plouffe, L'Œuvre des Samaritains continues to grow and serve the community. Each year, we welcome more than 17,000 visits and distribute thousands of food baskets.\n\nOur team of more than 50 active volunteers works tirelessly to ensure that every family is welcomed with dignity and respect. We have also developed strong partnerships with other organizations and local businesses.\n\nThe history of L'Œuvre des Samaritains is one of resilience, solidarity, and hope. It continues to be written every day thanks to the generosity of our donors and volunteers."
+      }
+    ]
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Who We Are",
+    "description": "Meet the dedicated people who bring L'Œuvre des Samaritains to life",
+    "stats": {
+      "volunteers": "Active Volunteers",
+      "hours": "Volunteer Hours per Month",
+      "years": "Years of Service",
+      "families": "Families Helped per Year"
+    },
+    "administration": {
+      "subtitle": "Board of Directors",
+      "title": "Our Leadership Team",
+      "description": "Dedicated individuals who guide our mission and ensure the smooth operation of the organization."
+    },
+    "administrators": [
+      { "name": "Chantal Plouffe", "role": "President and Founder" },
+      { "name": "Khadija Chahlaoui", "role": "Vice President" },
+      { "name": "Julien Gob", "role": "Administrator" },
+      { "name": "Miguel Angel Arevalo", "role": "Administrator" },
+      { "name": "Board Member", "role": "Administrator" }
+    ],
+    "volunteers": {
+      "subtitle": "Our Volunteers",
+      "title": "The Heart of Our Mission",
+      "description1": "Our volunteers are the pillar of L'Œuvre des Samaritains. Every week, dozens of dedicated people give their time to help families in need.",
+      "description2": "Whether sorting food, welcoming beneficiaries, or distributing groceries, our volunteers work with compassion and dedication.",
+      "tasks": [
+        "Warm welcome for beneficiaries",
+        "Sorting and preparing food baskets",
+        "Distribution and transportation assistance"
+      ]
+    },
+    "cta": {
+      "title": "Join Our Volunteer Team",
+      "description": "Want to make a difference in your community? We're always looking for dedicated people to help us with our mission.",
+      "volunteer": "Become a Volunteer",
+      "learnMore": "Learn More",
+      "whyVolunteer": "Why Become a Volunteer?",
+      "reasons": [
+        "Make a real difference in families' lives",
+        "Join a welcoming and supportive community",
+        "Develop new skills",
+        "Flexible hours adapted to your availability"
+      ]
+    }
+  },
+  "donate": {
+    "title": "Make a Donation",
+    "subtitle": "Support Us",
+    "description": "Your generosity allows us to help thousands of families each year",
+    "impact": {
+      "subtitle": "Your Impact",
+      "title": "Every Donation Makes a Difference",
+      "description": "Your contribution allows us to continue our mission of helping families in need. Here's what your donation can accomplish:",
+      "examples": [
+        { "amount": 25, "description": "Provides a food basket for one person" },
+        { "amount": 50, "description": "Feeds a family of 2-3 people for a week" },
+        { "amount": 100, "description": "Helps prepare a Christmas basket for a family" },
+        { "amount": 250, "description": "Supports center operations for one day" }
+      ]
+    },
+    "form": {
+      "title": "Donate Now",
+      "description": "Choose the amount and type of donation that suits you.",
+      "once": "One-time Donation",
+      "monthly": "Monthly Donation",
+      "selectAmount": "Select an Amount",
+      "otherAmount": "Other Amount",
+      "donateMonthly": "Donate Monthly",
+      "donate": "Make a Donation",
+      "taxReceipt": "A tax receipt will be issued for any donation of $20 or more.",
+      "thankYou": "Thank you! You will be redirected to our payment platform for a donation of"
+    },
+    "methods": {
+      "subtitle": "Other Ways to Give",
+      "title": "Several Options Available",
+      "online": { "title": "Online Donation", "description": "Make a secure donation by credit card or PayPal." },
+      "food": { "title": "Food Donation", "description": "Bring non-perishable food items to our center." },
+      "recurring": { "title": "Monthly Donation", "description": "Support us regularly with a recurring donation." }
+    },
+    "foodDonation": {
+      "title": "Food Donations",
+      "description": "You can also help us by bringing non-perishable food items to our distribution center.",
+      "mostNeeded": "Most Needed Items:",
+      "items": ["Canned Vegetables", "Pasta", "Rice", "Cereal", "Tomato Sauce", "Cooking Oil", "Peanut Butter", "UHT Milk"],
+      "contact": "Contact Us to Arrange a Donation"
+    }
+  },
+  "volunteer": {
+    "title": "Become a Volunteer",
+    "subtitle": "Get Involved",
+    "description": "Join our volunteer team and make a difference in your community",
+    "benefits": {
+      "title": "Why Become a Volunteer?",
+      "description": "Volunteering is an enriching experience that allows you to contribute to your community while developing new skills.",
+      "makeDifference": { "title": "Make a Difference", "description": "Directly contribute to improving the lives of families in need." },
+      "joinCommunity": { "title": "Join a Community", "description": "Become part of a warm and welcoming team of passionate volunteers." },
+      "flexibleHours": { "title": "Flexible Hours", "description": "Choose hours that fit your schedule." },
+      "developSkills": { "title": "Develop Your Skills", "description": "Acquire new abilities and enrich your experience." }
+    },
+    "roles": {
+      "subtitle": "Available Roles",
+      "title": "How Can You Help?",
+      "description": "We need volunteers for various tasks. Whether you have a few hours or a full day, every contribution counts!",
+      "list": [
+        { "title": "Food Sorting", "description": "Sort and organize received food products." },
+        { "title": "Welcoming Beneficiaries", "description": "Welcome families with warmth and respect." },
+        { "title": "Basket Preparation", "description": "Assemble food baskets for distribution." },
+        { "title": "Distribution", "description": "Help distribute food to families." }
+      ]
+    },
+    "form": {
+      "subtitle": "Registration Form",
+      "title": "Join Our Team",
+      "description": "Fill out the form below and we will contact you to discuss your involvement.",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(514) 000-0000",
+      "availability": "Availability",
+      "availabilityOptions": [
+        { "value": "mardi_matin", "label": "Tuesday morning (9am-12pm)" },
+        { "value": "mardi_apres", "label": "Tuesday afternoon (12pm-3pm)" },
+        { "value": "mercredi_matin", "label": "Wednesday morning (9am-12pm)" },
+        { "value": "mercredi_apres", "label": "Wednesday afternoon (12pm-3pm)" },
+        { "value": "jeudi_matin", "label": "Thursday morning (9am-12pm)" },
+        { "value": "jeudi_apres", "label": "Thursday afternoon (12pm-3pm)" },
+        { "value": "weekend", "label": "Weekends (occasional)" }
+      ],
+      "motivation": "Why do you want to become a volunteer?",
+      "motivationPlaceholder": "Tell us about your motivations...",
+      "submit": "Submit My Application",
+      "success": "Application Submitted!",
+      "successMessage": "Thank you for your interest! We will contact you as soon as possible.",
+      "required": "*"
+    }
+  },
+  "forWho": {
+    "title": "Who Is It For?",
+    "subtitle": "Our Services",
+    "description": "Discover who can benefit from our food assistance services",
+    "whoWeServe": {
+      "subtitle": "Who Uses Food Banks?",
+      "title": "There Is No Single Typical Profile",
+      "description": "The people we help are diverse and come from all walks of life. Our mission is to help anyone in need, without judgment.",
+      "list": [
+        "Families with children",
+        "People who are employed but whose salary doesn't cover expenses",
+        "People receiving social assistance or employment insurance",
+        "People with reduced mobility",
+        "Seniors",
+        "Students",
+        "Single parents",
+        "Newcomers",
+        "Documented referrals from CLSCs, hospitals (mental health)",
+        "Shelters",
+        "Transition houses"
+      ]
+    },
+    "requirements": {
+      "subtitle": "Required Documents",
+      "title": "What You Need to Register",
+      "description": "To benefit from our services, please bring the following documents on your first visit.",
+      "id": { "title": "Photo ID", "description": "A valid photo identification" },
+      "proof": { "title": "Proof of Residence", "description": "Bill, lease, or other document proving your address" },
+      "family": { "title": "Family Composition", "description": "Number of people in your household" }
+    },
+    "schedule": {
+      "title": "Distribution Schedule",
+      "tuesday": "Tuesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "hours": "1:00 PM - 5:00 PM",
+      "frequency": "Frequency",
+      "frequencyText": "One visit per month for each registered family"
+    },
+    "location": {
+      "title": "Our Address",
+      "address": "9300 Rue Lajeunesse",
+      "city": "Montreal, QC H2M 1S4",
+      "accessibility": "Accessible by public transit. Parking available on site."
+    },
+    "cta": {
+      "title": "Need Food Assistance?",
+      "description": "Don't hesitate to contact us for more information or visit us directly during our opening hours.",
+      "contact": "Contact Us"
+    }
+  },
+  "benefits": {
+    "title": "Food Benefits",
+    "subtitle": "Nutrition",
+    "description": "Discover the nutritional benefits of the foods we distribute",
+    "intro": "At L'Œuvre des Samaritains, we believe that food is the foundation of good health. Discover the nutritional benefits of the different foods we distribute each week to families.",
+    "categories": {
+      "fruits": { "title": "Fruits", "description": "Discover the benefits of fresh fruits we distribute." },
+      "vegetables": { "title": "Vegetables", "description": "Vegetables are essential for a balanced diet." },
+      "meats": { "title": "Meats", "description": "Important sources of protein for health." },
+      "spices": { "title": "Herbs and Spices", "description": "Add flavor and benefits to your meals." }
+    },
+    "tips": {
+      "title": "Nutrition Tips",
+      "description": "Some tips to get the most out of the food you receive.",
+      "variety": { "title": "Variety", "description": "Eat a variety of foods to get all the necessary nutrients." },
+      "freshness": { "title": "Freshness", "description": "Consume fresh fruits and vegetables quickly to maximize their benefits." },
+      "preparation": { "title": "Preparation", "description": "Prefer steaming or baking to preserve nutrients." }
+    }
+  },
+  "fruits": {
+    "title": "Fruits",
+    "subtitle": "Benefits",
+    "description": "Discover the benefits of fresh fruits we distribute",
+    "backLink": "Back to Benefits",
+    "whyEat": {
+      "title": "Why Eat Fruits?",
+      "description": "Fruits are essential for a balanced diet. They provide vitamins, minerals, and fiber necessary for good health."
+    },
+    "benefits": {
+      "heart": { "title": "Heart Health", "description": "Fruits are rich in antioxidants that protect the heart." },
+      "immune": { "title": "Immune System", "description": "Vitamin C strengthens the body's natural defenses." },
+      "energy": { "title": "Natural Energy", "description": "Natural sugars in fruits provide healthy energy." }
+    },
+    "filter": {
+      "all": "All Fruits",
+      "stone": "Stone Fruits",
+      "pome": "Pome Fruits",
+      "berries": "Berries",
+      "fruitVeg": "Fruit-Vegetables",
+      "exotic": "Exotic"
+    },
+    "categories": {
+      "stone": {
+        "name": "Stone Fruits",
+        "description": "Apricot, cherry, plum, peach... Stone fruits are summer stars. They all contain vitamins, minerals, and fiber."
+      },
+      "pome": {
+        "name": "Pome Fruits",
+        "description": "Pome fruits are among the most common in our diet. From apples to pears, these sweet and juicy fruits are appreciated for their distinct flavors."
+      },
+      "berries": {
+        "name": "Berries",
+        "description": "It's possible to vary plantings to always have berries on your plate, from spring to fall."
+      },
+      "fruitVeg": {
+        "name": "Fruit-Vegetables",
+        "description": "A fruit is a fructification, meaning what carries seeds. A vegetable is a plant whose certain parts are edible."
+      },
+      "exotic": {
+        "name": "Exotic",
+        "description": "Fruits from elsewhere that bring unique flavors and nutrients to our diet."
+      }
+    },
+    "items": {
+      "avocats": { "name": "Avocados" },
+      "cerises": { "name": "Cherries" },
+      "prunes": { "name": "Plums" },
+      "pommes": { "name": "Apples" },
+      "poires": { "name": "Pears" },
+      "kaki": { "name": "Persimmon" },
+      "melons": { "name": "Melons" },
+      "bleuets": { "name": "Blueberries" },
+      "canneberges": { "name": "Cranberries" },
+      "fraises": { "name": "Strawberries" },
+      "framboises": { "name": "Raspberries" },
+      "mures": { "name": "Blackberries" },
+      "citrouilles": { "name": "Pumpkins" },
+      "courgettes": { "name": "Zucchini" },
+      "aubergines": { "name": "Eggplants" },
+      "kiwi": { "name": "Kiwi" },
+      "bananes": { "name": "Bananas" }
+    },
+    "available": {
+      "title": "Our Available Fruits",
+      "description": "Click on a fruit to discover its benefits and preparation tips."
+    },
+    "tip": {
+      "title": "Storage Tip",
+      "description": "Store fruits at room temperature until ripe, then refrigerate to extend freshness. Consume them quickly to enjoy all their benefits!"
+    },
+    "modal": {
+      "benefits": "Benefits",
+      "choose": "How to Choose",
+      "store": "How to Store",
+      "prepare": "How to Prepare",
+      "freeze": "Can It Be Frozen?",
+      "cook": "How to Cook"
+    }
+  },
+  "vegetables": {
+    "title": "Vegetables",
+    "subtitle": "Benefits",
+    "description": "Discover the benefits of fresh vegetables we distribute",
+    "backLink": "Back to Benefits",
+    "whyEat": {
+      "title": "Why Eat Vegetables?",
+      "description": "Vegetables are the cornerstone of a healthy diet. They provide essential nutrients while being low in calories."
+    },
+    "benefits": {
+      "heart": { "title": "Cardiovascular Health", "description": "Green vegetables reduce the risk of heart disease." },
+      "eyes": { "title": "Eye Health", "description": "Carrots and orange vegetables are excellent for vision." },
+      "digestion": { "title": "Healthy Digestion", "description": "Vegetable fiber promotes good digestion." }
+    },
+    "filter": {
+      "all": "All Vegetables",
+      "flower": "Flower Vegetables",
+      "leaf": "Leafy Vegetables",
+      "root": "Root Vegetables"
+    },
+    "categories": {
+      "flower": {
+        "name": "Flower Vegetables",
+        "description": "Flower vegetables include broccoli, cauliflower and artichokes, rich in vitamins and fiber."
+      },
+      "leaf": {
+        "name": "Leafy Vegetables",
+        "description": "Leafy vegetables like spinach, watercress and swiss chard are nutrient powerhouses."
+      },
+      "root": {
+        "name": "Root Vegetables",
+        "description": "Root vegetables such as carrots, beets and onions provide energy and essential minerals."
+      }
+    },
+    "items": {
+      "artichaut": { "name": "Artichoke" },
+      "brocoli": { "name": "Broccoli" },
+      "choufleur": { "name": "Cauliflower" },
+      "asperges": { "name": "Asparagus" },
+      "bette": { "name": "Swiss Chard" },
+      "epinards": { "name": "Spinach" },
+      "cresson": { "name": "Watercress" },
+      "celeri": { "name": "Celery" },
+      "carottes": { "name": "Carrots" },
+      "betterave": { "name": "Beet" },
+      "oignon": { "name": "Onion" },
+      "ail": { "name": "Garlic" }
+    },
+    "available": {
+      "title": "Our Available Vegetables",
+      "description": "Click on a vegetable to discover its benefits and preparation tips."
+    },
+    "tip": {
+      "title": "Preparation Tip",
+      "description": "To preserve maximum nutrients, prefer steaming or quickly sautéing your vegetables. Avoid boiling them for too long!"
+    },
+    "modal": {
+      "benefits": "Benefits",
+      "choose": "How to Choose",
+      "store": "How to Store",
+      "prepare": "How to Prepare",
+      "freeze": "Can It Be Frozen?",
+      "cook": "How to Cook"
+    }
+  },
+  "meats": {
+    "title": "Meats",
+    "subtitle": "Benefits",
+    "description": "Discover the benefits of meats and proteins we distribute",
+    "backLink": "Back to Benefits",
+    "intro": "Red meat contains protein and iron, two nutrients necessary for maintaining good health, producing antibodies, protecting the immune system, and preventing diseases like anemia. For pregnant women, this iron intake is essential for the growth and development of the fetus's brain. Red meat also contains vitamins B and D, selenium, and zinc.",
+    "whyEat": {
+      "title": "Why Are Proteins Important?",
+      "description": "Meats and fish are excellent sources of high-quality protein, essential for growth and maintaining good health."
+    },
+    "benefits": {
+      "muscle": { "title": "Muscle Development", "description": "Proteins are essential for building and repairing muscles." },
+      "brain": { "title": "Brain Function", "description": "Vitamin B12 and iron support brain function." },
+      "energy": { "title": "Sustained Energy", "description": "Proteins provide stable energy throughout the day." }
+    },
+    "filter": {
+      "all": "All Meats",
+      "red": "Red Meat",
+      "white": "White Meat",
+      "fish": "Fish",
+      "seafood": "Seafood",
+      "deli": "Deli Meats"
+    },
+    "categories": {
+      "red": {
+        "name": "Red Meat",
+        "description": "Red meat contains protein and iron, two nutrients necessary for maintaining good health."
+      },
+      "white": {
+        "name": "White Meat",
+        "description": "White meats like chicken, veal and rabbit are lean and rich in protein."
+      },
+      "fish": {
+        "name": "Fish",
+        "description": "Fish are an excellent source of protein and omega-3 for cardiovascular health."
+      },
+      "seafood": {
+        "name": "Seafood",
+        "description": "Seafood provides iodine, selenium and high-quality protein."
+      },
+      "deli": {
+        "name": "Deli Meats",
+        "description": "To be consumed in moderation, deli meats add variety and flavor to the diet."
+      }
+    },
+    "items": {
+      "boeuf": { "name": "Beef" },
+      "cheval": { "name": "Horse" },
+      "mouton": { "name": "Lamb/Mutton" },
+      "poulet": { "name": "Chicken/Poultry" },
+      "lapin": { "name": "Rabbit" },
+      "porc": { "name": "Pork" },
+      "veau": { "name": "Veal" },
+      "merlan": { "name": "Whiting" },
+      "crevettes": { "name": "Shrimp" },
+      "poissons": { "name": "Fish" },
+      "charcuteries": { "name": "Deli Meats" }
+    },
+    "available": {
+      "title": "Our Available Meats and Fish",
+      "description": "Click on a meat to discover its benefits and preparation tips."
+    },
+    "tip": {
+      "title": "Storage Tip",
+      "description": "Store meats in the refrigerator and consume within 2-3 days. For longer storage, freeze them upon receipt. Always thaw in the refrigerator, never at room temperature."
+    },
+    "modal": {
+      "benefits": "Health Benefits",
+      "choose": "Buying Guide",
+      "store": "Storage",
+      "cook": "Cooking Tips"
+    }
+  },
+  "spices": {
+    "title": "Herbs and Spices",
+    "subtitle": "Benefits",
+    "description": "Discover the benefits of herbs and spices we distribute",
+    "backLink": "Back to Benefits",
+    "whyEat": {
+      "title": "Why Use Herbs and Spices?",
+      "description": "Herbs and spices are not just flavor enhancers, they also have many beneficial properties for health."
+    },
+    "benefits": {
+      "digestion": { "title": "Easier Digestion", "description": "Herbs and spices help digest heavy meals." },
+      "medicinal": { "title": "Medicinal Properties", "description": "Many spices have antibacterial and anti-inflammatory properties." },
+      "flavor": { "title": "Natural Flavors", "description": "They allow reducing salt and sugar while enhancing taste." }
+    },
+    "filter": {
+      "all": "View All",
+      "herbs": "Fine Herbs",
+      "spices": "Spices"
+    },
+    "categories": {
+      "herbs": {
+        "name": "Fine Herbs",
+        "description": "Fresh herbs add flavor and benefits to your dishes while aiding digestion."
+      },
+      "spices": {
+        "name": "Spices",
+        "description": "Spices are true health treasures, rich in antioxidants and medicinal properties."
+      }
+    },
+    "items": {
+      "coriandre": { "name": "Cilantro" },
+      "menthe": { "name": "Mint" },
+      "sauge": { "name": "Sage" },
+      "thym": { "name": "Thyme" },
+      "persil": { "name": "Parsley" },
+      "cumin": { "name": "Cumin" },
+      "curcuma": { "name": "Turmeric" },
+      "gingembre": { "name": "Ginger" },
+      "muscade": { "name": "Nutmeg" }
+    },
+    "available": {
+      "title": "Our Available Herbs and Spices",
+      "description": "Click on an herb or spice to discover its benefits and usage tips."
+    },
+    "tip": {
+      "title": "Usage Tip",
+      "description": "Fresh herbs are generally added at the end of cooking to preserve their aromas. Spices, on the other hand, can be added at the beginning of cooking to develop their full flavor potential."
+    },
+    "modal": {
+      "benefits": "Benefits",
+      "choose": "How to Choose",
+      "use": "Culinary Uses",
+      "store": "Storage"
+    }
+  }
+}

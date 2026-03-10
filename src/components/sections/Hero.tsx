@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Heart, Users, ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
@@ -33,6 +34,8 @@ export function Hero() {
 
 // Hero for Harvest theme - Full screen with zoom-in effect
 function HeroHarvest() {
+  const t = useTranslations('hero');
+
   return (
     <section className="relative min-h-screen bg-background overflow-hidden">
       {/* Fallback background color while image loads */}
@@ -47,7 +50,7 @@ function HeroHarvest() {
       >
         <Image
           src="/images/hero/hands-hd.jpg"
-          alt="Communaute solidaire"
+          alt="Communauté solidaire"
           fill
           className="object-cover"
           priority
@@ -82,7 +85,7 @@ function HeroHarvest() {
             transition={{ delay: 0.2 }}
             className="text-text-muted text-base md:text-lg mb-3 md:mb-4"
           >
-            Depuis 2002 au service de la communauté
+            {t('tagline')}
           </motion.p>
 
           <motion.h1
@@ -91,9 +94,9 @@ function HeroHarvest() {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-text leading-[1.05] mb-4 md:mb-6"
           >
-            <span className="block">Nourrir.</span>
-            <span className="block text-primary">Soutenir.</span>
-            <span className="block text-secondary">Inspirer.</span>
+            <span className="block">{t('title1')}</span>
+            <span className="block text-primary">{t('title2')}</span>
+            <span className="block text-secondary">{t('title3')}</span>
           </motion.h1>
 
           <motion.p
@@ -102,8 +105,7 @@ function HeroHarvest() {
             transition={{ delay: 0.5 }}
             className="text-lg md:text-xl text-text font-medium leading-relaxed mb-6 md:mb-8"
           >
-            L'Oeuvre des Samaritains aide les familles dans le besoin avec des aliments
-            frais et nutritifs. Ensemble, faisons la difference.
+            {t('description')}
           </motion.p>
 
           <motion.div
@@ -114,11 +116,11 @@ function HeroHarvest() {
           >
             <Button size="lg" href="/don" className="w-full sm:w-auto justify-center">
               <Heart className="w-5 h-5 mr-2" />
-              Faire un don
+              {t('donateButton')}
             </Button>
             <Button variant="outline" size="lg" href="/benevole" className="w-full sm:w-auto justify-center">
               <Users className="w-5 h-5 mr-2" />
-              Devenir bénévole
+              {t('volunteerButton')}
             </Button>
           </motion.div>
 
@@ -133,24 +135,24 @@ function HeroHarvest() {
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary">
                 <CountUp end={17000} suffix="+" duration={3} />
               </div>
-              <p className="text-xs sm:text-sm font-medium text-text">visites/an</p>
+              <p className="text-xs sm:text-sm font-medium text-text">{t('stats.visits')}</p>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-secondary">
                 <CountUp end={800} duration={2.5} />
               </div>
-              <p className="text-xs sm:text-sm font-medium text-text">familles à Noël</p>
+              <p className="text-xs sm:text-sm font-medium text-text">{t('stats.christmas')}</p>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-accent">22+</div>
-              <p className="text-xs sm:text-sm font-medium text-text">ans</p>
+              <p className="text-xs sm:text-sm font-medium text-text">{t('stats.years')}</p>
             </div>
           </motion.div>
         </div>
       </Container>
 
       {/* Floating images on the right */}
-      <div className="absolute right-[8%] lg:right-[10%] xl:right-[12%] top-1/2 -translate-y-1/2 hidden lg:block z-30">
+      <div className="absolute right-[2%] lg:right-[4%] xl:right-[8%] 2xl:right-[12%] top-1/2 -translate-y-1/2 hidden lg:block z-10">
         <div className="relative">
           {/* Main image - vegetables - wider */}
           <motion.div
@@ -159,10 +161,10 @@ function HeroHarvest() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="relative"
           >
-            <div className="relative w-[400px] h-[40vh] lg:w-[500px] lg:h-[45vh] xl:w-[600px] xl:h-[50vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+            <div className="relative w-[280px] h-[35vh] lg:w-[350px] lg:h-[40vh] xl:w-[500px] xl:h-[45vh] 2xl:w-[600px] 2xl:h-[50vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
                 src="/images/food/vegetables-hd.jpg"
-                alt="Legumes frais"
+                alt="Légumes frais"
                 fill
                 className="object-cover"
               />
@@ -180,7 +182,7 @@ function HeroHarvest() {
             }}
             className="absolute -top-8 -right-10 lg:-top-10 lg:-right-14"
           >
-            <div className="relative w-32 h-32 lg:w-40 lg:h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-6">
+            <div className="relative w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-6">
               <Image
                 src="/images/bienfaits/fruits/fraises.jpg"
                 alt="Fruits frais"
@@ -201,7 +203,7 @@ function HeroHarvest() {
             }}
             className="absolute -bottom-8 -right-12 lg:-bottom-12 lg:-right-16"
           >
-            <div className="relative w-44 h-44 lg:w-56 lg:h-56 rounded-xl overflow-hidden shadow-xl border-4 border-white -rotate-3">
+            <div className="relative w-32 h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 2xl:w-56 2xl:h-56 rounded-xl overflow-hidden shadow-xl border-4 border-white -rotate-3">
               <Image
                 src="/images/bienfaits/legumes/carottes.jpg"
                 alt="Carottes"
@@ -211,28 +213,29 @@ function HeroHarvest() {
             </div>
           </motion.div>
 
-          {/* Bottom-left floating image - medium */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1, x: [0, 3, 0, -3, 0] }}
-            transition={{
-              opacity: { delay: 1.3, duration: 0.5 },
-              scale: { delay: 1.3, duration: 0.5 },
-              x: { delay: 1.8, duration: 5, repeat: Infinity, ease: 'easeInOut' }
-            }}
-            className="absolute -bottom-10 -left-14 lg:-bottom-14 lg:-left-20"
-          >
-            <div className="relative w-36 h-28 lg:w-48 lg:h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-3">
-              <Image
-                src="/images/gallery/helping.jpg"
-                alt="Aide"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
+
+      {/* Bottom-left floating image - separate for higher z-index */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1, x: [0, 3, 0, -3, 0] }}
+        transition={{
+          opacity: { delay: 1.3, duration: 0.5 },
+          scale: { delay: 1.3, duration: 0.5 },
+          x: { delay: 1.8, duration: 5, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute right-[20%] lg:right-[25%] xl:right-[30%] 2xl:right-[35%] bottom-[20%] hidden lg:block z-40"
+      >
+        <div className="relative w-28 h-20 lg:w-36 lg:h-28 xl:w-44 xl:h-32 2xl:w-48 2xl:h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-3">
+          <Image
+            src="/images/gallery/helping.jpg"
+            alt="Aide"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </motion.div>
 
       {/* Scroll indicator */}
       <motion.div
@@ -246,7 +249,7 @@ function HeroHarvest() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-sm text-text font-medium hidden md:block">Defiler</span>
+          <span className="text-sm text-text font-medium hidden md:block">{t('scroll')}</span>
           <div className="w-5 h-8 border-2 border-text rounded-full flex items-start justify-center pt-1">
             <motion.div
               animate={{ y: [0, 8, 0] }}
@@ -262,13 +265,15 @@ function HeroHarvest() {
 
 // Hero for Urban theme - Full screen dark with modern layout
 function HeroUrban() {
+  const t = useTranslations('hero');
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#0f2820]">
       {/* Full-width background image */}
       <div className="absolute inset-0">
         <Image
           src="/images/hero/loading-food.jpg"
-          alt="Benevoles en action"
+          alt="Bénévoles en action"
           fill
           className="object-cover"
           priority
@@ -315,7 +320,7 @@ function HeroUrban() {
               className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 text-white/80 rounded-full text-sm font-medium mb-4 md:mb-6 backdrop-blur-sm"
             >
               <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-              Au service de la communaute depuis 2002
+              {t('tagline')}
             </motion.span>
 
             <motion.h1
@@ -324,9 +329,9 @@ function HeroUrban() {
               transition={{ delay: 0.3 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-4 md:mb-6"
             >
-              L'occasion de changer
-              <br />
-              <span className="text-secondary">la vie des autres</span>
+              <span className="block">{t('title1')}</span>
+              <span className="block text-secondary">{t('title2')}</span>
+              <span className="block">{t('title3')}</span>
             </motion.h1>
 
             <motion.p
@@ -335,7 +340,7 @@ function HeroUrban() {
               transition={{ delay: 0.5 }}
               className="text-lg md:text-xl text-white/70 leading-relaxed mb-6 md:mb-8 max-w-lg"
             >
-              Joignez-vous a nous pour soutenir ceux qui en ont besoin. Chaque don compte.
+              {t('description')}
             </motion.p>
 
             <motion.div
@@ -345,7 +350,7 @@ function HeroUrban() {
               className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-10"
             >
               <Button size="lg" href="/don" className="w-full sm:w-auto justify-center">
-                Faire un don
+                {t('donateButton')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button
@@ -354,7 +359,7 @@ function HeroUrban() {
                 href="/benevole"
                 className="w-full sm:w-auto justify-center border-white/30 text-white hover:bg-white hover:text-primary"
               >
-                Devenir bénévole
+                {t('volunteerButton')}
               </Button>
             </motion.div>
 
@@ -369,17 +374,17 @@ function HeroUrban() {
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
                   <CountUp end={17000} suffix="+" duration={3} />
                 </div>
-                <p className="text-xs sm:text-sm text-white/60">visites/an</p>
+                <p className="text-xs sm:text-sm text-white/60">{t('stats.visits')}</p>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary">
                   <CountUp end={800} duration={2.5} />
                 </div>
-                <p className="text-xs sm:text-sm text-white/60">familles à Noël</p>
+                <p className="text-xs sm:text-sm text-white/60">{t('stats.christmas')}</p>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">22+</div>
-                <p className="text-xs sm:text-sm text-white/60">ans</p>
+                <p className="text-xs sm:text-sm text-white/60">{t('stats.years')}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -400,7 +405,7 @@ function HeroUrban() {
               <div className="relative w-[400px] h-[520px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
                 <Image
                   src="/images/gallery/groceries.jpg"
-                  alt="Epicerie"
+                  alt="Épicerie"
                   fill
                   className="object-cover"
                 />
@@ -497,7 +502,7 @@ function HeroUrban() {
               className="absolute top-[50%] -left-14"
             >
               <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
-                <Image src="/images/bienfaits/legumes/brocoli.webp" alt="Legume" fill className="object-cover" />
+                <Image src="/images/bienfaits/legumes/brocoli.webp" alt="Légume" fill className="object-cover" />
               </div>
             </motion.div>
           </motion.div>
@@ -516,7 +521,7 @@ function HeroUrban() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-xs text-white/40 hidden md:block">Defiler</span>
+          <span className="text-xs text-white/40 hidden md:block">{t('scroll')}</span>
           <div className="w-5 h-8 border-2 border-white/30 rounded-full flex items-start justify-center pt-1">
             <motion.div
               animate={{ y: [0, 8, 0] }}
