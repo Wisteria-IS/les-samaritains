@@ -513,13 +513,9 @@
       "phonePlaceholder": "(514) 000-0000",
       "availability": "Availability",
       "availabilityOptions": [
-        { "value": "mardi_matin", "label": "Tuesday morning (9am-12pm)" },
-        { "value": "mardi_apres", "label": "Tuesday afternoon (12pm-3pm)" },
-        { "value": "mercredi_matin", "label": "Wednesday morning (9am-12pm)" },
-        { "value": "mercredi_apres", "label": "Wednesday afternoon (12pm-3pm)" },
-        { "value": "jeudi_matin", "label": "Thursday morning (9am-12pm)" },
-        { "value": "jeudi_apres", "label": "Thursday afternoon (12pm-3pm)" },
-        { "value": "weekend", "label": "Weekends (occasional)" }
+        { "value": "mardi", "label": "Tuesday (1pm-5pm)" },
+        { "value": "jeudi", "label": "Thursday (1pm-5pm)" },
+        { "value": "vendredi", "label": "Friday (1pm-5pm)" }
       ],
       "motivation": "Why do you want to become a volunteer?",
       "motivationPlaceholder": "Tell us about your motivations...",

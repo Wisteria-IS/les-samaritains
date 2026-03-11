@@ -513,13 +513,9 @@
       "phonePlaceholder": "(514) 000-0000",
       "availability": "Disponibilité",
       "availabilityOptions": [
-        { "value": "mardi_matin", "label": "Mardi matin (9h-12h)" },
-        { "value": "mardi_apres", "label": "Mardi après-midi (12h-15h)" },
-        { "value": "mercredi_matin", "label": "Mercredi matin (9h-12h)" },
-        { "value": "mercredi_apres", "label": "Mercredi après-midi (12h-15h)" },
-        { "value": "jeudi_matin", "label": "Jeudi matin (9h-12h)" },
-        { "value": "jeudi_apres", "label": "Jeudi après-midi (12h-15h)" },
-        { "value": "weekend", "label": "Fins de semaine (occasionnel)" }
+        { "value": "mardi", "label": "Mardi (13h-17h)" },
+        { "value": "jeudi", "label": "Jeudi (13h-17h)" },
+        { "value": "vendredi", "label": "Vendredi (13h-17h)" }
       ],
       "motivation": "Pourquoi souhaitez-vous devenir bénévole?",
       "motivationPlaceholder": "Parlez-nous de vos motivations...",
