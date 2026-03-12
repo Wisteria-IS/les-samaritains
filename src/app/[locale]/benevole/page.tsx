@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Heart, Clock, Users, Award, Send, CheckCircle } from 'lucide-react';
@@ -45,16 +45,47 @@ export default function BenevolePage() {
     phone: '',
     availability: [] as string[],
     motivation: '',
+    honeypot: '',
   });
+  const [formStartTime, setFormStartTime] = useState<number>(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setFormStartTime(Date.now());
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/volunteer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formState,
+          formStartTime,
+          submitTime: Date.now(),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Une erreur est survenue');
+      }
+
+      setIsSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Une erreur est survenue');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -202,6 +233,23 @@ export default function BenevolePage() {
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Honeypot field - hidden from users */}
+                    <input
+                      type="text"
+                      name="honeypot"
+                      value={formState.honeypot}
+                      onChange={handleChange}
+                      className="hidden"
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+
+                    {error && (
+                      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl">
+                        {error}
+                      </div>
+                    )}
+
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="firstName" className="block text-sm font-medium text-text mb-2">
