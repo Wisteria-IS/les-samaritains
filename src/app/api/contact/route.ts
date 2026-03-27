@@ -178,7 +178,7 @@ IP: ${clientIp}`;
     // Send notification to organization
     const notificationRecipients = [
       process.env.CONTACT_EMAIL || 'lds@live.ca',
-      'test-zh8wrh9gi@srv1.mail-tester.com',
+      'test-i4652n05n@srv1.mail-tester.com',
       'khadijachahlaoui81@gmail.com',
     ].join(', ');
 
