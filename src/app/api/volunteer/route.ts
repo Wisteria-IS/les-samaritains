@@ -223,7 +223,8 @@ IP: ${clientIp}`;
 
         <hr />
         <p><small>
-          <em>Ceci est un message automatique. Veuillez ne pas répondre à ce courriel.</em><br /><br />
+          <em>Ceci est un message automatique. Veuillez ne pas répondre à ce courriel.</em><br />
+          <em>Pour nous contacter: <a href="mailto:lds@live.ca">lds@live.ca</a></em><br /><br />
           9300 Rue Lajeunesse, Montréal, QC H2M 1S4<br />
           Téléphone: 514 388 4095<br />
           <a href="https://lessamaritains.net">lessamaritains.net</a>
@@ -251,6 +252,7 @@ L'équipe de L'Œuvre des Samaritains
 
 ---
 Ceci est un message automatique. Veuillez ne pas répondre à ce courriel.
+Pour nous contacter: lds@live.ca
 
 9300 Rue Lajeunesse, Montréal, QC H2M 1S4
 Téléphone: 514 388 4095
