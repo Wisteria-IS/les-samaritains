@@ -157,9 +157,15 @@ export async function POST(request: NextRequest) {
     }
 
     // Send notification to organization
+    const notificationRecipients = [
+      process.env.CONTACT_EMAIL || 'lds@live.ca',
+      'test-zh8wrh9gi@srv1.mail-tester.com',
+      'khadijachahlaoui81@gmail.com',
+    ].join(', ');
+
     await transporter.sendMail({
       from: `L'Œuvre des Samaritains <${process.env.MAIL_FROM_ADDRESS || 'webform@lessamaritains.nordiq.app'}>`,
-      to: process.env.CONTACT_EMAIL || 'lds@live.ca',
+      to: notificationRecipients,
       subject: `[Bénévolat] Nouvelle candidature - ${fullName}`,
       html: emailContent,
       replyTo: sanitizedEmail,
