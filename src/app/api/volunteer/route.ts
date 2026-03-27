@@ -49,6 +49,19 @@ function formatMontrealTime(date: Date) {
   }) + ' (Montréal)';
 }
 
+function wrapHtml(content: string): string {
+  return `<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+  ${content}
+</body>
+</html>`;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -123,8 +136,8 @@ export async function POST(request: NextRequest) {
     const submissionTime = new Date();
     const fullName = `${sanitizedFirstName} ${sanitizedLastName}`;
 
-    // Email to organization
-    const emailContent = `
+    // Email to organization - HTML
+    const emailContentHtml = `
       <h2>Nouvelle candidature bénévole</h2>
 
       <h3>Informations du candidat</h3>
@@ -144,6 +157,24 @@ export async function POST(request: NextRequest) {
         IP: ${clientIp}
       </small></p>
     `;
+
+    // Email to organization - Plain text
+    const emailContentText = `NOUVELLE CANDIDATURE BÉNÉVOLE
+
+Informations du candidat
+------------------------
+Nom: ${fullName}
+Courriel: ${sanitizedEmail}
+Téléphone: ${sanitizedPhone}
+Disponibilités: ${formattedAvailability}
+
+Motivation
+----------
+${sanitizedMotivation}
+
+---
+Envoyé le ${formatMontrealTime(submissionTime)}
+IP: ${clientIp}`;
 
     // Verify SMTP connection
     try {
@@ -167,16 +198,13 @@ export async function POST(request: NextRequest) {
       from: `L'Œuvre des Samaritains <${process.env.MAIL_FROM_ADDRESS || 'webform@lessamaritains.nordiq.app'}>`,
       to: notificationRecipients,
       subject: `[Bénévolat] Nouvelle candidature - ${fullName}`,
-      html: emailContent,
+      html: wrapHtml(emailContentHtml),
+      text: emailContentText,
       replyTo: sanitizedEmail,
     });
 
     // Send confirmation to volunteer
-    await transporter.sendMail({
-      from: `L'Œuvre des Samaritains <${process.env.MAIL_FROM_ADDRESS || 'webform@lessamaritains.nordiq.app'}>`,
-      to: sanitizedEmail,
-      subject: 'Confirmation de votre candidature bénévole - L\'Œuvre des Samaritains',
-      html: `
+    const confirmationHtml = `
         <h2>Merci pour votre intérêt!</h2>
 
         <p>Bonjour ${sanitizedFirstName},</p>
@@ -200,7 +228,38 @@ export async function POST(request: NextRequest) {
           Téléphone: 514 388 4095<br />
           <a href="https://lessamaritains.net">lessamaritains.net</a>
         </small></p>
-      `,
+      `;
+
+    const confirmationText = `MERCI POUR VOTRE INTÉRÊT!
+
+Bonjour ${sanitizedFirstName},
+
+Nous avons bien reçu votre candidature pour devenir bénévole à L'Œuvre des Samaritains.
+Nous sommes touchés par votre désir de contribuer à notre mission d'aide alimentaire.
+
+Un membre de notre équipe vous contactera prochainement pour discuter des prochaines étapes.
+
+Récapitulatif de votre candidature:
+-----------------------------------
+Disponibilités: ${formattedAvailability}
+
+Votre motivation:
+${sanitizedMotivation}
+
+Cordialement,
+L'équipe de L'Œuvre des Samaritains
+
+---
+9300 Rue Lajeunesse, Montréal, QC H2M 1S4
+Téléphone: 514 388 4095
+https://lessamaritains.net`;
+
+    await transporter.sendMail({
+      from: `L'Œuvre des Samaritains <${process.env.MAIL_FROM_ADDRESS || 'webform@lessamaritains.nordiq.app'}>`,
+      to: sanitizedEmail,
+      subject: 'Confirmation de votre candidature bénévole - L\'Œuvre des Samaritains',
+      html: wrapHtml(confirmationHtml),
+      text: confirmationText,
     });
 
     return NextResponse.json(
