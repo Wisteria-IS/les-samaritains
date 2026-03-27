@@ -200,7 +200,6 @@ IP: ${clientIp}`;
       subject: `[Bénévolat] Nouvelle candidature - ${fullName}`,
       html: wrapHtml(emailContentHtml),
       text: emailContentText,
-      replyTo: sanitizedEmail,
     });
 
     // Send confirmation to volunteer
@@ -224,6 +223,7 @@ IP: ${clientIp}`;
 
         <hr />
         <p><small>
+          <em>Ceci est un message automatique. Veuillez ne pas répondre à ce courriel.</em><br /><br />
           9300 Rue Lajeunesse, Montréal, QC H2M 1S4<br />
           Téléphone: 514 388 4095<br />
           <a href="https://lessamaritains.net">lessamaritains.net</a>
@@ -250,12 +250,14 @@ Cordialement,
 L'équipe de L'Œuvre des Samaritains
 
 ---
+Ceci est un message automatique. Veuillez ne pas répondre à ce courriel.
+
 9300 Rue Lajeunesse, Montréal, QC H2M 1S4
 Téléphone: 514 388 4095
 https://lessamaritains.net`;
 
     await transporter.sendMail({
-      from: `L'Œuvre des Samaritains <${process.env.MAIL_FROM_ADDRESS || 'webform@lessamaritains.nordiq.app'}>`,
+      from: `L'Œuvre des Samaritains <no-reply@lessamaritains.nordiq.app>`,
       to: sanitizedEmail,
       subject: 'Confirmation de votre candidature bénévole - L\'Œuvre des Samaritains',
       html: wrapHtml(confirmationHtml),
