@@ -11,17 +11,16 @@ import { Button } from '@/components/ui/Button';
 
 const mainPartners = [
   { name: 'Moisson Montréal', logo: '/images/partners/moisson-montreal.webp' },
-  { name: 'Centraide', logo: '/images/partners/donateur-centraide.webp' },
   { name: 'Croix-Rouge', logo: '/images/partners/croix-rouge.webp' },
   { name: 'La Tablée des Chefs', logo: '/images/partners/partn-tablee-des-chefs.webp' },
 ];
 
 const partners = [
+  { name: 'Jean Fortin', logo: '/images/partners/donateur-jean-fortin-2_edited.webp' },
   { name: 'Régent', logo: '/images/partners/LOGO-REGENT.webp' },
   { name: 'Papillon', logo: '/images/partners/ODS-PAPILLON.webp' },
   { name: 'Ahuntsic', logo: '/images/partners/donateur-ahuntsic.webp' },
   { name: 'Bouthillette', logo: '/images/partners/donateur-bouthillette.webp' },
-  { name: 'Jean Fortin', logo: '/images/partners/donateur-jean-fortin-2_edited.webp' },
   { name: 'Réchaud-Bus', logo: '/images/partners/donateur-rechaud-bus.webp' },
   { name: 'Lantic', logo: '/images/partners/part-lantic.webp' },
   { name: 'Groupe Beaudry', logo: '/images/partners/partn-groupe-beaudry.webp' },
