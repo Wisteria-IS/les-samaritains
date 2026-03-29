@@ -10,13 +10,13 @@ import { PageHeader } from '@/components/sections/PageHeader';
 import { Button } from '@/components/ui/Button';
 
 const mainPartners = [
+  { name: 'Jean Fortin', logo: '/images/partners/donateur-jean-fortin-2_edited.webp' },
   { name: 'Moisson Montréal', logo: '/images/partners/moisson-montreal.webp' },
   { name: 'Croix-Rouge', logo: '/images/partners/croix-rouge.webp' },
   { name: 'La Tablée des Chefs', logo: '/images/partners/partn-tablee-des-chefs.webp' },
 ];
 
 const partners = [
-  { name: 'Jean Fortin', logo: '/images/partners/donateur-jean-fortin-2_edited.webp' },
   { name: 'Régent', logo: '/images/partners/LOGO-REGENT.webp' },
   { name: 'Papillon', logo: '/images/partners/ODS-PAPILLON.webp' },
   { name: 'Ahuntsic', logo: '/images/partners/donateur-ahuntsic.webp' },
