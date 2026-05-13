@@ -226,7 +226,7 @@ export default function BenevolePage() {
             <FadeIn>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/gallery/food-sorting.jpg"
+                  src="/images/homepage/06-team-christmas.jpeg"
                   alt="Bénévoles en action"
                   fill
                   className="object-cover"
