@@ -90,7 +90,7 @@ export default function DonPage() {
             <FadeIn>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/manger-en-famille.jpeg"
+                  src="/images/homepage/04-distribution-family.jpeg"
                   alt="Famille bénéficiaire"
                   fill
                   className="object-cover"
