@@ -229,7 +229,7 @@ function HeroHarvest() {
       >
         <div className="relative w-28 h-20 lg:w-36 lg:h-28 xl:w-44 xl:h-32 2xl:w-48 2xl:h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-3">
           <Image
-            src="/images/gallery/helping.jpg"
+            src="/images/homepage/01-birthday-office.jpeg"
             alt="Aide"
             fill
             className="object-cover"

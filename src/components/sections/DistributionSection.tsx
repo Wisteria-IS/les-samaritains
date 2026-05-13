@@ -36,7 +36,7 @@ export function DistributionSection() {
           <FadeIn className="lg:col-span-2">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
-                src="/images/gallery/food-sorting.jpg"
+                src="/images/homepage/03-sorting-food.jpeg"
                 alt={t('altCenter')}
                 fill
                 className="object-cover"

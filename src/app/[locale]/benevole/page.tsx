@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Heart, Clock, Users, Award, Send, CheckCircle } from 'lucide-react';
+import { Heart, Clock, Users, Award, Send, CheckCircle, Star, Target, ShoppingBasket, Megaphone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
@@ -11,10 +11,21 @@ import { PageHeader } from '@/components/sections/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
+type DayKey = 'mardi' | 'jeudi' | 'vendredi';
+type DaySlot = { enabled: boolean; startTime: string; endTime: string };
+
+const DAYS: { key: DayKey; label: string }[] = [
+  { key: 'mardi', label: 'Mardi' },
+  { key: 'jeudi', label: 'Jeudi' },
+  { key: 'vendredi', label: 'Vendredi' },
+];
+
+const START_TIMES = ['8h00', '8h30'];
+const END_TIMES = ['12h00', '14h00', '15h00', '17h00'];
+
 export default function BenevolePage() {
   const t = useTranslations('volunteer');
   const roles = t.raw('roles.list') as Array<{ title: string; description: string }>;
-  const availabilityOptions = t.raw('form.availabilityOptions') as Array<{ value: string; label: string }>;
 
   const benefits = [
     {
@@ -43,7 +54,11 @@ export default function BenevolePage() {
     lastName: '',
     email: '',
     phone: '',
-    availability: [] as string[],
+    availability: {
+      mardi: { enabled: false, startTime: '8h00', endTime: '17h00' } as DaySlot,
+      jeudi: { enabled: false, startTime: '8h00', endTime: '17h00' } as DaySlot,
+      vendredi: { enabled: false, startTime: '8h00', endTime: '17h00' } as DaySlot,
+    },
     motivation: '',
     honeypot: '',
   });
@@ -61,6 +76,19 @@ export default function BenevolePage() {
     setIsSubmitting(true);
     setError(null);
 
+    const availabilityList = DAYS
+      .filter(({ key }) => formState.availability[key].enabled)
+      .map(({ key, label }) => {
+        const slot = formState.availability[key];
+        return `${label} ${slot.startTime}-${slot.endTime}`;
+      });
+
+    if (availabilityList.length === 0) {
+      setError('Veuillez sélectionner au moins une disponibilité.');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const response = await fetch('/api/volunteer', {
         method: 'POST',
@@ -69,6 +97,7 @@ export default function BenevolePage() {
         },
         body: JSON.stringify({
           ...formState,
+          availability: availabilityList,
           formStartTime,
           submitTime: Date.now(),
         }),
@@ -95,12 +124,23 @@ export default function BenevolePage() {
     }));
   };
 
-  const handleAvailabilityChange = (value: string) => {
+  const handleDayToggle = (day: DayKey) => {
     setFormState(prev => ({
       ...prev,
-      availability: prev.availability.includes(value)
-        ? prev.availability.filter(v => v !== value)
-        : [...prev.availability, value],
+      availability: {
+        ...prev.availability,
+        [day]: { ...prev.availability[day], enabled: !prev.availability[day].enabled },
+      },
+    }));
+  };
+
+  const handleSlotTimeChange = (day: DayKey, field: 'startTime' | 'endTime', value: string) => {
+    setFormState(prev => ({
+      ...prev,
+      availability: {
+        ...prev.availability,
+        [day]: { ...prev.availability[day], [field]: value },
+      },
     }));
   };
 
@@ -194,6 +234,74 @@ export default function BenevolePage() {
               </div>
             </FadeIn>
           </div>
+        </Container>
+      </section>
+
+      {/* Promotional Call-to-Action */}
+      <section className="py-12 md:py-16 bg-white">
+        <Container>
+          <FadeIn>
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-secondary p-1 shadow-xl">
+              <div className="relative rounded-[1.4rem] bg-gradient-to-br from-primary to-secondary px-6 py-10 md:px-12 md:py-14">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                  <div className="text-center lg:text-left text-white">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+                      <Megaphone className="w-4 h-4" />
+                      {t('promo.tagline')}
+                    </div>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
+                      <Star className="inline-block w-7 h-7 md:w-8 md:h-8 mr-2 fill-yellow-300 text-yellow-300" />
+                      {t('promo.title')}
+                      <Star className="inline-block w-7 h-7 md:w-8 md:h-8 ml-2 fill-yellow-300 text-yellow-300" />
+                    </h2>
+
+                    <div className="mt-8 space-y-4 text-left max-w-md mx-auto lg:mx-0">
+                      <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <Target className="w-7 h-7 flex-shrink-0 text-yellow-300 mt-0.5" />
+                        <div>
+                          <p className="font-bold text-lg">{t('promo.hoursMilestone')}</p>
+                          <ul className="mt-2 space-y-1.5 text-white/90 text-sm">
+                            <li className="flex items-center gap-2">
+                              <CheckCircle className="w-4 h-4 text-green-300 flex-shrink-0" />
+                              {t('promo.benefit1')}
+                            </li>
+                            <li className="flex items-center gap-2">
+                              <CheckCircle className="w-4 h-4 text-green-300 flex-shrink-0" />
+                              {t('promo.benefit2')}
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-3 bg-yellow-400/20 backdrop-blur-sm rounded-xl p-4 border-2 border-yellow-300/40">
+                        <ShoppingBasket className="w-8 h-8 flex-shrink-0 text-yellow-300" />
+                        <p className="font-extrabold text-lg md:text-xl text-white">
+                          <Star className="inline-block w-5 h-5 fill-yellow-300 text-yellow-300 mr-1" />
+                          {t('promo.freeGroceries')}
+                          <Star className="inline-block w-5 h-5 fill-yellow-300 text-yellow-300 ml-1" />
+                        </p>
+                      </div>
+
+                      <p className="text-center text-white/90 italic text-lg pt-2">
+                        <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 mr-1" />
+                        {t('promo.blessing')}
+                        <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 ml-1" />
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/30">
+                    <Image
+                      src="/images/promo/benevolat-appel.jpeg"
+                      alt={t('promo.imageAlt')}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </Container>
       </section>
 
@@ -343,26 +451,66 @@ export default function BenevolePage() {
                       <label className="block text-sm font-medium text-text mb-3">
                         {t('form.availability')} {t('form.required')}
                       </label>
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                        {availabilityOptions.map((option) => (
-                          <label
-                            key={option.value}
-                            className={cn(
-                              'flex items-center gap-2 px-4 py-3 rounded-xl cursor-pointer transition-all',
-                              formState.availability.includes(option.value)
-                                ? 'bg-primary text-white'
-                                : 'bg-white border border-border hover:border-primary'
-                            )}
-                          >
-                            <input
-                              type="checkbox"
-                              checked={formState.availability.includes(option.value)}
-                              onChange={() => handleAvailabilityChange(option.value)}
-                              className="sr-only"
-                            />
-                            <span className="text-sm">{option.label}</span>
-                          </label>
-                        ))}
+                      <p className="text-sm text-text-muted mb-4">
+                        {t('form.availabilityHelp')}
+                      </p>
+                      <div className="space-y-3">
+                        {DAYS.map(({ key, label }) => {
+                          const slot = formState.availability[key];
+                          return (
+                            <div
+                              key={key}
+                              className={cn(
+                                'rounded-xl border transition-all',
+                                slot.enabled
+                                  ? 'bg-primary/5 border-primary'
+                                  : 'bg-white border-border'
+                              )}
+                            >
+                              <label className="flex items-center gap-3 px-4 py-3 cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  checked={slot.enabled}
+                                  onChange={() => handleDayToggle(key)}
+                                  className="w-5 h-5 rounded text-primary focus:ring-primary"
+                                />
+                                <span className="font-medium text-text flex-1">{label}</span>
+                              </label>
+                              {slot.enabled && (
+                                <div className="grid grid-cols-2 gap-3 px-4 pb-4">
+                                  <div>
+                                    <label className="block text-xs font-medium text-text-muted mb-1">
+                                      {t('form.startTime')}
+                                    </label>
+                                    <select
+                                      value={slot.startTime}
+                                      onChange={(e) => handleSlotTimeChange(key, 'startTime', e.target.value)}
+                                      className="w-full px-3 py-2 rounded-lg bg-white border border-border text-text text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                                    >
+                                      {START_TIMES.map((time) => (
+                                        <option key={time} value={time}>{time}</option>
+                                      ))}
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label className="block text-xs font-medium text-text-muted mb-1">
+                                      {t('form.endTime')}
+                                    </label>
+                                    <select
+                                      value={slot.endTime}
+                                      onChange={(e) => handleSlotTimeChange(key, 'endTime', e.target.value)}
+                                      className="w-full px-3 py-2 rounded-lg bg-white border border-border text-text text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                                    >
+                                      {END_TIMES.map((time) => (
+                                        <option key={time} value={time}>{time}</option>
+                                      ))}
+                                    </select>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
 

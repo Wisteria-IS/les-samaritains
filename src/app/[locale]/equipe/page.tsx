@@ -12,9 +12,9 @@ import { Button } from '@/components/ui/Button';
 const administratorImages = [
   '/images/administrateurs/CHANTAL.png',
   '/images/administrateurs/KHAD.png',
-  '/images/administrateurs/julien.jpeg',
-  '/images/administrateurs/miguel.jpeg',
-  '/images/administrateurs/homme.png',
+  '/images/administrateurs/taoufiq.png',
+  '/images/administrateurs/miguel-roxanna.png',
+  '/images/administrateurs/julien-gob.png',
 ];
 
 const volunteerImages = [
@@ -42,7 +42,7 @@ export default function EquipePage() {
         title={t('title')}
         subtitle={t('subtitle')}
         description={t('description')}
-        backgroundImage="/images/team/team-bg.jpg"
+        backgroundImage="/images/homepage/14-selfie-team.jpeg"
       />
 
       {/* Stats */}

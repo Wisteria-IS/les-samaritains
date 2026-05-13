@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
+import { cn } from '@/lib/utils';
 
 export function MissionSection() {
   const { theme } = useTheme();
@@ -34,7 +35,7 @@ export function MissionSection() {
             <div className="relative">
               <div className="relative aspect-[4/3] rounded-xl md:rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/history/hist-2.jpg"
+                  src="/images/homepage/07-main-hall.jpeg"
                   alt={t('altFounders')}
                   fill
                   className="object-cover"
@@ -48,7 +49,7 @@ export function MissionSection() {
                 className="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8 w-24 h-24 md:w-40 md:h-40 rounded-lg md:rounded-xl overflow-hidden border-4 border-white shadow-xl hidden sm:block"
               >
                 <Image
-                  src="/images/history/hist-1B.jpg"
+                  src="/images/homepage/13-prix-moisson.jpeg"
                   alt={t('altHistory')}
                   fill
                   className="object-cover"
@@ -77,41 +78,35 @@ export function MissionSection() {
           </FadeIn>
         </div>
 
-        {/* Image gallery row - photos from our history */}
+        {/* Image gallery row - photos from our activities */}
         <FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-            <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden">
-              <Image
-                src="/images/history/hist-3.jpg"
-                alt={t('altCommunity')}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden">
-              <Image
-                src="/images/history/hist-7.jpg"
-                alt={t('altLocation')}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden hidden md:block">
-              <Image
-                src="/images/history/hist-14.jpg"
-                alt={t('altVolunteers')}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg md:rounded-xl overflow-hidden hidden md:block">
-              <Image
-                src="/images/history/hist-17.jpg"
-                alt={t('altTeam')}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-4">
+            {[
+              { src: '/images/homepage/06-team-christmas.jpeg', alt: t('altCommunity') },
+              { src: '/images/homepage/14-selfie-team.jpeg', alt: t('altTeam') },
+              { src: '/images/homepage/15-certificat-benevolat.jpeg', alt: t('altVolunteers') },
+              { src: '/images/homepage/05-warehouse-view.jpeg', alt: t('altLocation') },
+              { src: '/images/homepage/09-warehouse-wide.jpeg', alt: t('altLocation') },
+              { src: '/images/homepage/10-warehouse-rows.jpeg', alt: t('altLocation') },
+              { src: '/images/homepage/08-responsable-shelves.jpeg', alt: t('altVolunteers') },
+              { src: '/images/homepage/11-donation-boxes.jpeg', alt: t('altCommunity') },
+              { src: '/images/homepage/12-preparing-baskets.jpeg', alt: t('altTeam') },
+            ].map((image, index) => (
+              <div
+                key={image.src}
+                className={cn(
+                  'relative aspect-square rounded-lg md:rounded-xl overflow-hidden',
+                  index >= 6 && 'hidden lg:block'
+                )}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            ))}
           </div>
         </FadeIn>
       </Container>

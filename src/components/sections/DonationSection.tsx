@@ -70,7 +70,7 @@ export function DonationSection() {
             <div className="relative">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/gallery/helping.jpg"
+                  src="/images/homepage/04-distribution-family.jpeg"
                   alt={t('altHelping')}
                   fill
                   className="object-cover"
@@ -84,7 +84,7 @@ export function DonationSection() {
                 className="absolute -bottom-6 -left-6 w-36 h-36 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden md:block"
               >
                 <Image
-                  src="/images/food/fruits.jpg"
+                  src="/images/homepage/02-volunteer-fruits.jpeg"
                   alt={t('altFruits')}
                   fill
                   className="object-cover"

@@ -9,9 +9,9 @@ import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 const mainPartners = [
+  { name: 'Jean Fortin et associés', logo: '/images/partners/jean-fortin-logo.jpeg' },
   { name: 'Moisson Montréal', logo: '/images/partners/moisson-montreal.webp' },
   { name: 'Croix Rouge', logo: '/images/partners/croix-rouge.webp' },
-  { name: 'Centraide', logo: '/images/partners/donateur-centraide.webp' },
   { name: 'Ahuntsic', logo: '/images/partners/donateur-ahuntsic.webp' },
 ];
 
@@ -20,10 +20,16 @@ const otherPartners = [
   { name: 'Groupe Beaudry', logo: '/images/partners/partn-groupe-beaudry.webp' },
   { name: 'Lantic', logo: '/images/partners/part-lantic.webp' },
   { name: 'Rechaud Bus', logo: '/images/partners/donateur-rechaud-bus.webp' },
-  { name: 'Jean Fortin', logo: '/images/partners/donateur-jean-fortin-2_edited.webp' },
   { name: 'Bouthillette', logo: '/images/partners/donateur-bouthillette.webp' },
   { name: 'ODS 4', logo: '/images/partners/ods-4.webp' },
   { name: 'ODS 5', logo: '/images/partners/ods-5.webp' },
+];
+
+const compensatoryPartners = [
+  { name: 'YMCA', logo: '/images/partners/ymca.jpeg', hasLogo: true },
+  { name: "L'OPEX", logo: '/images/partners/opex.png', hasLogo: true, description: "Conseillers en orientation pour ex-détenus" },
+  { name: 'CCC Martineau', logo: null, hasLogo: false, description: 'Centre de transition' },
+  { name: 'Centre de réinsertion Saucier', logo: null, hasLogo: false, description: 'Centre de transition' },
 ];
 
 export function PartnersSection() {
@@ -74,7 +80,7 @@ export function PartnersSection() {
         </FadeIn>
 
         {/* Other Partners Grid */}
-        <FadeIn>
+        <FadeIn className="mb-16">
           <p className="text-center text-sm uppercase tracking-wider text-text-muted mb-8">
             {t('otherPartners')}
           </p>
@@ -95,6 +101,44 @@ export function PartnersSection() {
                   fill
                   className="object-contain"
                 />
+              </motion.div>
+            ))}
+          </div>
+        </FadeIn>
+
+        {/* Compensatory Work Partners */}
+        <FadeIn>
+          <p className="text-center text-sm uppercase tracking-wider text-text-muted mb-8">
+            {t('compensatoryPartners')}
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {compensatoryPartners.map((partner, index) => (
+              <motion.div
+                key={partner.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                whileHover={{ y: -4 }}
+                className="bg-white rounded-xl p-4 flex flex-col items-center justify-center text-center min-h-[120px] shadow-sm"
+              >
+                {partner.hasLogo && partner.logo ? (
+                  <div className="relative w-full h-16 mb-2">
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-center w-full h-16 mb-2">
+                    <span className="text-base font-bold text-text">{partner.name}</span>
+                  </div>
+                )}
+                {partner.description && (
+                  <p className="text-xs text-text-muted">{partner.description}</p>
+                )}
               </motion.div>
             ))}
           </div>

@@ -113,25 +113,12 @@ export async function POST(request: NextRequest) {
     const sanitizedLastName = lastName.trim().slice(0, 50);
     const sanitizedEmail = email.trim().slice(0, 100);
     const sanitizedPhone = phone?.trim().slice(0, 20) || 'Non fourni';
-    const sanitizedAvailability = (availability as string[]).slice(0, 10);
+    const sanitizedAvailability = (availability as string[])
+      .slice(0, 10)
+      .map(a => String(a).trim().slice(0, 60));
     const sanitizedMotivation = motivation.trim().slice(0, 2000);
 
-    const availabilityLabels: Record<string, string> = {
-      'monday-am': 'Lundi AM',
-      'monday-pm': 'Lundi PM',
-      'tuesday-am': 'Mardi AM',
-      'tuesday-pm': 'Mardi PM',
-      'wednesday-am': 'Mercredi AM',
-      'wednesday-pm': 'Mercredi PM',
-      'thursday-am': 'Jeudi AM',
-      'thursday-pm': 'Jeudi PM',
-      'friday-am': 'Vendredi AM',
-      'friday-pm': 'Vendredi PM',
-    };
-
-    const formattedAvailability = sanitizedAvailability
-      .map(a => availabilityLabels[a] || a)
-      .join(', ');
+    const formattedAvailability = sanitizedAvailability.join(', ');
 
     const submissionTime = new Date();
     const fullName = `${sanitizedFirstName} ${sanitizedLastName}`;

@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
 const donationAmounts = [25, 50, 100, 250, 500];
+const ZEFFY_URL = 'https://www.zeffy.com/fr-CA/o/fundraising/campaigns';
 
 export default function DonPage() {
   const t = useTranslations('donate');
@@ -40,11 +41,7 @@ export default function DonPage() {
   const [donationType, setDonationType] = useState<'once' | 'monthly'>('once');
 
   const handleDonate = () => {
-    const amount = selectedAmount || parseInt(customAmount);
-    if (amount) {
-      // In production, this would redirect to a payment processor
-      alert(`${t('form.thankYou')} ${amount}$.`);
-    }
+    window.open(ZEFFY_URL, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -196,7 +193,6 @@ export default function DonPage() {
                   onClick={handleDonate}
                   size="lg"
                   className="w-full"
-                  disabled={!selectedAmount && !customAmount}
                 >
                   <Heart className="w-5 h-5 mr-2" />
                   {donationType === 'monthly' ? t('form.donateMonthly') : t('form.donate')}
@@ -248,20 +244,9 @@ export default function DonPage() {
       {/* Food Donation Info */}
       <section className="py-16 md:py-20 bg-background-alt">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl mx-auto text-center">
             <FadeIn>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/panier.png"
-                  alt="Panier de denrées"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </FadeIn>
-
-            <FadeIn>
-              <Gift className="w-12 h-12 text-primary mb-6" />
+              <Gift className="w-12 h-12 text-primary mb-6 mx-auto" />
               <h2 className="text-3xl md:text-4xl font-bold text-text mb-6">
                 {t('foodDonation.title')}
               </h2>
@@ -269,8 +254,8 @@ export default function DonPage() {
                 {t('foodDonation.description')}
               </p>
 
-              <div className="space-y-3 mb-8">
-                <h3 className="font-bold text-text">{t('foodDonation.mostNeeded')}</h3>
+              <div className="space-y-3 mb-8 text-left max-w-xl mx-auto">
+                <h3 className="font-bold text-text text-center">{t('foodDonation.mostNeeded')}</h3>
                 <ul className="grid grid-cols-2 gap-2">
                   {foodItems.map((item) => (
                     <li key={item} className="flex items-center gap-2 text-text-muted">

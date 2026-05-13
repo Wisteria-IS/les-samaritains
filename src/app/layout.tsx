@@ -80,6 +80,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <body
+        suppressHydrationWarning
         className={`
           ${plusJakartaSans.variable}
           ${inter.variable}

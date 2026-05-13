@@ -138,6 +138,7 @@
     "description": "Our partners play an essential role in our mission.",
     "mainPartners": "Main Partners",
     "otherPartners": "Other Partners",
+    "compensatoryPartners": "Compensatory Work",
     "becomePartner": "Want to become a partner?",
     "becomePartnerButton": "Become a Partner"
   },
@@ -405,9 +406,9 @@
     "administrators": [
       { "name": "Chantal Plouffe", "role": "President and Founder" },
       { "name": "Khadija Chahlaoui", "role": "Vice President" },
-      { "name": "Julien Gob", "role": "Administrator" },
-      { "name": "Miguel Angel Arevalo", "role": "Administrator" },
-      { "name": "Board Member", "role": "Administrator" }
+      { "name": "Taoufiq Jmiai", "role": "Board Member" },
+      { "name": "Miguel Roxanna", "role": "Board Member" },
+      { "name": "Julien Gob", "role": "Board Member" }
     ],
     "volunteers": {
       "subtitle": "Our Volunteers",
@@ -480,6 +481,16 @@
     "title": "Become a Volunteer",
     "subtitle": "Get Involved",
     "description": "Join our volunteer team and make a difference in your community",
+    "promo": {
+      "tagline": "Volunteering — Call for All",
+      "title": "We are looking for volunteers",
+      "hoursMilestone": "100 hours completed =",
+      "benefit1": "Official certificate",
+      "benefit2": "Letter of recommendation for employment",
+      "freeGroceries": "Free groceries",
+      "blessing": "God loves you",
+      "imageAlt": "Volunteer call — L'Œuvre des Samaritains"
+    },
     "benefits": {
       "title": "Why Become a Volunteer?",
       "description": "Volunteering is an enriching experience that allows you to contribute to your community while developing new skills.",
@@ -512,11 +523,9 @@
       "phone": "Phone",
       "phonePlaceholder": "(514) 000-0000",
       "availability": "Availability",
-      "availabilityOptions": [
-        { "value": "mardi", "label": "Tuesday (1pm-5pm)" },
-        { "value": "jeudi", "label": "Thursday (1pm-5pm)" },
-        { "value": "vendredi", "label": "Friday (1pm-5pm)" }
-      ],
+      "availabilityHelp": "Check the days that work for you and choose your time range for each day. We are open Tuesday, Thursday, and Friday.",
+      "startTime": "Start time",
+      "endTime": "End time",
       "motivation": "Why do you want to become a volunteer?",
       "motivationPlaceholder": "Tell us about your motivations...",
       "submit": "Submit My Application",

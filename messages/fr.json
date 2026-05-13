@@ -138,6 +138,7 @@
     "description": "Nos partenaires jouent un rôle essentiel dans notre mission.",
     "mainPartners": "Partenaires Principaux",
     "otherPartners": "Autres Partenaires",
+    "compensatoryPartners": "Travaux compensatoires",
     "becomePartner": "Vous souhaitez devenir partenaire?",
     "becomePartnerButton": "Devenir partenaire"
   },
@@ -405,9 +406,9 @@
     "administrators": [
       { "name": "Chantal Plouffe", "role": "Présidente et fondatrice" },
       { "name": "Khadija Chahlaoui", "role": "Vice-présidente" },
-      { "name": "Julien Gob", "role": "Administrateur" },
-      { "name": "Miguel Angel Arevalo", "role": "Administrateur" },
-      { "name": "Membre du conseil", "role": "Administrateur" }
+      { "name": "Taoufiq Jmiai", "role": "Membre du CA" },
+      { "name": "Miguel Roxanna", "role": "Membre du CA" },
+      { "name": "Julien Gob", "role": "Membre du CA" }
     ],
     "volunteers": {
       "subtitle": "Nos bénévoles",
@@ -480,6 +481,16 @@
     "title": "Devenir Bénévole",
     "subtitle": "S'impliquer",
     "description": "Rejoignez notre équipe de bénévoles et faites une différence dans votre communauté",
+    "promo": {
+      "tagline": "Bénévolat — Appel à tous",
+      "title": "Nous recherchons des bénévoles",
+      "hoursMilestone": "100 heures complétées =",
+      "benefit1": "Certificat officiel",
+      "benefit2": "Lettre d'accompagnement pour emploi",
+      "freeGroceries": "Épicerie gratuite",
+      "blessing": "Dieu vous aime",
+      "imageAlt": "Appel aux bénévoles — L'Œuvre des Samaritains"
+    },
     "benefits": {
       "title": "Pourquoi devenir bénévole?",
       "description": "Le bénévolat est une expérience enrichissante qui vous permet de contribuer à votre communauté tout en développant de nouvelles compétences.",
@@ -511,12 +522,10 @@
       "emailPlaceholder": "votre@courriel.com",
       "phone": "Téléphone",
       "phonePlaceholder": "(514) 000-0000",
-      "availability": "Disponibilité",
-      "availabilityOptions": [
-        { "value": "mardi", "label": "Mardi (13h-17h)" },
-        { "value": "jeudi", "label": "Jeudi (13h-17h)" },
-        { "value": "vendredi", "label": "Vendredi (13h-17h)" }
-      ],
+      "availability": "Disponibilités",
+      "availabilityHelp": "Cochez les jours qui vous conviennent et choisissez votre plage horaire pour chaque jour. Nous sommes ouverts mardi, jeudi et vendredi.",
+      "startTime": "Heure de début",
+      "endTime": "Heure de fin",
       "motivation": "Pourquoi souhaitez-vous devenir bénévole?",
       "motivationPlaceholder": "Parlez-nous de vos motivations...",
       "submit": "Soumettre ma candidature",
