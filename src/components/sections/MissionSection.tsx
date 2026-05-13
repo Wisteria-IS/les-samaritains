@@ -80,14 +80,13 @@ export function MissionSection() {
 
         {/* Image gallery row - photos from our activities */}
         <FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
             {[
               { src: '/images/homepage/06-team-christmas.jpeg', alt: t('altCommunity') },
               { src: '/images/homepage/14-selfie-team.jpeg', alt: t('altTeam') },
               { src: '/images/homepage/15-certificat-benevolat.jpeg', alt: t('altVolunteers') },
               { src: '/images/homepage/05-warehouse-view.jpeg', alt: t('altLocation') },
-              { src: '/images/gallery/family.jpg', alt: t('altCommunity') },
-              { src: '/images/homepage/10-warehouse-rows.jpeg', alt: t('altLocation') },
+              { src: '/images/homepage/09-warehouse-wide.jpeg', alt: t('altLocation') },
               { src: '/images/homepage/08-responsable-shelves.jpeg', alt: t('altVolunteers') },
               { src: '/images/homepage/11-donation-boxes.jpeg', alt: t('altCommunity') },
               { src: '/images/homepage/12-preparing-baskets.jpeg', alt: t('altTeam') },
@@ -96,7 +95,7 @@ export function MissionSection() {
                 key={image.src}
                 className={cn(
                   'relative aspect-square rounded-lg md:rounded-xl overflow-hidden',
-                  index >= 6 && 'hidden lg:block'
+                  index >= 4 && 'hidden md:block'
                 )}
               >
                 <Image
