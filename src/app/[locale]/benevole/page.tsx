@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Heart, Clock, Users, Award, Send, CheckCircle, Star, Target, ShoppingBasket, Megaphone } from 'lucide-react';
+import { Heart, Clock, Users, Award, Send, CheckCircle, Star, Target, ShoppingBasket, Megaphone, FileText, ArrowDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
@@ -153,6 +153,74 @@ export default function BenevolePage() {
         backgroundImage="/images/hero/hands-hd.jpg"
       />
 
+      {/* Promotional Call-to-Action — kept at the very top */}
+      <section className="py-12 md:py-16 bg-background-alt">
+        <Container>
+          <FadeIn>
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-secondary shadow-2xl">
+              {/* Decorative orbs */}
+              <div className="pointer-events-none absolute -top-24 -right-24 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-yellow-300/20 blur-3xl" />
+
+              <div className="relative px-6 py-12 md:px-12 md:py-16 lg:py-20 text-white">
+                {/* Blessing on top */}
+                <p className="text-center italic text-xl md:text-2xl mb-8 tracking-wide">
+                  <Star className="inline-block w-5 h-5 fill-yellow-300 text-yellow-300 mr-2 -mt-1" />
+                  <span className="text-white/95">{t('promo.blessing')}</span>
+                  <Star className="inline-block w-5 h-5 fill-yellow-300 text-yellow-300 ml-2 -mt-1" />
+                </p>
+
+                {/* Tagline pill */}
+                <div className="flex justify-center mb-5">
+                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-xs md:text-sm font-bold uppercase tracking-wider">
+                    <Megaphone className="w-4 h-4" />
+                    {t('promo.tagline')}
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-center text-4xl md:text-5xl lg:text-6xl font-extrabold mb-10 leading-tight">
+                  {t('promo.title')}
+                </h2>
+
+                {/* Milestone headline */}
+                <div className="flex items-center justify-center gap-3 mb-8">
+                  <Target className="w-8 h-8 md:w-9 md:h-9 text-yellow-300 flex-shrink-0" />
+                  <p className="text-2xl md:text-3xl font-bold">{t('promo.hoursMilestone')}</p>
+                </div>
+
+                {/* 3 benefit cards */}
+                <div className="grid sm:grid-cols-3 gap-4 md:gap-5 max-w-4xl mx-auto">
+                  <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 transition-colors">
+                    <Award className="w-12 h-12 text-yellow-300 mx-auto mb-3" />
+                    <p className="font-bold text-base md:text-lg">{t('promo.benefit1')}</p>
+                  </div>
+                  <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 transition-colors">
+                    <FileText className="w-12 h-12 text-yellow-300 mx-auto mb-3" />
+                    <p className="font-bold text-base md:text-lg">{t('promo.benefit2')}</p>
+                  </div>
+                  <div className="bg-yellow-300/25 backdrop-blur-sm rounded-2xl p-6 text-center border-2 border-yellow-300/60 ring-2 ring-yellow-300/30 ring-offset-2 ring-offset-transparent shadow-lg shadow-yellow-300/20 sm:scale-105">
+                    <ShoppingBasket className="w-12 h-12 text-yellow-200 mx-auto mb-3" />
+                    <p className="font-extrabold text-base md:text-lg">{t('promo.freeGroceries')}</p>
+                  </div>
+                </div>
+
+                {/* Form CTA */}
+                <div className="text-center mt-10">
+                  <a
+                    href="#form-section"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-primary font-bold text-base md:text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  >
+                    {t('form.title')}
+                    <ArrowDown className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </Container>
+      </section>
+
       {/* Benefits */}
       <section className="py-16 md:py-20 bg-white">
         <Container>
@@ -237,58 +305,8 @@ export default function BenevolePage() {
         </Container>
       </section>
 
-      {/* Promotional Call-to-Action */}
-      <section className="py-12 md:py-16 bg-white">
-        <Container>
-          <FadeIn>
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-secondary p-1 shadow-xl">
-              <div className="relative rounded-[1.4rem] bg-gradient-to-br from-primary to-secondary px-6 py-10 md:px-12 md:py-14">
-                <div className="max-w-2xl mx-auto text-center text-white">
-                  <p className="text-white/90 italic text-lg md:text-xl mb-6">
-                    <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 mr-1" />
-                    {t('promo.blessing')}
-                    <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 ml-1" />
-                  </p>
-
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
-                    <Megaphone className="w-4 h-4" />
-                    {t('promo.tagline')}
-                  </div>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 leading-tight">
-                    <Star className="inline-block w-7 h-7 md:w-8 md:h-8 mr-2 fill-yellow-300 text-yellow-300" />
-                    {t('promo.title')}
-                    <Star className="inline-block w-7 h-7 md:w-8 md:h-8 ml-2 fill-yellow-300 text-yellow-300" />
-                  </h2>
-
-                  <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-5 md:p-6 text-left max-w-md mx-auto">
-                    <Target className="w-7 h-7 flex-shrink-0 text-yellow-300 mt-0.5" />
-                    <div>
-                      <p className="font-bold text-lg md:text-xl">{t('promo.hoursMilestone')}</p>
-                      <ul className="mt-3 space-y-2 text-white/90 text-base">
-                        <li className="flex items-center gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
-                          {t('promo.benefit1')}
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
-                          {t('promo.benefit2')}
-                        </li>
-                        <li className="flex items-center gap-2 font-bold text-white">
-                          <ShoppingBasket className="w-5 h-5 text-yellow-300 flex-shrink-0" />
-                          {t('promo.freeGroceries')}
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
-        </Container>
-      </section>
-
       {/* Application Form */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="form-section" className="py-16 md:py-24 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
             <FadeIn className="text-center mb-12">
