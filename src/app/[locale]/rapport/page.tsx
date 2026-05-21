@@ -10,6 +10,7 @@ import { PageHeader } from '@/components/sections/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { CountUp } from '@/components/animations/CountUp';
 import { BeneficiaryChart } from '@/components/charts/BeneficiaryChart';
+import { DONATION_URL } from '@/lib/constants';
 
 export default function RapportPage() {
   const t = useTranslations('report');
@@ -356,7 +357,7 @@ export default function RapportPage() {
               {t('cta.description')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/don" size="lg" className="bg-white text-secondary hover:bg-white/90">
+              <Button href={DONATION_URL} external size="lg" className="bg-white text-secondary hover:bg-white/90">
                 {t('cta.donate')}
               </Button>
               <Button href="/contact" variant="outline" size="lg" className="border-white text-white hover:bg-white/10">

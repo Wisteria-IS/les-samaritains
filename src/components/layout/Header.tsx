@@ -11,6 +11,7 @@ import { Container } from './Container';
 import { Button } from '@/components/ui/Button';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import { cn } from '@/lib/utils';
+import { DONATION_URL } from '@/lib/constants';
 
 interface NavItem {
   label: string;
@@ -184,10 +185,23 @@ export function Header() {
 
           {/* CTA buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="outline" size="md" href="/benevole" icon={<Users className="w-5 h-5" />}>
+            <Button
+              variant="primary"
+              size="md"
+              href="/benevole"
+              icon={<Users className="w-5 h-5" />}
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-blue-600 hover:to-cyan-500 text-white font-bold border-0 shadow-lg shadow-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/50"
+            >
               {t('volunteer')}
             </Button>
-            <Button variant="primary" size="md" href="/don" icon={<Heart className="w-5 h-5" />}>
+            <Button
+              variant="primary"
+              size="md"
+              href={DONATION_URL}
+              external
+              icon={<Heart className="w-5 h-5" />}
+              className="bg-gradient-to-r from-rose-500 to-fuchsia-600 hover:from-fuchsia-600 hover:to-rose-500 text-white font-bold border-0 shadow-lg shadow-rose-500/40 hover:shadow-xl hover:shadow-rose-500/50"
+            >
               {t('donate')}
             </Button>
           </div>
@@ -243,10 +257,19 @@ export function Header() {
                   </div>
                 ))}
                 <div className="pt-4 flex flex-col gap-2" onClick={() => setMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full" href="/benevole">
+                  <Button
+                    variant="primary"
+                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-blue-600 hover:to-cyan-500 text-white font-bold border-0 shadow-lg shadow-cyan-500/40"
+                    href="/benevole"
+                  >
                     {t('volunteer')}
                   </Button>
-                  <Button variant="primary" className="w-full" href="/don">
+                  <Button
+                    variant="primary"
+                    className="w-full bg-gradient-to-r from-rose-500 to-fuchsia-600 hover:from-fuchsia-600 hover:to-rose-500 text-white font-bold border-0 shadow-lg shadow-rose-500/40"
+                    href={DONATION_URL}
+                    external
+                  >
                     {t('donate')}
                   </Button>
                 </div>

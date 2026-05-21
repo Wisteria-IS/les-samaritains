@@ -8,6 +8,7 @@ import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { PageHeader } from '@/components/sections/PageHeader';
 import { Button } from '@/components/ui/Button';
+import { DONATION_URL } from '@/lib/constants';
 
 export default function AProposPage() {
   const t = useTranslations('about');
@@ -181,7 +182,7 @@ export default function AProposPage() {
               {t('cta.description')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/don" size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button href={DONATION_URL} external size="lg" className="bg-white text-primary hover:bg-white/90">
                 {t('cta.donate')}
               </Button>
               <Button href="/benevole" variant="outline" size="lg" className="border-white text-white hover:bg-white/10">

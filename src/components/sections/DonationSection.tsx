@@ -8,6 +8,7 @@ import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
+import { DONATION_URL } from '@/lib/constants';
 
 export function DonationSection() {
   const { theme } = useTheme();
@@ -18,14 +19,16 @@ export function DonationSection() {
       icon: CreditCard,
       title: t('methods.monetary.title'),
       description: t('methods.monetary.description'),
-      href: '/don',
+      href: DONATION_URL,
+      external: true,
       color: 'primary',
     },
     {
       icon: Truck,
       title: t('methods.food.title'),
       description: t('methods.food.description'),
-      href: '/don#alimentaire',
+      href: '/contact',
+      external: false,
       color: 'secondary',
     },
     {
@@ -33,6 +36,7 @@ export function DonationSection() {
       title: t('methods.material.title'),
       description: t('methods.material.description'),
       href: '/contact',
+      external: false,
       color: 'accent',
     },
   ];
@@ -56,7 +60,7 @@ export function DonationSection() {
               {t('orgInfo')}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" href="/don">
+              <Button size="lg" href={DONATION_URL} external>
                 <Heart className="w-5 h-5 mr-2" />
                 {t('donateButton')}
               </Button>
@@ -104,6 +108,8 @@ export function DonationSection() {
               <motion.a
                 key={option.title}
                 href={option.href}
+                target={option.external ? '_blank' : undefined}
+                rel={option.external ? 'noopener noreferrer' : undefined}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

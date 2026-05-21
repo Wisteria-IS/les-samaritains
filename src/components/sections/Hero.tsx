@@ -8,6 +8,7 @@ import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { CountUp } from '@/components/animations/CountUp';
+import { DONATION_URL } from '@/lib/constants';
 
 // Floating food items for Harvest theme - smoother, gentler movement
 const floatingFoods = [
@@ -114,7 +115,7 @@ function HeroHarvest() {
             transition={{ delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-10"
           >
-            <Button size="lg" href="/don" className="w-full sm:w-auto justify-center">
+            <Button size="lg" href={DONATION_URL} external className="w-full sm:w-auto justify-center">
               <Heart className="w-5 h-5 mr-2" />
               {t('donateButton')}
             </Button>
@@ -349,7 +350,7 @@ function HeroUrban() {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-10"
             >
-              <Button size="lg" href="/don" className="w-full sm:w-auto justify-center">
+              <Button size="lg" href={DONATION_URL} external className="w-full sm:w-auto justify-center">
                 {t('donateButton')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

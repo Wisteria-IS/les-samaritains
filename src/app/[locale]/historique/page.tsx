@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { PageHeader } from '@/components/sections/PageHeader';
+import { DONATION_URL } from '@/lib/constants';
 
 const historyImages = [
   '/images/history/hist-1B.jpg',
@@ -124,7 +125,9 @@ export default function HistoriquePage() {
                 {t('cta.volunteer')}
               </a>
               <a
-                href="/don"
+                href={DONATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-colors"
               >
                 {t('cta.donate')}
