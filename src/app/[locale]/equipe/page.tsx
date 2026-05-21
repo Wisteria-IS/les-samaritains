@@ -28,11 +28,11 @@ function initialsOf(name: string): string {
     .toUpperCase();
 }
 
-const volunteerImages = [
-  '/images/benevoles/chantal.webp',
-  '/images/benevoles/benevole-2.png',
-  '/images/gallery/helping.jpg',
-  '/images/gallery/food-sorting.jpg',
+const volunteerImages: { src: string; zoom?: boolean }[] = [
+  { src: '/images/benevoles/chantal.webp' },
+  { src: '/images/benevoles/benevole-2.png' },
+  { src: '/images/homepage/donation-family.jpg' },
+  { src: '/images/homepage/equipe-families.jpg', zoom: true },
 ];
 
 export default function EquipePage() {
@@ -171,10 +171,10 @@ export default function EquipePage() {
                     className="relative aspect-square rounded-xl overflow-hidden"
                   >
                     <Image
-                      src={image}
+                      src={image.src}
                       alt={`${t('volunteers.subtitle')} ${index + 1}`}
                       fill
-                      className="object-cover"
+                      className={image.zoom ? 'object-cover scale-[1.3]' : 'object-cover'}
                     />
                   </motion.div>
                 ))}
