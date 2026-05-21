@@ -287,8 +287,8 @@ export default function RapportPage() {
               className="relative aspect-square rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/history/hist-3.jpg"
-                alt="Shelves"
+                src="/images/homepage/rapport-distribution.jpg"
+                alt="Centre de distribution"
                 fill
                 className="object-cover"
               />
@@ -301,8 +301,8 @@ export default function RapportPage() {
               className="relative aspect-square rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/carousel/groupesam.png"
-                alt="Volunteers"
+                src="/images/homepage/rapport-pantry.jpg"
+                alt="Garde-manger approvisionné"
                 fill
                 className="object-cover"
               />
@@ -315,8 +315,8 @@ export default function RapportPage() {
               className="relative aspect-square rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/history/rapport-event.jpg"
-                alt="Event"
+                src="/images/homepage/rapport-sorting.jpg"
+                alt="Tri des dons alimentaires"
                 fill
                 className="object-cover"
               />
