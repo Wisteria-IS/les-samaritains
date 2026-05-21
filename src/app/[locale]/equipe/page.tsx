@@ -9,13 +9,24 @@ import { FadeIn } from '@/components/animations/FadeIn';
 import { PageHeader } from '@/components/sections/PageHeader';
 import { Button } from '@/components/ui/Button';
 
-const administratorImages = [
+const administratorImages: (string | null)[] = [
   '/images/administrateurs/CHANTAL.png',
   '/images/administrateurs/KHAD.png',
   '/images/administrateurs/taoufiq.png',
   '/images/administrateurs/miguel-roxanna.png',
   '/images/administrateurs/julien-gob.png',
+  null,
 ];
+
+function initialsOf(name: string): string {
+  return name
+    .split(/[\s-]+/)
+    .map((part) => part[0])
+    .filter(Boolean)
+    .slice(0, 2)
+    .join('')
+    .toUpperCase();
+}
 
 const volunteerImages = [
   '/images/benevoles/chantal.webp',
@@ -95,12 +106,20 @@ export default function EquipePage() {
                 className="text-center"
               >
                 <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
-                  <Image
-                    src={administratorImages[index]}
-                    alt={admin.name}
-                    fill
-                    className="object-cover"
-                  />
+                  {administratorImages[index] ? (
+                    <Image
+                      src={administratorImages[index]!}
+                      alt={admin.name}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/15 to-secondary/15">
+                      <span className="text-5xl md:text-6xl font-bold text-primary/70">
+                        {initialsOf(admin.name)}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <h3 className="text-xl font-bold text-text">{admin.name}</h3>
                 <p className="text-text-muted">{admin.role}</p>
