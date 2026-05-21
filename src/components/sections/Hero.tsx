@@ -163,8 +163,8 @@ function HeroHarvest() {
           >
             <div className="relative w-[280px] h-[35vh] lg:w-[350px] lg:h-[40vh] xl:w-[500px] xl:h-[45vh] 2xl:w-[600px] 2xl:h-[50vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/images/food/vegetables-hd.jpg"
-                alt="Légumes frais"
+                src="/images/homepage/hero-center-team.jpg"
+                alt="L'équipe des Samaritains"
                 fill
                 className="object-cover"
               />
@@ -184,8 +184,8 @@ function HeroHarvest() {
           >
             <div className="relative w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 2xl:w-40 2xl:h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-6">
               <Image
-                src="/images/bienfaits/fruits/fraises.jpg"
-                alt="Fruits frais"
+                src="/images/homepage/hero-cutting.jpg"
+                alt="Préparation en cuisine"
                 fill
                 className="object-cover"
               />
@@ -205,8 +205,8 @@ function HeroHarvest() {
           >
             <div className="relative w-32 h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 2xl:w-56 2xl:h-56 rounded-xl overflow-hidden shadow-xl border-4 border-white -rotate-3">
               <Image
-                src="/images/bienfaits/legumes/carottes.jpg"
-                alt="Carottes"
+                src="/images/homepage/hero-cert.jpg"
+                alt="Remise de certificat de bénévolat"
                 fill
                 className="object-cover"
               />
@@ -229,8 +229,8 @@ function HeroHarvest() {
       >
         <div className="relative w-28 h-20 lg:w-36 lg:h-28 xl:w-44 xl:h-32 2xl:w-48 2xl:h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white rotate-3">
           <Image
-            src="/images/homepage/01-birthday-office.jpeg"
-            alt="Aide"
+            src="/images/homepage/hero-2680.jpg"
+            alt="Bénévoles à l'oeuvre"
             fill
             className="object-cover"
           />
