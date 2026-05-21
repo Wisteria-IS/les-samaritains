@@ -226,7 +226,7 @@ export default function BenevolePage() {
             <FadeIn>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/homepage/06-team-christmas.jpeg"
+                  src="/images/homepage/hero-center-team.jpg"
                   alt="Bénévoles en action"
                   fill
                   className="object-cover"
@@ -243,60 +243,42 @@ export default function BenevolePage() {
           <FadeIn>
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-secondary p-1 shadow-xl">
               <div className="relative rounded-[1.4rem] bg-gradient-to-br from-primary to-secondary px-6 py-10 md:px-12 md:py-14">
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                  <div className="text-center lg:text-left text-white">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
-                      <Megaphone className="w-4 h-4" />
-                      {t('promo.tagline')}
-                    </div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
-                      <Star className="inline-block w-7 h-7 md:w-8 md:h-8 mr-2 fill-yellow-300 text-yellow-300" />
-                      {t('promo.title')}
-                      <Star className="inline-block w-7 h-7 md:w-8 md:h-8 ml-2 fill-yellow-300 text-yellow-300" />
-                    </h2>
+                <div className="max-w-2xl mx-auto text-center text-white">
+                  <p className="text-white/90 italic text-lg md:text-xl mb-6">
+                    <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 mr-1" />
+                    {t('promo.blessing')}
+                    <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 ml-1" />
+                  </p>
 
-                    <div className="mt-8 space-y-4 text-left max-w-md mx-auto lg:mx-0">
-                      <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                        <Target className="w-7 h-7 flex-shrink-0 text-yellow-300 mt-0.5" />
-                        <div>
-                          <p className="font-bold text-lg">{t('promo.hoursMilestone')}</p>
-                          <ul className="mt-2 space-y-1.5 text-white/90 text-sm">
-                            <li className="flex items-center gap-2">
-                              <CheckCircle className="w-4 h-4 text-green-300 flex-shrink-0" />
-                              {t('promo.benefit1')}
-                            </li>
-                            <li className="flex items-center gap-2">
-                              <CheckCircle className="w-4 h-4 text-green-300 flex-shrink-0" />
-                              {t('promo.benefit2')}
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="flex items-center gap-3 bg-yellow-400/20 backdrop-blur-sm rounded-xl p-4 border-2 border-yellow-300/40">
-                        <ShoppingBasket className="w-8 h-8 flex-shrink-0 text-yellow-300" />
-                        <p className="font-extrabold text-lg md:text-xl text-white">
-                          <Star className="inline-block w-5 h-5 fill-yellow-300 text-yellow-300 mr-1" />
-                          {t('promo.freeGroceries')}
-                          <Star className="inline-block w-5 h-5 fill-yellow-300 text-yellow-300 ml-1" />
-                        </p>
-                      </div>
-
-                      <p className="text-center text-white/90 italic text-lg pt-2">
-                        <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 mr-1" />
-                        {t('promo.blessing')}
-                        <Star className="inline-block w-4 h-4 fill-yellow-300 text-yellow-300 ml-1" />
-                      </p>
-                    </div>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+                    <Megaphone className="w-4 h-4" />
+                    {t('promo.tagline')}
                   </div>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 leading-tight">
+                    <Star className="inline-block w-7 h-7 md:w-8 md:h-8 mr-2 fill-yellow-300 text-yellow-300" />
+                    {t('promo.title')}
+                    <Star className="inline-block w-7 h-7 md:w-8 md:h-8 ml-2 fill-yellow-300 text-yellow-300" />
+                  </h2>
 
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/30">
-                    <Image
-                      src="/images/promo/benevolat-appel.jpeg"
-                      alt={t('promo.imageAlt')}
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-5 md:p-6 text-left max-w-md mx-auto">
+                    <Target className="w-7 h-7 flex-shrink-0 text-yellow-300 mt-0.5" />
+                    <div>
+                      <p className="font-bold text-lg md:text-xl">{t('promo.hoursMilestone')}</p>
+                      <ul className="mt-3 space-y-2 text-white/90 text-base">
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                          {t('promo.benefit1')}
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                          {t('promo.benefit2')}
+                        </li>
+                        <li className="flex items-center gap-2 font-bold text-white">
+                          <ShoppingBasket className="w-5 h-5 text-yellow-300 flex-shrink-0" />
+                          {t('promo.freeGroceries')}
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
