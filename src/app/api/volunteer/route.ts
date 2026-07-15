@@ -177,7 +177,7 @@ IP: ${clientIp}`;
     // Send notification to organization
     await transporter.sendMail({
       from: `L'Œuvre des Samaritains <${process.env.MAIL_FROM_ADDRESS || 'webform@lessamaritains.nordiq.app'}>`,
-      to: process.env.CONTACT_EMAIL || 'lds@live.ca',
+      to: process.env.VOLUNTEER_EMAIL || 'ldsbenevolat@hotmail.com',
       subject: `[Bénévolat] Nouvelle candidature - ${fullName}`,
       html: wrapHtml(emailContentHtml),
       text: emailContentText,
