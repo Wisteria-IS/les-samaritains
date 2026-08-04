@@ -13,7 +13,7 @@ const administratorImages: (string | null)[] = [
   '/images/administrateurs/CHANTAL.png',
   '/images/administrateurs/KHAD.png',
   '/images/administrateurs/taoufiq.png',
-  '/images/administrateurs/miguel-roxanna.png',
+  '/images/administrateurs/miguel-arevalo.png',
   '/images/administrateurs/julien-gob.png',
   null,
 ];
