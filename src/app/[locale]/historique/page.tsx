@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { PageHeader } from '@/components/sections/PageHeader';
+import { Link } from '@/i18n/routing';
 import { DONATION_URL } from '@/lib/constants';
 
 const historyImages = [
@@ -118,12 +119,12 @@ export default function HistoriquePage() {
               {t('cta.description')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center px-8 py-3 bg-white text-primary font-semibold rounded-full hover:bg-white/90 transition-colors"
               >
                 {t('cta.volunteer')}
-              </a>
+              </Link>
               <a
                 href={DONATION_URL}
                 target="_blank"

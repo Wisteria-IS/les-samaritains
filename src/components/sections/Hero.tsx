@@ -10,20 +10,8 @@ import { Button } from '@/components/ui/Button';
 import { CountUp } from '@/components/animations/CountUp';
 import { DONATION_URL } from '@/lib/constants';
 
-// Floating food items for Harvest theme - smoother, gentler movement
-const floatingFoods = [
-  { src: '/images/bienfaits/fruits/cerises.jpg', alt: 'Cerises', size: 'w-16 h-16 md:w-24 md:h-24', position: 'top-[15%] right-[5%] md:right-[8%]', delay: 0, duration: 8, yRange: [-6, 6] },
-  { src: '/images/bienfaits/legumes/carottes.jpg', alt: 'Carottes', size: 'w-20 h-20 md:w-28 md:h-28', position: 'top-[35%] right-[2%] md:right-[12%]', delay: 0.5, duration: 9, yRange: [-8, 4] },
-  { src: '/images/bienfaits/fruits/pommes.jpg', alt: 'Pommes', size: 'w-14 h-14 md:w-20 md:h-20', position: 'top-[55%] right-[8%] md:right-[5%]', delay: 1, duration: 10, yRange: [-5, 7] },
-  { src: '/images/bienfaits/legumes/brocoli.webp', alt: 'Brocoli', size: 'w-18 h-18 md:w-24 md:h-24', position: 'top-[70%] right-[15%] md:right-[15%]', delay: 1.5, duration: 8.5, yRange: [-6, 6] },
-  { src: '/images/bienfaits/viandes/volaille.jpg', alt: 'Volaille', size: 'w-16 h-16 md:w-22 md:h-22', position: 'top-[25%] right-[18%] md:right-[22%]', delay: 2, duration: 9.5, yRange: [-7, 5] },
-  { src: '/images/bienfaits/fruits/fraises.jpg', alt: 'Fraises', size: 'w-12 h-12 md:w-16 md:h-16', position: 'top-[45%] right-[22%] md:right-[18%]', delay: 0.8, duration: 8, yRange: [-4, 6] },
-  { src: '/images/bienfaits/legumes/oignon.jpg', alt: 'Oignon', size: 'w-14 h-14 md:w-18 md:h-18', position: 'top-[80%] right-[5%] md:right-[8%]', delay: 1.2, duration: 9, yRange: [-5, 5] },
-  { src: '/images/bienfaits/viandes/boeufs.jpeg', alt: 'Boeuf', size: 'w-16 h-16 md:w-20 md:h-20', position: 'top-[60%] right-[25%] md:right-[25%]', delay: 0.3, duration: 10, yRange: [-6, 6] },
-];
-
 export function Hero() {
-  const { theme, themeName } = useTheme();
+  const { theme } = useTheme();
   const heroConfig = theme.components.hero;
 
   if (heroConfig.style === 'fullwidth') {

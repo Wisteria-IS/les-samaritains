@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
@@ -33,7 +32,6 @@ const compensatoryPartners = [
 ];
 
 export function PartnersSection() {
-  const { theme } = useTheme();
   const t = useTranslations('partnersHome');
 
   return (

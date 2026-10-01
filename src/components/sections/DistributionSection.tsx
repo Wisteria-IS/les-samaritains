@@ -1,16 +1,13 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Clock, MapPin, Users, Calendar } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
 
 export function DistributionSection() {
-  const { theme } = useTheme();
   const t = useTranslations('distribution');
   const documents = t.raw('documents.items') as string[];
 

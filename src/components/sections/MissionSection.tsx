@@ -3,13 +3,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { cn } from '@/lib/utils';
 
 export function MissionSection() {
-  const { theme } = useTheme();
   const t = useTranslations('mission');
   const values = t.raw('values') as string[];
 

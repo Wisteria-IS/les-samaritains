@@ -43,7 +43,7 @@ export function BeneficiaryChart() {
       {/* Header */}
       <div className="mb-8">
         <p className="text-xs font-semibold tracking-widest uppercase text-primary mb-2">
-          L'Œuvre des Samaritains
+          L&apos;Œuvre des Samaritains
         </p>
         <h3 className="text-2xl md:text-3xl font-serif text-text leading-tight">
           Répartition des bénéficiaires<br />par provenance
