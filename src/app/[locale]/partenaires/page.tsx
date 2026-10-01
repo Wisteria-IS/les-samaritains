@@ -24,6 +24,7 @@ const partners = [
   { name: 'Réchaud-Bus', logo: '/images/partners/donateur-rechaud-bus.webp' },
   { name: 'Lantic', logo: '/images/partners/part-lantic.webp' },
   { name: 'Groupe Beaudry', logo: '/images/partners/partn-groupe-beaudry.webp' },
+  { name: 'Fondation J.A. DeSève', logo: '/images/partners/fondation-ja-deseve.webp', wide: true },
   { name: 'Partenaire 1', logo: '/images/partners/ods-2.webp' },
   { name: 'Partenaire 2', logo: '/images/partners/ods-3.webp' },
   { name: 'Partenaire 3', logo: '/images/partners/ods-4.webp' },
@@ -122,7 +123,7 @@ export default function PartenairesPage() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+          <div className="grid grid-flow-row-dense grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner.name}
@@ -131,7 +132,9 @@ export default function PartenairesPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-background-alt rounded-xl p-6 flex items-center justify-center aspect-square"
+                className={`bg-background-alt rounded-xl p-6 flex items-center justify-center ${
+                  partner.wide ? 'col-span-2 min-h-24' : 'aspect-square'
+                }`}
               >
                 <div className="relative w-full h-full">
                   <Image
