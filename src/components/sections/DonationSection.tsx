@@ -4,14 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Heart, CreditCard, Truck, Gift, ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { DONATION_URL } from '@/lib/constants';
 
 export function DonationSection() {
-  const { theme } = useTheme();
   const t = useTranslations('donationHome');
 
   const donationOptions = [

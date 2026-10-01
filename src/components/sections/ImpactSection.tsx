@@ -4,13 +4,11 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useTheme } from '@/contexts/ThemeContext';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { CountUp } from '@/components/animations/CountUp';
 
 export function ImpactSection() {
-  const { theme } = useTheme();
   const t = useTranslations('impact');
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
@@ -75,7 +73,7 @@ export function ImpactSection() {
             </div>
             <div>
               <blockquote className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed mb-4 md:mb-6">
-                "{t('quote')}"
+                &quot;{t('quote')}&quot;
               </blockquote>
               <p className="text-sm md:text-base text-white/70">
                 {t('quoteDescription')}

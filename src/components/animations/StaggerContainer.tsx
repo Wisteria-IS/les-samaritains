@@ -19,7 +19,6 @@ export function StaggerContainer({
 }: StaggerContainerProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once, amount: 0.2 });
-  const { theme } = useTheme();
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
