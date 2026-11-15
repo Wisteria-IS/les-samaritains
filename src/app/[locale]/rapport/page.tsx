@@ -16,10 +16,10 @@ export default function RapportPage() {
   const t = useTranslations('report');
 
   const yearlyStats = [
-    { icon: Users, value: 15900, suffix: '', label: t('stats.totalVisits') },
-    { icon: Package, value: 15000, suffix: '', label: t('stats.groceryVisits') },
-    { icon: Calendar, value: 900, suffix: '', label: t('stats.emergencies') },
-    { icon: Heart, value: 800, suffix: '', label: t('stats.christmasFamilies') },
+    { icon: Users, value: 13412, suffix: '', label: t('stats.totalVisits') },
+    { icon: Package, value: 12962, suffix: '', label: t('stats.groceryVisits') },
+    { icon: Calendar, value: 450, suffix: '', label: t('stats.emergencies') },
+    { icon: Heart, value: 710, suffix: '', label: t('stats.christmasFamilies') },
   ];
 
   const valeurs = t.raw('mission.values') as string[];
@@ -336,7 +336,7 @@ export default function RapportPage() {
                 </div>
                 <h3 className="text-xl font-bold text-text mb-2">{t('download.title')}</h3>
                 <p className="text-text-muted mb-6">{t('download.description')}</p>
-                <Button href="#" className="w-full sm:w-auto">
+                <Button href="/documents/rapport-annuel-2025-2026.pdf" external className="w-full sm:w-auto">
                   <Download className="w-5 h-5 mr-2" />
                   {t('download.button')}
                 </Button>

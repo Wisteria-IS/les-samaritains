@@ -284,7 +284,7 @@
   "report": {
     "title": "Activity Report",
     "subtitle": "Annual Review",
-    "description": "ANNUAL REPORT 2024-2025",
+    "description": "ANNUAL REPORT 2025-2026",
     "stats": {
       "totalVisits": "Total Visits",
       "groceryVisits": "Grocery Visits",
@@ -299,36 +299,36 @@
       "values": ["Respect", "Trust", "Compassion", "Dignity", "Courtesy", "Civility"]
     },
     "overview": {
-      "subtitle": "L'Œuvre des Samaritains in 2024-2025",
+      "subtitle": "L'Œuvre des Samaritains in 2025-2026",
       "title": "A Statistical Overview",
       "sectionTitle": "2. Distribution Center",
-      "point1": "During the year, 900 emergency situations (free visits) and 15,000 grocery visits were served by the organization, totaling 15,900 visits from our members and non-members.",
-      "point2": "Since the beginning of the fiscal year on June 30, 2025, there has been a significant increase in newcomers in emergency situations.",
-      "christmasTitle": "Christmas Grocery 2024",
-      "christmasText": "800 families were served over a period of 5 days."
+      "point1": "During the year, 450 emergency situations (free visits) and 12,962 grocery visits were served by the organization, totaling 13,412 visits from our members and non-members.",
+      "point2": "Since the beginning of the fiscal year on June 30, 2026, there has been a significant increase in people who have a job but live below the poverty line.",
+      "christmasTitle": "Christmas Grocery 2025",
+      "christmasText": "710 families were served over a period of 5 days."
     },
     "profile": {
-      "title": "Participant Profile 2024-2025",
-      "point1": "30% of our beneficiaries live in shared housing, given the increase in the cost of living.",
-      "point2": "During 2024-25: 30% of new registrations are newcomers. Since late 2024, the number of newcomers from Ukraine, Africa, and Turkey benefiting from the food bank has increased significantly.",
-      "point3": "Taking into account emergency situations and Christmas basket distributions: We have served nearly 17,000 free visits since 2020.",
-      "point4": "17,000 free visits x $7 cost per visit = $119,000 in free visits given back to the most disadvantaged in our community."
+      "title": "Participant Profile 2025-2026",
+      "point1": "20% of our beneficiaries live in shared housing, given rising housing costs.",
+      "point2": "40% of our visitors work but have a low income, 30% receive last-resort social assistance and 10% are students.",
+      "point3": "Taking into account emergency situations and Christmas basket distributions: we have served nearly 18,000 free visits since 2020.",
+      "point4": "18,000 free visits x $7 cost per visit = $126,000 in free visits given back to the most disadvantaged in our community."
     },
     "services": {
-      "title": "L'Œuvre des Samaritains Services 2024-2025",
-      "distributionTitle": "A) Food Distribution in 2024-2025",
-      "distributionText": "In 2024-2025, we received 17,000 visits. Once registered, participants receive a food basket with the help of a volunteer. Food distribution at L'Œuvre des Samaritains has been in the form of a community grocery store since its inception. To cope with the pandemic situation, we had to change our distribution procedure to adequately meet the health rules established by public health.",
+      "title": "L'Œuvre des Samaritains Services 2025-2026",
+      "distributionTitle": "A) Food Distribution in 2025-2026",
+      "distributionText": "Once registered, participants receive a food basket with the help of a volunteer. Food distribution at L'Œuvre des Samaritains has taken the form of a community grocery store since its inception. We welcome French-learning newcomers who use the food bank into our community life by offering them volunteer roles that take into account intercultural differences, their challenges and their needs, and by referring them to relevant resources.",
       "wasteTitle": "B) We Say NO to Food Waste",
       "wasteText": "Since 2007, the organization has been environmentally conscious as we inspect and transform every perishable product that Moisson Montréal sends us. We are therefore committed to offering more products fit for consumption. This service is offered three days a week: Tuesday, Thursday, and Friday. The food offered by L'Œuvre des Samaritains is sorted, cleaned, and packaged. Offering food is important to the organization. The organization wishes to serve its clients with respect and dignity.",
-      "christmasTitle": "C) Christmas Grocery 2024",
-      "christmasText1": "For the 2024 Christmas holidays, our organization was pleased to organize a food distribution for our beneficiaries. With a budget of $15,000, we were able to purchase essential products such as meat, chicken, rice, and sugar.",
-      "christmasText2": "This initiative was made possible thanks to the generosity of our donors, who also allowed our beneficiaries to choose the items most useful to them. This support was crucial in bringing some comfort and warmth to those who needed it most during this holiday season. We warmly thank everyone who contributed to making this event a success. 800 families were served over a period of six days.",
+      "christmasTitle": "C) Christmas Grocery 2025",
+      "christmasText1": "For the 2025 Christmas holidays, our organization was pleased to organize a food distribution for our beneficiaries. With a budget of $13,000, we were able to purchase essential products such as meat, chicken, rice, sugar, butter, tuna, tomatoes and pasta.",
+      "christmasText2": "This initiative was made possible thanks to the generosity of our donors, who also allowed our beneficiaries to choose the items most useful to them. This support was crucial in bringing some comfort and warmth to those who needed it most during this holiday season. We warmly thank everyone who contributed to making this event a success. 710 families were served over a period of six days.",
       "communityTitle": "D) Community Involvement",
       "communityIntro": "L'Œuvre des Samaritains is a member of:",
       "communityList": ["Ahuntsic Multi-sectoral Neighborhood Table", "Food Security Project of Solidarité Ahuntsic", "Ahuntsic Food Security Table"]
     },
     "download": {
-      "title": "Annual Report 2024-2025",
+      "title": "Annual Report 2025-2026",
       "description": "Download the complete report in PDF format",
       "button": "Download Report (PDF)"
     },
